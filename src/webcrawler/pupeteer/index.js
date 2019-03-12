@@ -1,12 +1,16 @@
 const puppeteer = require('puppeteer');
 const theUtil = require('util');
+const fs = require('fs');
+
+var terms = '' + fs.readFileSync('../productnames.txt');
+terms = terms.split('\n');
 
 const sleep = theUtil.promisify(setTimeout);
 
 (async () => {
 	const browser = await puppeteer.launch();
 	const page = await browser.newPage();
-	await page.goto('https://www.bing.com/search?q=energy+star+hair+dryers', {  //('https://www.energystar.gov/products', {
+	await page.goto('https://www.bing.com/search?q=' + terms[0], {  //('https://www.energystar.gov/products', {
 		'waitUntil': 'networkidle2',
 		'timeout': 10000
 	}).then(() => {
@@ -18,18 +22,6 @@ const sleep = theUtil.promisify(setTimeout);
 		width: 1200,
 		height: 800
 	});
-
-	/*===================This would be for maintaining active sessions on a webpage
-	await page.type('#email', 'bhag@gmail.com');
-	await page.type('#pass', 'password123');
-	await page.click('#loginbutton');
-
-	await page.waitForNavigation();
-
-	await page.goto('https://www.messenger.com/t/523535423542345', {
-		'waitUntil': 'networkidle2'
-	});
-	*/
 
 	//console.log('first screen');
 

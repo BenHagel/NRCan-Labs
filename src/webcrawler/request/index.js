@@ -11,8 +11,7 @@ var firstLinks = [];
 var imgLinks = [];
 
 //Part 1
-var searchTerm = terms[0];
-var url = 'https://www.bing.com/search?q=' + searchTerm;
+var url = 'https://www.bing.com/search?q=' + terms[0];
 
 function saveImagesOnWebsite(url){
     console.log('LOADING IMAGES ON WEBSITE FOR: ' + url);
