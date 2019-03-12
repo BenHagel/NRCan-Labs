@@ -1,0 +1,6 @@
+energy+star+hair+dryers
+energy+star+clothes+dryers
+energy+star+commercial+clothes+washers
+energy+star+humidifiers
+energy+star+ceiling+fans
+energy+star+light+bulbs

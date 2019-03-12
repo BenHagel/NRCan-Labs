@@ -6,7 +6,7 @@ const sleep = theUtil.promisify(setTimeout);
 (async () => {
 	const browser = await puppeteer.launch();
 	const page = await browser.newPage();
-	await page.goto('https://www.energystar.gov/products', {
+	await page.goto('https://www.bing.com/search?q=energy+star+hair+dryers', {  //('https://www.energystar.gov/products', {
 		'waitUntil': 'networkidle2',
 		'timeout': 10000
 	}).then(() => {
@@ -32,6 +32,13 @@ const sleep = theUtil.promisify(setTimeout);
 	*/
 
 	//console.log('first screen');
+
+	const hrefs = await page.$$eval('a', as => as.map(a => a.href));
+
+	for(var t = 0;t < hrefs.length;t++){
+		console.log(hrefs[t]);
+	}
+	
 
 	await page.screenshot({path: 'example3.png'});
 	await sleep(1000);
