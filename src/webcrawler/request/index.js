@@ -10,26 +10,37 @@ var firstLinks = [];
 //Part 2
 var imgLinks = [];
 
+var startTime = Date.now();
+
 //Part 1
 var url = 'https://www.bing.com/search?q=' + terms[0];
 
-function saveImagesOnWebsite(url){
-    console.log('LOADING IMAGES ON WEBSITE FOR: ' + url);
-    request(url, function(err, resp, body){
-        $ = cheerio.load(body);
-        imgs = $('img'); //jquery get all images
-        $(imgs).each(function(i, img){
-            //if((''+$(img).attr('src')).substring(0,4)){
-                if(imgLinks.length < 200){ imgLinks.push($(img).attr('src'));}
-                else{console.log(JSON.stringify(imgLinks));process.exit(0);}
-                //console.log($(img).attr('src'));
-            //}
+//41.417 seconds
+
+function saveImagesOnWebsite(linkIndex){
+    if(linkIndex < firstLinks.length){
+        console.log('LINK CHECK: ' + linkIndex + ' ' + firstLinks[linkIndex]);
+        request(url, function(err, resp, body){
+            $ = cheerio.load(body);
+            imgs = $('img'); //jquery get all images
+            $(imgs).each(function(i, img){
+                imgLinks.push($(img).attr('src'));
+            });
+            linkIndex++;
+            saveImagesOnWebsite(linkIndex);
         });
-    });
+    }
+    else{
+        console.log('All DOne:--- ' + imgLinks.length);
+        var endTime = Date.now() - startTime;
+        endTime /= 1000;
+
+        console.log('Time took: ' + endTime);
+
+    }
 }
 
 function loadStuff(){
-    console.log('loading stuff.....');
     request(url, function(err, resp, body){
         $ = cheerio.load(body);
         links = $('a'); //jquery get all hyperlinks
@@ -40,13 +51,11 @@ function loadStuff(){
                 firstLinks.push($(link).attr('href'));
             }
         });
-
-        for(var i = 0;i < firstLinks.length;i++){
-            if(imgLinks.length < 200) saveImagesOnWebsite(firstLinks[i]);
-            else process.exit(0);
-        }
-
+        saveImagesOnWebsite(0);
     });
+
+    
+    console.log('\tLOAD STUFF');
 }
 
 loadStuff();
