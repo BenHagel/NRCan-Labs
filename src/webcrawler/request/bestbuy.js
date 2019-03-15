@@ -2,9 +2,6 @@ var request = require('request');
 var cheerio = require('cheerio');
 const fs = require('fs');
 
-var terms = '' + fs.readFileSync('../productnames.txt');
-terms = terms.split('\n');
-
 //1. Look at the file name first, if they even contain 'energy' 'star' 'certified'
 //2. alt tags on the images 
 
@@ -28,9 +25,12 @@ const maxPages = 170;
 var startTime = Date.now();
 
 //Just search for first term
-var baseURL = 'https://www.bestbuy.ca';
+/*var baseURL = 'https://www.bestbuy.ca';
 var pageURL = baseURL + '/en-CA/Search/SearchResults.aspx?type=product&page=1&sortBy=relevance&sortDir=desc&query=' + terms[1];
- //'https://www.bestbuy.ca/en-CA/Search/SearchResults.aspx?query=energy%20star%20dryer';
+var terms = '' + fs.readFileSync('../productnames.txt');
+terms = terms.split('\n');
+grabLinksFrom(pageURL);
+*/
 
 function grabLinksFrom(pageURL){
     request(pageURL, function(err, resp, body){
@@ -86,8 +86,6 @@ function grabLinksFrom(pageURL){
     console.log('start');
 }
 
-grabLinksFrom(pageURL);
-
 function addLink(newURL){
     for(var t = 0; t < productLinks.length;t++){
         if(newURL === productLinks[t]) return false;
@@ -95,6 +93,57 @@ function addLink(newURL){
     productLinks.push(newURL);
     return true;
 }
+
+
+
+
+
+var terms = '' + fs.readFileSync('../output/bestbuy_productlinks.txt');
+terms = terms.split('\n');
+var productsLeft = 100;//terms.length-2;
+//console.log(terms.length + '  ' + terms[productsLeft]);
+
+//List of products with 'star' in the description
+var productsWithHits = [];
+
+extractAllDescFromProducts(productsLeft);
+function extractAllDescFromProducts(linkIndex){
+    request(terms[linkIndex], function(err, resp, body){
+        $ = cheerio.load(body);
+        descs = $('.tab-overview-item');
+        console.log('descs length: ' + descs.length);
+
+        var internalDesc = '';
+        $(descs).each(function(i, desc){
+            internalDesc += '' + descs.text() + '\n';
+        });
+
+        internalDesc = internalDesc.toLowerCase();
+
+        if(internalDesc.includes('star') && internalDesc.includes('certified')){
+            productsWithHits.push(terms[linkIndex]);
+            console.log('hit found');
+        }
+
+        //console.log('DESC for: ' + terms[linkIndex] + '\n' + internalDesc);
+
+        //Base case
+        if(linkIndex > 0){
+            linkIndex--;
+            extractAllDescFromProducts(linkIndex);
+        }else{
+            //END
+            console.log('---FINISHED with:');
+            console.log('\t' + productsWithHits.length + ' links hit');
+            for(var j = 0;j < productsWithHits.length;j++){
+                fs.appendFileSync('../output/bestbuy_products_w_hits.txt', productsWithHits[j] + '\n');
+
+            }
+        }
+    });
+}
+
+
 
 
 
@@ -118,8 +167,6 @@ function saveImagesOnWebsite(linkIndex){
         console.log('All DOne:--- ' + imgLinks.length);
         var endTime = Date.now() - startTime;
         endTime /= 1000;
-
         console.log('Time took: ' + endTime);
-
     }
 }
