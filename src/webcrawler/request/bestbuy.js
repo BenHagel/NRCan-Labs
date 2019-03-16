@@ -25,12 +25,12 @@ const maxPages = 170;
 var startTime = Date.now();
 
 //Just search for first term
-/*var baseURL = 'https://www.bestbuy.ca';
+var baseURL = 'https://www.bestbuy.ca';
 var pageURL = baseURL + '/en-CA/Search/SearchResults.aspx?type=product&page=1&sortBy=relevance&sortDir=desc&query=' + terms[1];
 var terms = '' + fs.readFileSync('../productnames.txt');
 terms = terms.split('\n');
 grabLinksFrom(pageURL);
-*/
+
 
 function grabLinksFrom(pageURL){
     request(pageURL, function(err, resp, body){
@@ -98,15 +98,14 @@ function addLink(newURL){
 
 
 
-var terms = '' + fs.readFileSync('../output/bestbuy_productlinks.txt');
-terms = terms.split('\n');
-var productsLeft = 100;//terms.length-2;
-//console.log(terms.length + '  ' + terms[productsLeft]);
+//var terms = '' + fs.readFileSync('../output/bestbuy_productlinks.txt');
+//terms = terms.split('\n');
+//var productsLeft = 100;//terms.length-2;
 
 //List of products with 'star' in the description
-var productsWithHits = [];
+//var productsWithHits = [];
 
-extractAllDescFromProducts(productsLeft);
+//extractAllDescFromProducts(productsLeft);
 function extractAllDescFromProducts(linkIndex){
     request(terms[linkIndex], function(err, resp, body){
         $ = cheerio.load(body);
