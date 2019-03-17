@@ -1,0 +1,8 @@
+html{
+    overflow: hidden !important;
+}
+.sketch-parent{
+    width: 100%;
+    height: calc(100vh - 150px);
+    border: 1px solid black;
+}
