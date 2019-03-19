@@ -2,11 +2,28 @@ var request = require('request');
 var cheerio = require('cheerio');
 const fs = require('fs');
 
-var terms = '' + fs.readFileSync('../output/bestbuy_productlinks.txt');
+var csvRaw = ''+ fs.readFileSync('../../certified-light-bulbs-2019-03-14.csv');
+csvRaw = csvRaw.split('\n');
+
+var formatted = [];
+for(var i = 0;i < csvRaw.length;i++){
+    if(csvRaw[i].length > 20){
+        formatted.push(csvRaw[i].split(','));
+    }
+}
+console.log('formatted lines: ' + formatted.length);
+
+//Set all to lower case
+for(var i = 0;i < formatted.length;i++){
+    for(var j = 0;j < formatted[i].length;j++){
+        formatted[i][j] = formatted[i][j].toLowerCase();
+    }
+}
+
+var terms = '' + fs.readFileSync('../output/bestbuy_products_w_hits.txt');
 terms = terms.split('\n');
 
 var linkIndex = 0;
-
 
 function loadStuff(url){
     request(url, function(err, resp, body){
@@ -17,12 +34,21 @@ function loadStuff(url){
         */
 
         $ = cheerio.load(body);
-        links = $('.tab-overview-item'); //jquery get all hyperlinks
+        links = $('#ctl00_CP_ctl00_PD_lblModelNumber'); //jquery get all the IDs
         var overallText = '';
         $(links).each(function(i, link){
-            overallText += ('' + $(link).text()).toLowerCase() + ' ';
+            overallText = ('' + $(link).text()).toLowerCase();
         });
 
+        var hitFound = 0;
+
+        for(var i = 0;i < formatted.length;i++){
+            for(var j = 0;j < formatted[i].length;j++){
+                if(formatted[i][j] === overallText){hitFound++;}//console.log('HIT at: ' + url); break;}
+            }
+        }
+
+        /*
         if(overallText.includes('energy star') || overallText.includes('star certified') || overallText.includes('star qualified')){
             console.log('ernergu found @ ' + linkIndex);
             fs.appendFile('../output/bestbuy_products_w_hits.txt', url + '\n', function (err) {
@@ -34,8 +60,8 @@ function loadStuff(url){
         else{
             console.log('negative at: ' + linkIndex);
         }
-
-        //console.log(overallText);
+        */
+        console.log(hitFound + ': ' + overallText);
 
         linkIndex++;
         if(linkIndex < terms.length-1){
