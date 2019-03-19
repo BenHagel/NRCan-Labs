@@ -2,7 +2,7 @@ var request = require('request');
 var cheerio = require('cheerio');
 const fs = require('fs');
 
-var csvRaw = ''+ fs.readFileSync('../../certified-light-bulbs-2019-03-14.csv');
+var csvRaw = ''+ fs.readFileSync('../../../certified-light-bulbs-2019-03-14.csv');
 csvRaw = csvRaw.split('\n');
 
 var formatted = [];

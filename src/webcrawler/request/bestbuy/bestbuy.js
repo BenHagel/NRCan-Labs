@@ -124,8 +124,6 @@ function extractAllDescFromProducts(linkIndex){
             console.log('hit found');
         }
 
-        //console.log('DESC for: ' + terms[linkIndex] + '\n' + internalDesc);
-
         //Base case
         if(linkIndex > 0){
             linkIndex--;
@@ -139,6 +137,7 @@ function extractAllDescFromProducts(linkIndex){
 
             }
         }
+        
     });
 }
 
