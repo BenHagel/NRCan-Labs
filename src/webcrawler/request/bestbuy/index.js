@@ -1,3 +1,8 @@
+/*
+NRCAN
+save all the img urls on a page, starting from product names searches into bing.
+*/
+
 var request = require('request');
 var cheerio = require('cheerio');
 const fs = require('fs');

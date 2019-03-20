@@ -1,3 +1,8 @@
+/*
+NRCAN
+save all the img urls on a page, starting from product names searches into bing.
+*/
+
 var request = require('request');
 var cheerio = require('cheerio');
 const fs = require('fs');
@@ -34,7 +39,7 @@ function loadStuff(url){
         */
 
         $ = cheerio.load(body);
-        links = $('#ctl00_CP_ctl00_PD_lblModelNumber'); //jquery get all the IDs
+        links = $('.product-title');
         var overallText = '';
         $(links).each(function(i, link){
             overallText = ('' + $(link).text()).toLowerCase();

@@ -1,3 +1,8 @@
+/*
+NRCAN - BESTBUY 1
+Scrape all the pages after a search
+*/
+
 var request = require('request');
 var cheerio = require('cheerio');
 const fs = require('fs');

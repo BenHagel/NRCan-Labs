@@ -1,3 +1,8 @@
+/*
+NRCAN - BEST BUY 2
+search the text for ENERGY STAR HITS, from the URLS 
+*/
+
 var request = require('request');
 var cheerio = require('cheerio');
 const fs = require('fs');
