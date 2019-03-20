@@ -7,7 +7,12 @@ var request = require('request');
 var cheerio = require('cheerio');
 const fs = require('fs');
 
-var csvRaw = ''+ fs.readFileSync('../../../certified-light-bulbs-2019-03-14.csv');
+String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.replace(new RegExp(search, 'g'), replacement);
+};
+
+var csvRaw = ''+ fs.readFileSync('../../../../certified-light-bulbs-2019-03-14.csv');
 csvRaw = csvRaw.split('\n');
 
 var formatted = [];
@@ -25,7 +30,7 @@ for(var i = 0;i < formatted.length;i++){
     }
 }
 
-var terms = '' + fs.readFileSync('../output/bestbuy_products_w_hits.txt');
+var terms = '' + fs.readFileSync('../../output/bestbuy_products_w_hits.txt');
 terms = terms.split('\n');
 
 var linkIndex = 0;
@@ -44,6 +49,13 @@ function loadStuff(url){
         $(links).each(function(i, link){
             overallText = ('' + $(link).text()).toLowerCase();
         });
+
+        overallText = overallText.replaceAll(',', '');
+        overallText = overallText.replaceAll('\t', '');
+        overallText = overallText.replaceAll('\n', '');
+        overallText = overallText.replaceAll('\r', '');
+        overallText = overallText.replace(/\s\s+/g, ' ');
+        overallText = overallText.trim();
 
         var hitFound = 0;
 
