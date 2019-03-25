@@ -40,7 +40,12 @@ ServerAPI.getProductLink = function(f, l){
 
 ServerAPI.getHotProductLink = function(){
     var gggg = function(data){
-        Menu.renderHighestHits(data);
+        if(data.all){
+            Menu.renderAllHits(data);
+        }
+        else{
+            Menu.renderHighestHits(data);
+        }
 	};
     var command = '?sig=' + Menu.signature;
     command += '&cmd=get_hit_product_link';

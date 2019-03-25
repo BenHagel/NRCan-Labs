@@ -75,7 +75,7 @@ html{
 }
 .main-text-output{
     width: 100%;
-    height: 50%;
+    height: 390px;
     overflow-x: scroll;
 
     resize: vertical;

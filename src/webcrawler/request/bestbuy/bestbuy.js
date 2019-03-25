@@ -132,13 +132,14 @@ BestBuy.compareToDatabase = function(url, res){
 
         hitValues.sort(function(a, b){return b.match-a.match});
 
-        console.log(hitValues[0]);
+        //console.log(hitValues[0]);
         for(var u = 0;u < hitValues.length;u++){
-            hitValues[u].word = formatted[hitValues[u].ind];
+            hitValues[u].words = formatted[hitValues[u].ind];
         }
         
         var returnVal = {};
         returnVal.url = url;
+        returnVal.title = overallText;
         returnVal.hits = hitValues.slice(0, 15);
 
         res.json(returnVal);

@@ -122,9 +122,14 @@ app.post('/api', function(req, res){
         //not yet
     }
     else if(req.query.cmd === 'get_hit_product_link'){
-        console.log(req.query.index);
         if(!processInProgress){
-            BestBuy.compareToDatabase(csvRawEnergyStarHits[Number(req.query.index)], res);
+            if(req.query.index === 'all'){
+                res.json({'all': csvRawEnergyStarHits});
+            }
+            else{
+                BestBuy.compareToDatabase(csvRawEnergyStarHits[Number(req.query.index)], res);
+            }
+            
         }
     }
     else if(req.query.cmd === 'confirm_database'){

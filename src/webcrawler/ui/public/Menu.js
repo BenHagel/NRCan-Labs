@@ -70,8 +70,27 @@ Menu.renderCurrentJobs = function(data){
 
 Menu.renderHighestHits = function(data){
     if(data){
-
+        var outputArea = document.getElementById('mainTextOutput');
+        outputArea.value = data.url;
+        outputArea.value += '\n' + data.title;
+        outputArea.value += '\n======================';
+        for(var k = 0;k < data.hits.length;k++){
+            outputArea.value += '\n' + data.hits[k].match + ' match';
+            outputArea.value += '\n@ index ' + data.hits[k].ind + ', w/ phrases:';
+            outputArea.value += '\n' + JSON.stringify(data.hits[k].words);
+            outputArea.value += '\n-------------------------------------------';
+        }
         
+    }
+};
+
+Menu.renderAllHits = function(data){
+    if(data){
+        var outputArea = document.getElementById('mainTextOutput');
+        outputArea.value = '';
+        for(var k = 0;k < data.all.length;k++){
+            outputArea.value += data.all[k] + '\n\n';
+        }
     }
 };
 //^\s*([0-9a-zA-Z]+)\s*$
