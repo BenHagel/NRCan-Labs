@@ -1,35 +1,29 @@
-/*
-NRCAN - BESTBUY 1
-Scrape all the pages after a search
-*/
-//1. Look at the file name first, if they even contain 'energy' 'star' 'certified'
-//2. alt tags on the images 
+////////////////////////
+///////DEHUDIMIFIERS
+///////////////////////
 
-//Scale down the image to illegable format and then use that as the max
-
-//Careful for going too fast - will be detected from 
-//2. Look out for slower   queires
-
-//TWITTER, FACEBOOK, use the api's to look at API's for 
-//All less fluffy and low-fidelity 
-//Look to book off time w Douglas
-
+var request = require('request');
+var cheerio = require('cheerio');
+var levenshtein = require('fast-levenshtein');
+const csv = require('csv-parser');
+const fs = require('fs');
 
 var BestBuy = {};
 
 //Part 1
 BestBuy.currentPage = 1;
-BestBuy.maxPages = 50;
+BestBuy.maxPages = 5;
+
+var linksToProducts = [];
 
 //Just search for first term
 BestBuy.baseURL = 'https://www.bestbuy.ca';
-BestBuy.pageURL = BestBuy.baseURL + '/en-CA/Search/SearchResults.aspx?type=product&page=1&sortBy=relevance&sortDir=desc&query=';
+BestBuy.pageURL = BestBuy.baseURL + '/en-CA/Search/SearchResults.aspx?type=product&page=1&sortBy=relevance&sortDir=desc&query=dehumidifiers';
 
 BestBuy.startSearching = function(searchTerm){
     var urlStart = BestBuy.pageURL + searchTerm;
-    processInProgress = true;
     BestBuy.currentPage = 1;
-    BestBuy.maxPages = 150;
+    BestBuy.maxPages = 5;
     linksToProducts = [];
     //console.log(urlStart);
     BestBuy.grabLinksFrom(urlStart);
@@ -58,7 +52,7 @@ BestBuy.grabLinksFrom = function(pageURL){
         });
 
         //Iterate pages
-        if(BestBuy.currentPage < BestBuy.maxPages && processInProgress === true){
+        if(BestBuy.currentPage < BestBuy.maxPages){
             var oldPageNum = '&page=' + BestBuy.currentPage;
             BestBuy.currentPage++;
             var newPageNum = '&page=' + BestBuy.currentPage;
@@ -72,9 +66,8 @@ BestBuy.grabLinksFrom = function(pageURL){
             //console.log('---FINISHED with:');
             //console.log('\t' + productLinks.length + ' links');
             for(var j = 0;j < linksToProducts.length;j++){
-                fs.appendFileSync('../output/bestbuy_productlinks.txt', linksToProducts[j] + '\n');
+                fs.appendFileSync('../../output/bestbuy_deh_productlinks.txt', linksToProducts[j] + '\n');
             }
-            processInProgress = false;
         }
     });
 };
@@ -146,7 +139,7 @@ BestBuy.compareToDatabase = function(url, res){
     });
 };
 
-
+BestBuy.grabLinksFrom(BestBuy.pageURL);
 
 //extractAllDescFromProducts(productsLeft);
 function extractAllDescFromProducts(linkIndex){
@@ -176,7 +169,7 @@ function extractAllDescFromProducts(linkIndex){
             console.log('---FINISHED with:');
             console.log('\t' + productsWithHits.length + ' links hit');
             for(var j = 0;j < productsWithHits.length;j++){
-                fs.appendFileSync('../output/bestbuy_products_w_hits.txt', productsWithHits[j] + '\n');
+                fs.appendFileSync('../../output/bestbuy_products_w_hits.txt', productsWithHits[j] + '\n');
 
             }
         }

@@ -6,8 +6,14 @@ save all the img urls on a page, starting from product names searches into bing.
 var request = require('request');
 var cheerio = require('cheerio');
 var levenshtein = require('fast-levenshtein');
+const csv = require('csv-parser');
 const fs = require('fs');
 
+//Case Study URL
+var productURL = 'https://www.bestbuy.ca/en-ca/product/philips-468009-led-90w-par38-glass-daylight-5000k/12741957.aspx?';
+
+
+//Helper functions
 String.prototype.replaceAll = function(search, replacement) {
     var target = this;
     return target.replace(new RegExp(search, 'g'), replacement);
@@ -25,9 +31,23 @@ function repAll(word, target, desired){
     }
 }
 
-var csvRaw = ''+ fs.readFileSync('../../../../certified-light-bulbs-2019-03-14.csv');
-csvRaw = csvRaw.split('\n');
+//var csvRaw = ''+ fs.readFileSync('../../../../certified-light-bulbs-2019-03-14.csv');
+//csvRaw = csvRaw.split('\n');
+var results = [];
 
+fs.createReadStream('../../../../certified-light-bulbs-2019-03-14.csv')
+    .pipe(csv())
+    .on('headers', (headers) => {
+        console.log('First header: ' + headers);
+    })
+    .on('data', (data) => results.push(data))
+    .on('end', () => {
+        //console.log('results: ' + results.length);
+        console.log(results[0]);
+    });
+
+
+/*
 var formatted = [];
 for(var i = 0;i < csvRaw.length;i++){
     if(csvRaw[i].length > 20){
@@ -41,19 +61,12 @@ for(var i = 0;i < csvRaw.length;i++){
         csvRaw[i] = csvRaw[i].trim();
         formatted.push(csvRaw[i].split(' '));
     }
-}
-//console.log('formatted lines: ' + formatted.length);
-//console.log(formatted[1]);
+}*/
 
-//Set all to lower case
-for(var i = 0;i < formatted.length;i++){
-    for(var j = 0;j < formatted[i].length;j++){
-        //formatted[i][j] = formatted[i][j].toLowerCase();
-    }
-}
 
-var terms = '' + fs.readFileSync('../../output/bestbuy_products_w_hits.txt');
-terms = terms.split('\n');
+
+// terms = '' + fs.readFileSync('../../output/bestbuy_products_w_hits.txt');
+//terms = terms.split('\n');
 
 var linkIndex = 0;
 
@@ -132,7 +145,7 @@ function loadStuff(url){
     });
 }
 
-loadStuff(terms[linkIndex]);
+//loadStuff(terms[linkIndex]);
 
 
 

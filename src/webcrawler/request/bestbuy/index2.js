@@ -1,46 +1,40 @@
 /*
 NRCAN - BEST BUY 2
-search the text for ENERGY STAR HITS, from the URLS 
+search the text for ENERGY STAR HITS, from the URLS  oF w.e. 'TERMS' variabl eis.
 */
 
 var request = require('request');
 var cheerio = require('cheerio');
 const fs = require('fs');
+const csv = require('csv-parser');
+var results = [];
 
-var terms = '' + fs.readFileSync('../output/bestbuy_productlinks.txt');
+var terms = '' + fs.readFileSync('../../output/bestbuy_deh_productlinks.txt');
 terms = terms.split('\n');
 
+
+
 var linkIndex = 0;
-
-
 function loadStuff(url){
     request(url, function(err, resp, body){
-        /*
-        if((''+body).includes('energy')){
-            console.log('Energy seen');
-        }
-        */
+
 
         $ = cheerio.load(body);
-        links = $('.tab-overview-item'); //jquery get all hyperlinks
+        var links = $('#ctl00_CP_ctl00_PD_lblModelNumber');//'.tab-overview-item'); //jquery get all hyperlinks
         var overallText = '';
         $(links).each(function(i, link){
-            overallText += ('' + $(link).text()).toLowerCase() + ' ';
+            overallText += ('' + $(link).text());
         });
-
-        if(overallText.includes('energy star') || overallText.includes('star certified') || overallText.includes('star qualified')){
-            console.log('ernergu found @ ' + linkIndex);
-            fs.appendFile('../output/bestbuy_products_w_hits.txt', url + '\n', function (err) {
-                if (err) throw err;
-                    console.log('Saved!');
-                //console.log(overallText);
-            });
-        }
-        else{
-            console.log('negative at: ' + linkIndex);
-        }
-
         //console.log(overallText);
+
+        var hit = false;
+        for(var j = 0;j < results.length;j++){
+            if(results[j]['Model Number'] === overallText){
+                hit = true;
+            }
+        }
+        console.log('hiiiit');
+
 
         linkIndex++;
         if(linkIndex < terms.length-1){
@@ -54,10 +48,29 @@ function loadStuff(url){
     //console.log('\tLOADed');
 }
 
-loadStuff(terms[linkIndex]);
 
 
 
+
+
+
+fs.createReadStream('../../../../ENERGY_STAR_Certified_Dehumidifiers.csv')
+    .pipe(csv())
+    .on('headers', (headers) => {
+        //console.log('First header: ' + headers);
+    })
+    .on('data', (data) => results.push(data))
+    .on('end', () => {
+        //console.log('results: ' + results.length);
+        //console.log(results[0]['Model Number']);
+
+
+
+        loadStuff(terms[linkIndex]);
+
+
+
+    });
 
 
 

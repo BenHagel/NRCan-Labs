@@ -7,6 +7,8 @@ src/
 - npm install https --save
 - pip install scrapy
 - npm install express --save
+- npm install fast-levenshtein --save
+- npm install csv-parser --save
 
 
 Useful links:
@@ -20,3 +22,4 @@ npm install request --save
 npm install cheerio --save
 npm install express --save
 npm install fast-levenshtein --save
+npm install csv-parser --save
