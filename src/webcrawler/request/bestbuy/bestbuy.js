@@ -2,11 +2,6 @@
 NRCAN - BESTBUY 1
 Scrape all the pages after a search
 */
-
-var request = require('request');
-var cheerio = require('cheerio');
-const fs = require('fs');
-
 //1. Look at the file name first, if they even contain 'energy' 'star' 'certified'
 //2. alt tags on the images 
 
@@ -20,46 +15,40 @@ const fs = require('fs');
 //Look to book off time w Douglas
 
 
-//Part 1
-var productLinks = [];
+var BestBuy = {};
 
 //Part 1
-var currentPage = 1;
-const maxPages = 170;
-
-var startTime = Date.now();
+BestBuy.currentPage = 1;
+BestBuy.maxPages = 50;
 
 //Just search for first term
-var baseURL = 'https://www.bestbuy.ca';
-var pageURL = baseURL + '/en-CA/Search/SearchResults.aspx?type=product&page=1&sortBy=relevance&sortDir=desc&query=' + terms[1];
-var terms = '' + fs.readFileSync('../productnames.txt');
-terms = terms.split('\n');
-grabLinksFrom(pageURL);
+BestBuy.baseURL = 'https://www.bestbuy.ca';
+BestBuy.pageURL = BestBuy.baseURL + '/en-CA/Search/SearchResults.aspx?type=product&page=1&sortBy=relevance&sortDir=desc&query=';
 
+BestBuy.startSearching = function(searchTerm){
+    var urlStart = BestBuy.pageURL + searchTerm;
+    processInProgress = true;
+    BestBuy.currentPage = 1;
+    BestBuy.maxPages = 150;
+    linksToProducts = [];
+    //console.log(urlStart);
+    BestBuy.grabLinksFrom(urlStart);
+};
 
-function grabLinksFrom(pageURL){
+BestBuy.grabLinksFrom = function(pageURL){
     request(pageURL, function(err, resp, body){
-        //Gets all energy words
-        if((''+body).includes('energy')){
-            //console.log('Energy Seen');
-        }
-        //console.log(body);
-        
         //Body 
         $ = cheerio.load(body);
-        links = $('a'); //jquery get all hyperlinks
+        links = $('a');
         $(links).each(function(i, link){
             var targetLink = ('' + $(link).attr('href'));
             var targetLinkParsed = targetLink.split('/', 4);  //  /en-ca/product/
             //console.log(targetLink);
             if(targetLinkParsed.length > 2){
                 if(targetLinkParsed[1] === 'en-ca' && targetLinkParsed[2] === 'product'){
-                    targetLink = baseURL + targetLink;
-                    addLink(targetLink);
+                    targetLink = BestBuy.baseURL + targetLink;
+                    BestBuy.addLink(targetLink);
                 }
-            }
-            if(targetLink.includes('energy')){
-                //console.log('ernergu found @ ' + targetLink);
             }
             //if((''+$(link).attr('href')).substring(0,4) === 'http'){
                 //console.log($(link).attr('href'));
@@ -67,48 +56,96 @@ function grabLinksFrom(pageURL){
                 //firstLinks.push($(link).attr('href'));
             //}
         });
-        console.log('Found: ' + productLinks.length + ' links\n');
 
         //Iterate pages
-        if(currentPage < maxPages){
-            var oldPageNum = '&page=' + currentPage;
-            currentPage++;
-            var newPageNum = '&page=' + currentPage;
+        if(BestBuy.currentPage < BestBuy.maxPages && processInProgress === true){
+            var oldPageNum = '&page=' + BestBuy.currentPage;
+            BestBuy.currentPage++;
+            var newPageNum = '&page=' + BestBuy.currentPage;
             //Call new page
             var nextPageURL = pageURL.replace(oldPageNum, newPageNum);
-            console.log(nextPageURL);
-            grabLinksFrom(nextPageURL);
+            //console.log(nextPageURL);
+            //console.log(nextPageURL);
+            BestBuy.grabLinksFrom(nextPageURL);
         }
         else{
-            console.log('---FINISHED with:');
-            console.log('\t' + productLinks.length + ' links');
-            for(var j = 0;j < productLinks.length;j++){
-                fs.appendFileSync('../output/bestbuy_productlinks.txt', productLinks[j] + '\n');
-
+            //console.log('---FINISHED with:');
+            //console.log('\t' + productLinks.length + ' links');
+            for(var j = 0;j < linksToProducts.length;j++){
+                fs.appendFileSync('../output/bestbuy_productlinks.txt', linksToProducts[j] + '\n');
             }
+            processInProgress = false;
         }
     });
-    console.log('start');
-}
+};
 
-function addLink(newURL){
-    for(var t = 0; t < productLinks.length;t++){
-        if(newURL === productLinks[t]) return false;
+BestBuy.addLink = function(newURL){
+    for(var t = 0; t < linksToProducts.length;t++){
+        if(newURL === linksToProducts[t]) return false;
     }
-    productLinks.push(newURL);
+    linksToProducts.push(newURL);
     return true;
-}
+};
+
+BestBuy.compareToDatabase = function(url, res){
+    request(url, function(err, resp, body){
+        $ = cheerio.load(body);
+        links = $('.product-title');
+        var overallText = '';
+        $(links).each(function(i, link){
+            overallText = ('' + $(link).text()).toLowerCase();
+        });
+
+        //Useuless characters
+        overallText = overallText.replaceAll(',', '');
+        overallText = overallText.replaceAll('"', ' ');
+        overallText = overallText.replaceAll('\t', '');
+        overallText = overallText.replaceAll('\n', '');
+        overallText = overallText.replaceAll('\r', '');
+        overallText = overallText.replace(/\s\s+/g, ' ');
+        overallText = overallText.trim();
+        
+        //Characters that taint the results
+        overallText = repAll(overallText, '-', ' ');
+        overallText = repAll(overallText, 'new!', ' ');
+        overallText = repAll(overallText, '!', ' ');
+        overallText = repAll(overallText, '(', ' ');
+        overallText = repAll(overallText, ')', ' ');
+        overallText = repAll(overallText, '/', ' ');
+        overallText = overallText.replace(/\s\s+/g, ' ');
+        overallText = overallText.trim();
+
+        //console.log(overallText);
+        var titleComponents = overallText.split(' ');
+        var hitValues = [];
+
+        for(var i = 0;i < formatted.length;i++){
+            var hitFound = 0;
+            for(var j = 0;j < formatted[i].length;j++){
+                for(var x = 0;x < titleComponents.length;x++){
+                    if(levenshtein.get(formatted[i][j], titleComponents[x]) < 2){hitFound++;}
+                }
+            }
+            var perc = (0.0+hitFound) / (0.0+formatted[i].length);
+            hitValues.push({'ind': i, 'match': perc});
+        }
+
+        hitValues.sort(function(a, b){return b.match-a.match});
+
+        console.log(hitValues[0]);
+        for(var u = 0;u < hitValues.length;u++){
+            hitValues[u].word = formatted[hitValues[u].ind];
+        }
+        
+        var returnVal = {};
+        returnVal.url = url;
+        returnVal.hits = hitValues.slice(0, 15);
+
+        res.json(returnVal);
+    });
+};
 
 
-
-
-
-//var terms = '' + fs.readFileSync('../output/bestbuy_productlinks.txt');
-//terms = terms.split('\n');
-//var productsLeft = 100;//terms.length-2;
-
-//List of products with 'star' in the description
-//var productsWithHits = [];
 
 //extractAllDescFromProducts(productsLeft);
 function extractAllDescFromProducts(linkIndex){

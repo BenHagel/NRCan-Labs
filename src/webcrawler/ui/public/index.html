@@ -1,20 +1,79 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Web Crawler 1</title>
+        <title>NRCan UI</title>
         <link rel="stylesheet" href="./style/css/theme.min.css">
         <link rel="stylesheet" href="./style/css/custom.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <script src="./p5.min.js"></script>
-        <script src="./sketch.js"></script>
+        <!--<script src="./p5.min.js"></script>-->
+        <!--<script src="./sketch.js"></script>-->
+        <script src="./ServerAPI.js"></script>
+        <script src="./Menu.js"></script>
+        <script src="./splitmin.js"></script>
     </head>
 
-    <body>
+    <body onload="Menu.onload()">
+        <!--Not in use-->
         <div>
-            <h1>Web Crawler 1</h1>
+            <img src="logo_twitter.png" width="65px" height="65px" class="logo-img">
+            <h1 class="title-h1">NRCan Terminal</h1>
         </div>
-        <div id="sketchParent" class="sketch-parent">
 
+        <!--Config Area-->
+        <div class="split left">
+            <h2>Config</h2>
+            <span id="currentDatabaseInfo"></span>
+            <div id="loadingSpinner" class="hidden"><button onclick="ServerAPI.stop();" style="background-color: red;">stop</button><img style="width: 20px; height: 20px;" src="./loading_spinner.gif"></div>
+            <div class="tab">
+                <button id="productSites_tab" class="tab-active tablinks" onclick="Menu.openTab(0);">Product Sites</button>
+                <button id="www_tab" class="tablinks" onclick="Menu.openTab(1);">WWW</button>
+                <button id="singleSite_tab" class="tablinks" onclick="Menu.openTab(2);">Single Site</button>
+            </div>
+
+
+
+            <div id="productSites" class="config-content">
+                <p>Grab raw product links here</p>
+                <br>
+                <button class="collapsible">Find Product Links</button>
+                <div>
+                    <p>Which product website are you searching?</p>
+                    <input checked type="radio" name="shop" value="bb" id="shopTypeBB"> Best Buy<br>
+                    <input type="radio" name="shop" value="hd" id="shopTypeHD"> Home Depot<br>
+                    <input type="radio" name="shop" value="ct" id="shopTypeCT"> Canadian Tire<br>
+                    <input id="searchForProductInput" type="text" placeholder="product name">
+                    <button onclick="ServerAPI.productSearch();">Search</button>
+                </div>
+
+                <br>
+                <br>
+
+                <button class="collapsible">Search Energy Star Hits</button>
+                <div>
+                    <p>Search products of interest with Energy Star</p>
+                    <div>links of interest: <span id="numLinksInMemory"></span></div>
+                    <input width="100%" id="searchForProductInputIndex" type="text" placeholder="search index">
+                    <button onclick="ServerAPI.getHotProductLink();">Search</button>
+                </div>
+            </div>
+
+
+
+            <div id="www" class="hidden config-content">
+                ~ in progress ~
+            </div>
+            <div id="singleSite" class="hidden config-content">
+                ~ in progress ~
+            </div>
         </div>
+
+        <!--Results Area-->
+        <div class="split right">
+            <h2>Results</h2>
+            <div class="results-content">
+                <textarea id="mainTextOutput" wrap="soft" spellcheck="false" class="main-text-output"></textarea>
+            </div>
+        </div>
+
     </body>
 </html>

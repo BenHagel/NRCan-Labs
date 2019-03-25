@@ -1,8 +1,130 @@
 html{
     overflow: hidden !important;
 }
+
+/*Not in use11111111111111*/
 .sketch-parent{
     width: 100%;
     height: calc(100vh - 150px);
     border: 1px solid black;
+    display: flex;
+    flex-direction: row;
 }
+.logo-img{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+.title-h1{
+    padding-left: 70px;
+}
+
+/*WIndow split*/
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+.left {
+    left: 0;
+    background-color: rgb(180, 180, 180);
+    overflow: hidden;
+}
+
+.right {
+    right: 0;
+    background-color: rgb(210, 210, 210);
+    overflow-y: scroll;
+}
+
+
+/* Tabs*/
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab-active{
+    background-color: rgb(73, 146, 255) !important;
+}
+
+
+/*Config content*/
+.config-content{
+    padding-left: 5px;
+}
+.main-text-output{
+    width: 100%;
+    height: 50%;
+    overflow-x: scroll;
+
+    resize: vertical;
+}
+
+
+/*Results content*/
+.results-content{
+
+}
+
+
+
+/*Collapsible Areas*/
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+
+
