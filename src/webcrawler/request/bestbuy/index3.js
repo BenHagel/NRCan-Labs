@@ -33,17 +33,17 @@ function repAll(word, target, desired){
 
 //var csvRaw = ''+ fs.readFileSync('../../../../certified-light-bulbs-2019-03-14.csv');
 //csvRaw = csvRaw.split('\n');
-var results = [];
+var db = [];
 
 fs.createReadStream('../../../../certified-light-bulbs-2019-03-14.csv')
     .pipe(csv())
     .on('headers', (headers) => {
         console.log('First header: ' + headers);
     })
-    .on('data', (data) => results.push(data))
+    .on('data', (data) => db.push(data))
     .on('end', () => {
-        //console.log('results: ' + results.length);
-        console.log(results[0]);
+        //console.log('db: ' + db.length);
+        console.log(db[0]);
     });
 
 

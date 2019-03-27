@@ -50,6 +50,9 @@ ServerAPI.getHotProductLink = function(){
     var command = '?sig=' + Menu.signature;
     command += '&cmd=get_hit_product_link';
     command += '&index=' + document.getElementById('searchForProductInputIndex').value;
+    command += '&shop=' + document.getElementById('shopTypeBB').checked + 
+        '1' + document.getElementById('shopTypeHD').checked + 
+            '1' + document.getElementById('shopTypeCT').checked;
     //console.log(command);
     ServerAPI.xmlRequest('POST', command, gggg);
 };
@@ -67,6 +70,10 @@ ServerAPI.productSearch = function(){
     command += '&search=' + document.getElementById('searchForProductInput').value;
     //console.log(command);
     ServerAPI.xmlRequest('POST', command, confirmJobs);
+};
+
+ServerAPI.productSearchWWW = function(){
+
 };
 
 ServerAPI.stop = function(){

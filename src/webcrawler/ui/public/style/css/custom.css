@@ -33,7 +33,7 @@ html{
 .left {
     left: 0;
     background-color: rgb(180, 180, 180);
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .right {

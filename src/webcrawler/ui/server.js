@@ -5,6 +5,7 @@ const fs = require('fs');
 var request = require('request');
 var cheerio = require('cheerio');
 var levenshtein = require('fast-levenshtein');
+const csv = require('csv-parser');
 
 
 
@@ -35,7 +36,7 @@ eval('' + fs.readFileSync('../request/bestbuy/bestbuy.js'));
 //eval('' + fs.readFileSync('../request/homedepot/homedepot.js'));
 //eval('' + fs.readFileSync('../request/cantire/cantire.js'));
 
-
+eval('' + fs.readFileSync('../request/LightBulbHelper.js'));
 
 
 
@@ -62,6 +63,7 @@ function repAll(word, target, desired){//recursive replace all
 
 
 //Load LIGHT BULB database
+/*
 var csvRaw = '' + fs.readFileSync('../../../certified-light-bulbs-2019-03-14.csv');
 csvRaw = csvRaw.split('\n');
 
@@ -80,6 +82,20 @@ for(var i = 0;i < csvRaw.length;i++){
     }
 }
 //console.log(csvRaw[4]);
+*/
+
+var db = [];
+
+fs.createReadStream('../../../certified-light-bulbs-2019-03-14.csv')
+    .pipe(csv())
+    .on('headers', (headers) => {
+        console.log('First header: ' + headers);
+    })
+    .on('data', (data) => db.push(data))
+    .on('end', () => {
+        //console.log('db: ' + db.length);
+        console.log('loaded: ' + db[0]);
+    });
 
 
 
@@ -123,11 +139,21 @@ app.post('/api', function(req, res){
     }
     else if(req.query.cmd === 'get_hit_product_link'){
         if(!processInProgress){
+            radioButtons = (''+req.query.shop).split('1');
             if(req.query.index === 'all'){
                 res.json({'all': csvRawEnergyStarHits});
             }
             else{
-                BestBuy.compareToDatabase(csvRawEnergyStarHits[Number(req.query.index)], res);
+                if(radioButtons[0] === 'true'){
+                    BestBuy.compareToDatabase(csvRawEnergyStarHits[Number(req.query.index)], res);
+                }
+                else if(radioButtons[1] === 'true'){
+    
+                }
+                else if(radioButtons[2] === 'true'){
+    
+                }
+                
             }
             
         }
