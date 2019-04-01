@@ -27,16 +27,25 @@ function repAll(word, target, desired){
 
 //Open jobs that are currently taking time to run
 //var openJobs = [];
+var processInProgress = false;
+
+//DISTRIBUTORS
 var radioButtons = [];//which shop selectged
 var linksToProducts = [];//current links to products
+var productsWithHits = [];
+var linksOfInfractions = [];
 
-var processInProgress = false;
+//WWW
+var goodStartingSeedURLS = '' + fs.readFileSync('user_data/goodStartingSeeds.txt')
+
 
 eval('' + fs.readFileSync('../request/bestbuy/bestbuy.js'));
 //eval('' + fs.readFileSync('../request/homedepot/homedepot.js'));
 //eval('' + fs.readFileSync('../request/cantire/cantire.js'));
+eval('' + fs.readFileSync('../request/www/www.js'));
 
-eval('' + fs.readFileSync('../request/LightBulbHelper.js'));
+eval('' + fs.readFileSync('../request/dists/LightBulbHelper.js'));
+eval('' + fs.readFileSync('../request/dists/FridgeHelper.js'));
 
 
 
@@ -57,44 +66,15 @@ function repAll(word, target, desired){//recursive replace all
     }
 }
 
-
-
-
-
-
-//Load LIGHT BULB database
-/*
-var csvRaw = '' + fs.readFileSync('../../../certified-light-bulbs-2019-03-14.csv');
-csvRaw = csvRaw.split('\n');
-
-var formatted = [];
-for(var i = 0;i < csvRaw.length;i++){
-    if(csvRaw[i].length > 20){
-        csvRaw[i] = csvRaw[i].toLocaleLowerCase();
-        csvRaw[i] = csvRaw[i].replaceAll(',', ' ');
-        csvRaw[i] = csvRaw[i].replaceAll('"', ' ');
-        csvRaw[i] = csvRaw[i].replaceAll('\t', '');
-        csvRaw[i] = csvRaw[i].replaceAll('\n', '');
-        csvRaw[i] = csvRaw[i].replaceAll('\r', '');
-        csvRaw[i] = csvRaw[i].replace(/\s\s+/g, ' ');
-        csvRaw[i] = csvRaw[i].trim();
-        formatted.push(csvRaw[i].split(' '));
-    }
-}
-//console.log(csvRaw[4]);
-*/
-
 var db = [];
-
+//fs.createReadStream('../../../certified-residential-refrigerators-2019-03-28.csv')
 fs.createReadStream('../../../certified-light-bulbs-2019-03-14.csv')
     .pipe(csv())
-    .on('headers', (headers) => {
-        console.log('First header: ' + headers);
+    .on('headers', (headers) => {//console.log('First header: ' + headers);
     })
     .on('data', (data) => db.push(data))
     .on('end', () => {
-        //console.log('db: ' + db.length);
-        console.log('loaded: ' + db[0]);
+        console.log('loaded ' + db.length);
     });
 
 
@@ -102,9 +82,18 @@ fs.createReadStream('../../../certified-light-bulbs-2019-03-14.csv')
 
 
 
-//Load LIGHT BULB hits for ENERGY STAR
-var csvRawEnergyStarHits = '' + fs.readFileSync('../output/bestbuy_products_w_hits.txt');
-csvRawEnergyStarHits = csvRawEnergyStarHits.split('\n');
+//Load FRIDGE hits for ENERGY STAR
+//productsWithHits = '' + fs.readFileSync('../output/fridges/eStarHits.txt');
+productsWithHits = '' + fs.readFileSync('../output/lightbulbs/eStarHits.txt');
+productsWithHits = productsWithHits.split('\n');
+
+//Load FRIDGE infractions for ENERGY STAR
+//linksOfInfractions = '' + fs.readFileSync('../output/fridges/eStarHits_infractions.txt');
+linksOfInfractions = '' + fs.readFileSync('../output/lightbulbs/eStarHits_infractions.txt');
+linksOfInfractions = linksOfInfractions.split('\n');
+
+
+
 
 
 
@@ -115,53 +104,28 @@ app.use(express.static('public'));
 app.get('/', (req, res) => res.sendFile('./index.html'));
 
 app.post('/api', function(req, res){
+    //Top command to halt process in progress
     if(req.query.cmd === 'stop'){
         processInProgress = false;
     }
+    //Once on startup to load in information
+    else if(req.query.cmd === 'confirm_database'){
+        res.json({'entries': db.length, 'goodStartingSeeds': goodStartingSeedURLS});
+    }
+    //Once every second called
     else if(req.query.cmd === 'check_jobs'){
-        /*if(processInProgress){
-            res.json({'busy': processInProgress, 'links': linksToProducts});
-        }
-        else{
-            res.json({'busy': processInProgress, 'links': });
-        }*/
         if(linksToProducts.length > 0){
-            res.json({'busy': processInProgress, 'links': linksToProducts.length, 'lbEstarHits': csvRawEnergyStarHits.length,
+            res.json({'busy': processInProgress, 'links': linksToProducts.length, 'lbEstarHits': productsWithHits.length,
                 'firstLink': linksToProducts[0], 'lastLink': linksToProducts[linksToProducts.length-1]});
         }else{
-            res.json({'busy': processInProgress, 'links': linksToProducts.length,  'lbEstarHits': csvRawEnergyStarHits.length,
+            res.json({'busy': processInProgress, 'links': linksToProducts.length,  'lbEstarHits': productsWithHits.length,
                 'firstLink': '---', 'lastLink': '---'});
         }
         
     }
-    else if(req.query.cmd === 'get_product_link'){
-        //not yet
-    }
-    else if(req.query.cmd === 'get_hit_product_link'){
-        if(!processInProgress){
-            radioButtons = (''+req.query.shop).split('1');
-            if(req.query.index === 'all'){
-                res.json({'all': csvRawEnergyStarHits});
-            }
-            else{
-                if(radioButtons[0] === 'true'){
-                    BestBuy.compareToDatabase(csvRawEnergyStarHits[Number(req.query.index)], res);
-                }
-                else if(radioButtons[1] === 'true'){
-    
-                }
-                else if(radioButtons[2] === 'true'){
-    
-                }
-                
-            }
-            
-        }
-    }
-    else if(req.query.cmd === 'confirm_database'){
-        res.json({'entries': formatted.length});
-    }
-    else if(req.query.cmd === 'start_job_search'){
+
+    //DISTRIBUTOR
+    else if(req.query.cmd === 'DIS_start_job_search'){
         if(!processInProgress && (''+req.query.search).length > 2){
             radioButtons = (''+req.query.shop).split('1');
             if(radioButtons[0] === 'true'){
@@ -175,6 +139,74 @@ app.post('/api', function(req, res){
             }
         }
         res.json({});
+    }
+    else if(req.query.cmd === 'DIS_get_product_with_es_hit'){
+        if(!processInProgress){
+
+            radioButtons = (''+req.query.shop).split('1');
+            if(req.query.index === 'all'){
+                
+                res.json({'all': productsWithHits});
+            }
+            else{
+                if(radioButtons[0] === 'true'){
+                    //BestBuy.compareToDatabase(productsWithHits[Number(req.query.index)], res);
+                    productsWithHits = [];
+                    res.json({});
+                    processInProgress = true;
+                    BestBuy.extractAllDescFromProducts(linksToProducts.length-1, res);
+                }
+                else if(radioButtons[1] === 'true'){
+                    res.json({});
+                }
+                else if(radioButtons[2] === 'true'){
+                    res.json({});
+                }
+                
+            }
+        }
+    }
+    else if(req.query.cmd === 'DIS_get_hit_product_link'){
+        if(!processInProgress){
+            radioButtons = (''+req.query.shop).split('1');
+            if(req.query.index === 'all'){
+                /*for(var p = 0;p < 75;p++){
+                    BestBuy.compareToDatabase(p, res);
+                }
+                res.json({'all': productsWithHits});*/
+                linksOfInfractions = [];
+                processInProgress = true;
+                BestBuy.compareAllModelNumberToDatabase(productsWithHits.length-1, res);
+                //res.json({'all': productsWithHits});
+            }
+            else{
+                if(radioButtons[0] === 'true'){
+                    BestBuy.compareToDatabase(productsWithHits[Number(req.query.index)], res);
+                }
+                else if(radioButtons[1] === 'true'){
+                    res.json({});
+                }
+                else if(radioButtons[2] === 'true'){
+                    res.json({});
+                }
+                
+            }
+            
+        }
+    }
+    
+    
+
+    //WWW
+    else if(req.query.cmd === 'WWW_start_seed'){
+        if(!processInProgress && (''+req.query.seeds).length > 4){
+            console.log(''+req.query.seeds);
+        }
+        res.json({});
+    }
+
+    else if(req.query.cmd === 'get_product_link'){
+        //not yet
     }
 });
 

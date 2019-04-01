@@ -36,24 +36,26 @@
                 <p>Grab raw product links here</p>
                 <br>
                 <button class="collapsible">Find Product Links</button>
-                <div>
+                <div style="display: none;">
                     <p>Which product website are you searching?</p>
                     <input checked type="radio" name="shop" value="bb" id="shopTypeBB"> Best Buy<br>
                     <input type="radio" name="shop" value="hd" id="shopTypeHD"> Home Depot<br>
                     <input type="radio" name="shop" value="ct" id="shopTypeCT"> Canadian Tire<br>
                     <input id="searchForProductInput" type="text" placeholder="product name">
-                    <button onclick="ServerAPI.productSearch();">Search</button>
+                    <button onclick="ServerAPI.dis_productSearch();">Search</button>
+                    <br>
+                    <button onclick="ServerAPI.dis_findWhichLinksHaveESHits();">Which have hits?</button>
                 </div>
 
                 <br>
                 <br>
 
                 <button class="collapsible">Search Energy Star Hits</button>
-                <div>
+                <div style="display: none;">
                     <p>Search products of interest with Energy Star</p>
                     <div>links of interest: <span id="numLinksInMemory"></span></div>
                     <input width="100%" id="searchForProductInputIndex" type="text" placeholder="search index">
-                    <button onclick="ServerAPI.getHotProductLink();">Search</button>
+                    <button onclick="ServerAPI.dis_getHotProductLink();">Search</button>
                 </div>
             </div>
 
@@ -62,11 +64,13 @@
             <div id="www" class="hidden config-content">
                 <p>Search world wide web for hits here</p>
                 <br>
-                <div>
-                    <p>Key words to insert into search engine:</p>
-                    <input width="100%" id="searchForProductInputForWWW" type="text" placeholder="search index">
-                    <button onclick="ServerAPI.productSearchWWW();">Search</button>
+                <button class="collapsible">Generate Seeds for URLs</button>
+                <div style="display: none;">
+                    <p>Starting seeds</p>
+                    <textarea readonly id="goodStartingSeeds" wrap="off" spellcheck="false" class="url-starting-seeds-text-area"></textarea>
+                    <button onclick="ServerAPI.www_seedStart();">Seed</button>
                 </div>
+
             </div>
             <div id="singleSite" class="hidden config-content">
                 ~ in progress ~

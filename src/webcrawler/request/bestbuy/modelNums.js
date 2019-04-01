@@ -1,6 +1,5 @@
 /*
-NRCAN - BEST BUY 2
-search the text for ENERGY STAR HITS, from the URLS  oF w.e. 'TERMS' variabl eis.
+MATCH MODEL #'s
 */
 
 var request = require('request');
@@ -9,7 +8,7 @@ const fs = require('fs');
 const csv = require('csv-parser');
 var results = [];
 
-var terms = '' + fs.readFileSync('../../output/bestbuy_deh_productlinks.txt');
+var terms = '' + fs.readFileSync('../../output/fridges/eStarHits.txt');
 terms = terms.split('\n');
 
 
@@ -28,12 +27,28 @@ function loadStuff(url){
         //console.log(overallText);
 
         var hit = false;
+        console.log(results[0]['Model Number'] + ' ' + overallText);
         for(var j = 0;j < results.length;j++){
-            if(results[j]['Model Number'] === overallText){
+            var mNumber = '' + results[j]['Model Number'];
+            var allMatch = true;
+            for(var f = 0;f < mNumber.length;f++){
+                if(f < overallText.length){
+                    if(mNumber.charAt(f).toLowerCase() === overallText.charAt(f).toLowerCase()){
+
+                    }
+                    else{
+                        allMatch = false;
+                    }
+                }
+            }
+            if(allMatch === true){
                 hit = true;
             }
         }
-        console.log('hiiiit');
+        if(hit){
+            console.log('hiiiit');
+        }
+        
 
 
         linkIndex++;
@@ -54,7 +69,7 @@ function loadStuff(url){
 
 
 
-fs.createReadStream('../../../../ENERGY_STAR_Certified_Dehumidifiers.csv')
+fs.createReadStream('../../../../certified-residential-refrigerators-2019-03-28.csv')
     .pipe(csv())
     .on('headers', (headers) => {
         //console.log('First header: ' + headers);
@@ -64,12 +79,11 @@ fs.createReadStream('../../../../ENERGY_STAR_Certified_Dehumidifiers.csv')
         //console.log('results: ' + results.length);
         //console.log(results[0]['Model Number']);
 
-
+        for(var h = 0;h < results.length;h++){
+            results[h]['Model Number'] = results[h]['Model Number'].replace(/\*/g, '');
+        }
 
         loadStuff(terms[linkIndex]);
-
-
-
     });
 
 

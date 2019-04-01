@@ -14,6 +14,7 @@ ServerAPI.xmlRequest = function(type, req, to){
 	xhr.send(null);
 };
 
+//Once ever 1.5 seconds to see if server busy
 ServerAPI.checkOnJobs = function(){
 	var confirmJobs = function(data){
         Menu.renderCurrentJobs(data);
@@ -21,8 +22,54 @@ ServerAPI.checkOnJobs = function(){
 	};
     var command = '?sig=' + Menu.signature;
     command += '&cmd=check_jobs';
-    //command += '&address=' + add;
     ServerAPI.xmlRequest('POST', command, confirmJobs);
+};
+
+//For DISTRIBUTOR searching
+ServerAPI.dis_productSearch = function(){
+    var confirmJobs = function(data){
+        //Menu.renderCurrentJobs(data);
+        //setTimeout(ServerAPI.checkOnJobs, 3500);
+	};
+    var command = '?sig=' + Menu.signature;
+    command += '&cmd=DIS_start_job_search';
+    command += '&shop=' + document.getElementById('shopTypeBB').checked + 
+        '1' + document.getElementById('shopTypeHD').checked + 
+            '1' + document.getElementById('shopTypeCT').checked;
+    command += '&search=' + document.getElementById('searchForProductInput').value;
+    ServerAPI.xmlRequest('POST', command, confirmJobs);
+};
+
+ServerAPI.dis_findWhichLinksHaveESHits = function(){
+    var confirmReceive = function(data){
+        //Menu.renderCurrentJobs(data);
+        //setTimeout(ServerAPI.checkOnJobs, 3500);
+	};
+    var command = '?sig=' + Menu.signature;
+    command += '&cmd=DIS_get_product_with_es_hit';
+    command += '&shop=' + document.getElementById('shopTypeBB').checked + 
+        '1' + document.getElementById('shopTypeHD').checked + 
+            '1' + document.getElementById('shopTypeCT').checked;
+    ServerAPI.xmlRequest('POST', command, confirmReceive);
+};
+
+ServerAPI.dis_getHotProductLink = function(){
+    var gggg = function(data){
+        if(data.all){
+            Menu.renderAllHits(data);
+        }
+        else{
+            Menu.renderHighestHits(data);
+        }
+	};
+    var command = '?sig=' + Menu.signature;
+    command += '&cmd=DIS_get_hit_product_link';
+    command += '&index=' + document.getElementById('searchForProductInputIndex').value;
+    command += '&shop=' + document.getElementById('shopTypeBB').checked + 
+        '1' + document.getElementById('shopTypeHD').checked + 
+            '1' + document.getElementById('shopTypeCT').checked;
+    //console.log(command);
+    ServerAPI.xmlRequest('POST', command, gggg);
 };
 
 ServerAPI.getProductLink = function(f, l){
@@ -38,42 +85,18 @@ ServerAPI.getProductLink = function(f, l){
     ServerAPI.xmlRequest('POST', command, confirmJobs);
 };
 
-ServerAPI.getHotProductLink = function(){
-    var gggg = function(data){
-        if(data.all){
-            Menu.renderAllHits(data);
-        }
-        else{
-            Menu.renderHighestHits(data);
-        }
+
+
+
+//For WWW Searching.
+ServerAPI.www_seedStart = function(){
+    var confirmSeed = function(data){
+        //Menu.renderCurrentJobs(data);
+        //setTimeout(ServerAPI.checkOnJobs, 3500);
 	};
     var command = '?sig=' + Menu.signature;
-    command += '&cmd=get_hit_product_link';
-    command += '&index=' + document.getElementById('searchForProductInputIndex').value;
-    command += '&shop=' + document.getElementById('shopTypeBB').checked + 
-        '1' + document.getElementById('shopTypeHD').checked + 
-            '1' + document.getElementById('shopTypeCT').checked;
-    //console.log(command);
-    ServerAPI.xmlRequest('POST', command, gggg);
-};
-
-ServerAPI.productSearch = function(){
-    var confirmJobs = function(data){
-        Menu.renderCurrentJobs(data);
-        setTimeout(ServerAPI.checkOnJobs, 3500);
-	};
-    var command = '?sig=' + Menu.signature;
-    command += '&cmd=start_job_search';
-    command += '&shop=' + document.getElementById('shopTypeBB').checked + 
-        '1' + document.getElementById('shopTypeHD').checked + 
-            '1' + document.getElementById('shopTypeCT').checked;
-    command += '&search=' + document.getElementById('searchForProductInput').value;
-    //console.log(command);
-    ServerAPI.xmlRequest('POST', command, confirmJobs);
-};
-
-ServerAPI.productSearchWWW = function(){
-
+    command += '&cmd=WWW_start_seed';
+    ServerAPI.xmlRequest('POST', command, confirmSeed);
 };
 
 ServerAPI.stop = function(){
@@ -88,7 +111,8 @@ ServerAPI.stop = function(){
 
 ServerAPI.howManyLightBulbEntries = function(){
 	var confirmDatabaseLoaded = function(data){
-		document.getElementById('currentDatabaseInfo').innerHTML = data.entries + ' Energy Star certified light bulbs loaded';
+        document.getElementById('currentDatabaseInfo').innerHTML = data.entries + ' Energy Star certified fridges loaded';
+        document.getElementById('goodStartingSeeds').value = data.goodStartingSeeds;
 	};
     var command = '?sig=' + Menu.signature;
     command += '&cmd=confirm_database';

@@ -19,7 +19,7 @@ var BestBuy = {};
 
 //Part 1
 BestBuy.currentPage = 1;
-BestBuy.maxPages = 50;
+BestBuy.maxPages = 11;
 
 //Just search for first term
 BestBuy.baseURL = 'https://www.bestbuy.ca';
@@ -29,7 +29,7 @@ BestBuy.startSearching = function(searchTerm){
     var urlStart = BestBuy.pageURL + searchTerm;
     processInProgress = true;
     BestBuy.currentPage = 1;
-    BestBuy.maxPages = 150;
+    BestBuy.maxPages = 11;
     linksToProducts = [];
     //console.log(urlStart);
     BestBuy.grabLinksFrom(urlStart);
@@ -72,7 +72,7 @@ BestBuy.grabLinksFrom = function(pageURL){
             //console.log('---FINISHED with:');
             //console.log('\t' + productLinks.length + ' links');
             for(var j = 0;j < linksToProducts.length;j++){
-                fs.appendFileSync('../output/bestbuy_productlinks.txt', linksToProducts[j] + '\n');
+                fs.appendFileSync('../output/fridges/productlinks.txt', linksToProducts[j] + '\n');
             }
             processInProgress = false;
         }
@@ -85,6 +85,40 @@ BestBuy.addLink = function(newURL){
     }
     linksToProducts.push(newURL);
     return true;
+};
+
+//extractAllDescFromProducts(productsLeft);
+BestBuy.extractAllDescFromProducts = function(linkIndex, res){
+    request(linksToProducts[linkIndex], function(err, resp, body){
+        $ = cheerio.load(body);
+        descs = $('.tab-overview-item');
+
+        var internalDesc = '';
+        $(descs).each(function(i, desc){
+            internalDesc += '' + descs.text() + '\n';
+        });
+
+        internalDesc = internalDesc.toLowerCase();
+
+        if(internalDesc.includes('star') && internalDesc.includes('certified')){
+            productsWithHits.push(linksToProducts[linkIndex]);
+        }
+
+        //Base case
+        if(linkIndex > 0 && processInProgress){
+            linkIndex--;
+            BestBuy.extractAllDescFromProducts(linkIndex);
+        }else{
+            //END
+            console.log('---FINISHED with:');
+            console.log('\t' + productsWithHits.length + ' links hit');
+            for(var j = 0;j < productsWithHits.length;j++){
+                fs.appendFileSync('../output/fridges/eStarHits.txt', productsWithHits[j] + '\n');
+            }
+            processInProgress = false;
+        }
+        
+    });
 };
 
 BestBuy.compareToDatabase = function(url, res){
@@ -118,6 +152,7 @@ BestBuy.compareToDatabase = function(url, res){
         //console.log(overallText);
         var titleComponents = overallText.split(' ');
         var hitValues = [];
+        /*
 
         for(var i = 0;i < formatted.length;i++){
             var hitFound = 0;
@@ -136,7 +171,7 @@ BestBuy.compareToDatabase = function(url, res){
         for(var u = 0;u < hitValues.length;u++){
             hitValues[u].words = formatted[hitValues[u].ind];
         }
-        
+        */
         var returnVal = {};
         returnVal.url = url;
         returnVal.title = overallText;
@@ -146,43 +181,60 @@ BestBuy.compareToDatabase = function(url, res){
     });
 };
 
-
-
-//extractAllDescFromProducts(productsLeft);
-function extractAllDescFromProducts(linkIndex){
-    request(terms[linkIndex], function(err, resp, body){
+BestBuy.compareAllModelNumberToDatabase = function(indOfESMatch, res){
+    request(productsWithHits[indOfESMatch], function(err, resp, body){
         $ = cheerio.load(body);
-        descs = $('.tab-overview-item');
-        console.log('descs length: ' + descs.length);
-
-        var internalDesc = '';
-        $(descs).each(function(i, desc){
-            internalDesc += '' + descs.text() + '\n';
+        var links = $('#ctl00_CP_ctl00_PD_lblModelNumber');//'.tab-overview-item'); //jquery get all hyperlinks
+        var overallText = '';
+        $(links).each(function(i, link){
+            overallText += ('' + $(link).text());
         });
 
-        internalDesc = internalDesc.toLowerCase();
+        var hit = false;
+        for(var j = 0;j < db.length;j++){
+            var mNumber = '' + db[j]['Model Number'];
+            var allMatch = true;
+            for(var f = 0;f < mNumber.length;f++){
+                if(f < overallText.length){
+                    if(mNumber.charAt(f).toLowerCase() === overallText.charAt(f).toLowerCase() || mNumber.charAt(f) === '*'){
 
-        if(internalDesc.includes('star') && internalDesc.includes('certified')){
-            productsWithHits.push(terms[linkIndex]);
-            console.log('hit found');
-        }
-
-        //Base case
-        if(linkIndex > 0){
-            linkIndex--;
-            extractAllDescFromProducts(linkIndex);
-        }else{
-            //END
-            console.log('---FINISHED with:');
-            console.log('\t' + productsWithHits.length + ' links hit');
-            for(var j = 0;j < productsWithHits.length;j++){
-                fs.appendFileSync('../output/bestbuy_products_w_hits.txt', productsWithHits[j] + '\n');
-
+                    }
+                    else{
+                        allMatch = false;
+                    }
+                }
+            }
+            if(allMatch === true){
+                hit = true;
             }
         }
-        
+
+        //No match - 
+        if(!hit){
+            linksOfInfractions.push(productsWithHits[indOfESMatch]);
+        }
+
+
+
+
+        if(indOfESMatch > 0 && processInProgress){
+            indOfESMatch--;
+            BestBuy.compareAllModelNumberToDatabase(indOfESMatch, res);
+        }
+        else{
+            var returnVal = {};
+            returnVal.all = JSON.stringify(linksOfInfractions);
+            for(var j = 0;j < linksOfInfractions.length;j++){
+                fs.appendFileSync('../output/lightbulbs/eStarHits_infractions.txt', linksOfInfractions[j] + '\n');
+            }
+            processInProgress = false;
+            res.json(returnVal);
+        }
     });
-}
+};
+
+
+
 
 
 
