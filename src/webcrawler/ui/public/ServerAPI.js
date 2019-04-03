@@ -93,7 +93,7 @@ ServerAPI.www_seedStart = function(){
     var confirmSeed = function(data){
         //Menu.renderCurrentJobs(data);
         //setTimeout(ServerAPI.checkOnJobs, 3500);
-	};
+    };
     var command = '?sig=' + Menu.signature;
     command += '&cmd=WWW_start_seed';
     ServerAPI.xmlRequest('POST', command, confirmSeed);

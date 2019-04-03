@@ -7,6 +7,18 @@ Starting from:
 */
 var WWW = {};
 
+WWW.startingSeeds = [];
+WWW.nodes = [];
+
+WWW.initTree = function(){
+    for(var i = 0;i < WWW.startingSeeds.length;i++){
+        WWW.nodes.push({
+            "depth": 0,
+            "url": WWW.startingSeeds[i]
+        });
+    }
+};
+
 WWW.developTree = function(){
 
 };

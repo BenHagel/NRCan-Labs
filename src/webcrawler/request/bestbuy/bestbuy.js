@@ -28,8 +28,8 @@ BestBuy.pageURL = BestBuy.baseURL + '/en-CA/Search/SearchResults.aspx?type=produ
 BestBuy.startSearching = function(searchTerm){
     var urlStart = BestBuy.pageURL + searchTerm;
     processInProgress = true;
-    BestBuy.currentPage = 1;
-    BestBuy.maxPages = 11;
+    //BestBuy.currentPage = 1;
+    //BestBuy.maxPages = 11;
     linksToProducts = [];
     //console.log(urlStart);
     BestBuy.grabLinksFrom(urlStart);
@@ -72,7 +72,7 @@ BestBuy.grabLinksFrom = function(pageURL){
             //console.log('---FINISHED with:');
             //console.log('\t' + productLinks.length + ' links');
             for(var j = 0;j < linksToProducts.length;j++){
-                fs.appendFileSync('../output/fridges/productlinks.txt', linksToProducts[j] + '\n');
+                fs.appendFileSync('../output/' + folderNameOfOutput + '/productlinks.txt', linksToProducts[j] + '\n');
             }
             processInProgress = false;
         }
@@ -110,10 +110,10 @@ BestBuy.extractAllDescFromProducts = function(linkIndex, res){
             BestBuy.extractAllDescFromProducts(linkIndex);
         }else{
             //END
-            console.log('---FINISHED with:');
-            console.log('\t' + productsWithHits.length + ' links hit');
+            //console.log('---FINISHED with:');
+            //console.log('\t' + productsWithHits.length + ' links hit');
             for(var j = 0;j < productsWithHits.length;j++){
-                fs.appendFileSync('../output/fridges/eStarHits.txt', productsWithHits[j] + '\n');
+                fs.appendFileSync('../output/' + folderNameOfOutput + '/eStarHits.txt', productsWithHits[j] + '\n');
             }
             processInProgress = false;
         }
@@ -182,6 +182,7 @@ BestBuy.compareToDatabase = function(url, res){
 };
 
 BestBuy.compareAllModelNumberToDatabase = function(indOfESMatch, res){
+    //console.log("here: " + productsWithHits[indOfESMatch]);
     request(productsWithHits[indOfESMatch], function(err, resp, body){
         $ = cheerio.load(body);
         var links = $('#ctl00_CP_ctl00_PD_lblModelNumber');//'.tab-overview-item'); //jquery get all hyperlinks
@@ -225,7 +226,7 @@ BestBuy.compareAllModelNumberToDatabase = function(indOfESMatch, res){
             var returnVal = {};
             returnVal.all = JSON.stringify(linksOfInfractions);
             for(var j = 0;j < linksOfInfractions.length;j++){
-                fs.appendFileSync('../output/lightbulbs/eStarHits_infractions.txt', linksOfInfractions[j] + '\n');
+                fs.appendFileSync('../output/' + folderNameOfOutput + '/eStarHits_infractions.txt', linksOfInfractions[j] + '\n');
             }
             processInProgress = false;
             res.json(returnVal);

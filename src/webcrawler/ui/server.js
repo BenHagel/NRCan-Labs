@@ -36,18 +36,16 @@ var productsWithHits = [];
 var linksOfInfractions = [];
 
 //WWW
-var goodStartingSeedURLS = '' + fs.readFileSync('user_data/goodStartingSeeds.txt')
-
+var goodStartingSeedURLS = '';
 
 eval('' + fs.readFileSync('../request/bestbuy/bestbuy.js'));
 //eval('' + fs.readFileSync('../request/homedepot/homedepot.js'));
 //eval('' + fs.readFileSync('../request/cantire/cantire.js'));
 eval('' + fs.readFileSync('../request/www/www.js'));
 
-eval('' + fs.readFileSync('../request/dists/LightBulbHelper.js'));
-eval('' + fs.readFileSync('../request/dists/FridgeHelper.js'));
-
-
+goodStartingSeedURLS = '' + fs.readFileSync('user_data/goodStartingSeeds.txt');
+WWW.startingSeeds = goodStartingSeedURLS.split('\n');
+WWW.initTree();
 
 
 //Helper funcs
@@ -66,9 +64,14 @@ function repAll(word, target, desired){//recursive replace all
     }
 }
 
+var folderNameOfOutput = 'dehumidifiers';//fridges, lightbulbs, dehumidifiers
+BestBuy.currentPage = 1;
+BestBuy.maxPages = 11;
 var db = [];
 //fs.createReadStream('../../../certified-residential-refrigerators-2019-03-28.csv')
-fs.createReadStream('../../../certified-light-bulbs-2019-03-14.csv')
+//fs.createReadStream('../../../certified-residential-freezers-2019-04-03.csv')
+//fs.createReadStream('../../../certified-light-bulbs-2019-03-14.csv')
+fs.createReadStream('../../../ENERGY_STAR_Certified_Dehumidifiers.csv')
     .pipe(csv())
     .on('headers', (headers) => {//console.log('First header: ' + headers);
     })
@@ -83,13 +86,13 @@ fs.createReadStream('../../../certified-light-bulbs-2019-03-14.csv')
 
 
 //Load FRIDGE hits for ENERGY STAR
-//productsWithHits = '' + fs.readFileSync('../output/fridges/eStarHits.txt');
-productsWithHits = '' + fs.readFileSync('../output/lightbulbs/eStarHits.txt');
+productsWithHits = '' + fs.readFileSync('../output/' + folderNameOfOutput + '/eStarHits.txt');
+//productsWithHits = '' + fs.readFileSync('../output/' + folderNameOfOutput + '/eStarHits.txt');
 productsWithHits = productsWithHits.split('\n');
 
 //Load FRIDGE infractions for ENERGY STAR
-//linksOfInfractions = '' + fs.readFileSync('../output/fridges/eStarHits_infractions.txt');
-linksOfInfractions = '' + fs.readFileSync('../output/lightbulbs/eStarHits_infractions.txt');
+linksOfInfractions = '' + fs.readFileSync('../output/' + folderNameOfOutput + '/eStarHits_infractions.txt');
+//linksOfInfractions = '' + fs.readFileSync('../output/' + folderNameOfOutput + '/eStarHits_infractions.txt');
 linksOfInfractions = linksOfInfractions.split('\n');
 
 
@@ -199,8 +202,8 @@ app.post('/api', function(req, res){
 
     //WWW
     else if(req.query.cmd === 'WWW_start_seed'){
-        if(!processInProgress && (''+req.query.seeds).length > 4){
-            console.log(''+req.query.seeds);
+        if(!processInProgress){
+
         }
         res.json({});
     }
