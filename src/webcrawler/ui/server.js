@@ -119,10 +119,12 @@ app.post('/api', function(req, res){
     else if(req.query.cmd === 'check_jobs'){
         if(linksToProducts.length > 0){
             res.json({'busy': processInProgress, 'links': linksToProducts.length, 'lbEstarHits': productsWithHits.length,
-                'firstLink': linksToProducts[0], 'lastLink': linksToProducts[linksToProducts.length-1]});
+                'firstLink': linksToProducts[0], 'lastLink': linksToProducts[linksToProducts.length-1],
+                'nodes': JSON.stringify(WWW.nodes)});
         }else{
             res.json({'busy': processInProgress, 'links': linksToProducts.length,  'lbEstarHits': productsWithHits.length,
-                'firstLink': '---', 'lastLink': '---'});
+                'firstLink': '---', 'lastLink': '---',
+                'nodes': JSON.stringify(WWW.nodes)});
         }
         
     }

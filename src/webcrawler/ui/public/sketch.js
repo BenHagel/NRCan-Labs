@@ -8,6 +8,8 @@ function setup(){
     var sketchCanvas = 
         createCanvas(widthParentDiv, heightParentDiv, WEBGL);
     sketchCanvas.parent("sketchParent");
+    frameRate(5);
+    smooth();
 }
 
 function draw(){
@@ -33,6 +35,7 @@ function draw(){
     }
     //console.log(a + '  ' + b);
     background(40);
+    drawNodes();
 }
 
 function windowResized(){
@@ -99,4 +102,27 @@ function pollGamepads() {
             clearInterval(interval);
         }
     }
+}
+
+function drawNodes(){
+    var expandSize = 56.0;
+    var currentDepth = 0;
+    var currentHorizonal = 0;
+    for(var k = 0;k < localNodes.length;k++){
+        ellipse(
+            width/2 + 10*currentHorizonal,
+            height - 40 - 20*currentDepth, 
+            40, 40);
+
+        if(localNodes[k].depth !== currentDepth){
+            currentHorizonal = 0;
+            currentDepth = localNodes[k].depth;
+        }
+    }
+}
+
+function drawNode(n, ind){
+    fill(250, 250, 250);
+    noStroke();
+
 }

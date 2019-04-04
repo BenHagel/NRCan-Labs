@@ -17,6 +17,7 @@ ServerAPI.xmlRequest = function(type, req, to){
 //Once ever 1.5 seconds to see if server busy
 ServerAPI.checkOnJobs = function(){
 	var confirmJobs = function(data){
+        localNodes = JSON.parse(data.nodes);
         Menu.renderCurrentJobs(data);
         setTimeout(ServerAPI.checkOnJobs, 1500);
 	};
