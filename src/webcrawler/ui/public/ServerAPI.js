@@ -110,10 +110,18 @@ ServerAPI.stop = function(){
     ServerAPI.xmlRequest('POST', command, confirmStop);
 };
 
-ServerAPI.howManyLightBulbEntries = function(){
+ServerAPI.initialQuery = function(){
 	var confirmDatabaseLoaded = function(data){
-        document.getElementById('currentDatabaseInfo').innerHTML = data.entries + ' Energy Star certified fridges loaded';
+        var dbsParsed = JSON.parse(data.entries);
+        document.getElementById('currentDatabaseInfo').innerHTML = dbsParsed.length + ' Databases Loaded';
         document.getElementById('goodStartingSeeds').value = data.goodStartingSeeds;
+        var dSelector = document.getElementById('databaseSelector');
+        for(var k = 0;k < dbsParsed.length;k++){
+            var newVal = document.createElement('option');
+            newVal.setAttribute('value', dbsParsed[k].name);
+            newVal.innerHTML = dbsParsed[k].name;
+            dSelector.appendChild(newVal);
+        }
 	};
     var command = '?sig=' + Menu.signature;
     command += '&cmd=confirm_database';

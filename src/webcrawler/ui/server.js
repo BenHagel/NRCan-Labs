@@ -8,18 +8,37 @@ var levenshtein = require('fast-levenshtein');
 const csv = require('csv-parser');
 
 
-
-
-
-function repAll(word, target, desired){
-    if(word.includes(target)){
-        word = word.replace(target, desired);
-        return repAll(word, target, desired);
-    }
-    else{
-        return word;
-    }
-}
+//Load config file,
+var CONFIG = JSON.parse(fs.readFileSync('../../../config.json', 'utf8'));
+var db_filenames = [];
+fs.readdirSync('../../../' + CONFIG.database_dir_name).forEach(file => {
+    db_filenames.push('' + file);
+});
+console.log('Loading databases...');
+var dbLoader = function(dbInd){
+    var tempdb = [];
+    fs.createReadStream('../../../' + CONFIG.database_dir_name + '/' + db_filenames[dbInd])
+    .pipe(csv())
+    .on('headers', (headers) => {
+    })
+    .on('data', (data) => tempdb.push(data))
+    .on('end', () => {
+        var toAdd = {};
+        toAdd.name = '' + db_filenames[dbInd].split('.')[0];
+        toAdd.size = tempdb.length;
+        console.log('loaded:\t' + toAdd.name);
+        console.log('\trecords:\t' + toAdd.size);
+        CONFIG.databases.push(toAdd);
+        if(dbInd > 0){
+            dbLoader(dbInd-1);
+        }
+        else{
+            console.log('DONE! Loaded: ' + CONFIG.databases.length + ' databases');
+            app.listen(port, function(){console.log('hosting server on port ' + port)});
+        }
+    });
+};
+dbLoader(db_filenames.length-1);
 
 
 
@@ -38,8 +57,8 @@ var linksOfInfractions = [];
 //WWW
 var goodStartingSeedURLS = '';
 
-eval('' + fs.readFileSync('../request/bestbuy/bestbuy.js'));
-//eval('' + fs.readFileSync('../request/homedepot/homedepot.js'));
+eval('' + fs.readFileSync('../request/dists/bestbuy.js'));
+eval('' + fs.readFileSync('../request/dists/homedepot.js'));
 //eval('' + fs.readFileSync('../request/cantire/cantire.js'));
 eval('' + fs.readFileSync('../request/www/www.js'));
 
@@ -47,38 +66,8 @@ goodStartingSeedURLS = '' + fs.readFileSync('user_data/goodStartingSeeds.txt');
 WWW.startingSeeds = goodStartingSeedURLS.split('\n');
 WWW.initTree();
 
+var folderNameOfOutput = 'temp';//fridges, lightbulbs, dehumidifiers, :::temp:::
 
-//Helper funcs
-String.prototype.replaceAll = function(search, replacement) {
-    var target = this;
-    return target.replace(new RegExp(search, 'g'), replacement);
-};
-
-function repAll(word, target, desired){//recursive replace all
-    if(word.includes(target)){
-        word = word.replace(target, desired);
-        return repAll(word, target, desired);
-    }
-    else{
-        return word;
-    }
-}
-
-var folderNameOfOutput = 'dehumidifiers';//fridges, lightbulbs, dehumidifiers
-BestBuy.currentPage = 1;
-BestBuy.maxPages = 11;
-var db = [];
-//fs.createReadStream('../../../certified-residential-refrigerators-2019-03-28.csv')
-//fs.createReadStream('../../../certified-residential-freezers-2019-04-03.csv')
-//fs.createReadStream('../../../certified-light-bulbs-2019-03-14.csv')
-fs.createReadStream('../../../ENERGY_STAR_Certified_Dehumidifiers.csv')
-    .pipe(csv())
-    .on('headers', (headers) => {//console.log('First header: ' + headers);
-    })
-    .on('data', (data) => db.push(data))
-    .on('end', () => {
-        console.log('loaded ' + db.length);
-    });
 
 
 
@@ -113,7 +102,7 @@ app.post('/api', function(req, res){
     }
     //Once on startup to load in information
     else if(req.query.cmd === 'confirm_database'){
-        res.json({'entries': db.length, 'goodStartingSeeds': goodStartingSeedURLS});
+        res.json({'entries': JSON.stringify(CONFIG.databases), 'goodStartingSeeds': goodStartingSeedURLS});
     }
     //Once every second called
     else if(req.query.cmd === 'check_jobs'){
@@ -215,4 +204,3 @@ app.post('/api', function(req, res){
     }
 });
 
-app.listen(port, function(){console.log('on ' + port)});

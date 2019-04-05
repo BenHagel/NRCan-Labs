@@ -1,14 +1,15 @@
 # NRCan-Labs
 
 src/
-- npm install puppeteer --save
+- npm install puppeteer --save      <- maybe not
 - npm install request --save
 - npm install cheerio --save
-- npm install https --save
-- pip install scrapy
+- npm install https --save          <- maybe not
+- pip install scrapy                <- maybe not
 - npm install express --save
 - npm install fast-levenshtein --save
 - npm install csv-parser --save
+- npm install colour --save
 
 
 Useful links:

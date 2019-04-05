@@ -91,6 +91,12 @@ html{
     width: 60%;
 }
 
+.database-selector option{
+    height: 12px !important;
+    width: 30% !important;
+
+}
+
 /*Results content*/
 .results-content{
 

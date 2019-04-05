@@ -1,0 +1,833 @@
+ENERGY STAR Unique ID,ENERGY STAR Partner,Brand Name,Model Name,Model Number,Additional Model Information,Product Type,Fuel Type,Efficiency (AFUE),Date Available On Market,Date Certified,Markets,CB Model Identifier,Can Integrate Hot Water Heating,Meets ENERGY STAR Most Efficient 2019 Criteria
+2323673,Bradford White Corporation,Bradford White,Brute LX,"BLXCW175(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,08/01/2014,07/31/2018,"United States, Canada","ES_92896_BLXCW175(N,P)****_08012018004649_6149596",Yes,Yes
+2323674,Bradford White Corporation,Bradford White,Brute LX,"BLXHW050(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,09/01/2014,07/31/2018,"United States, Canada","ES_92896_BLXHW050(N,P)****_08012018004651_2671013",No,Yes
+2323675,Bradford White Corporation,Bradford White,Brute LX,"BLXHW075(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,08/01/2014,07/31/2018,"United States, Canada","ES_92896_BLXHW075(N,P)****_08012018004654_5604379",No,Yes
+2323676,Bradford White Corporation,Bradford White,Brute LX,"BLXHW100(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,09/01/2014,07/31/2018,"United States, Canada","ES_92896_BLXHW100(N,P)****_08012018004656_1810152",No,Yes
+2323677,Bradford White Corporation,Bradford White,Brute LX,"BLXHW125(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,08/01/2014,07/31/2018,"United States, Canada","ES_92896_BLXHW125(N,P)****_08012018004658_4743518",No,Yes
+2323678,Bradford White Corporation,Bradford White,Brute LX,"BLXHW150(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,09/01/2014,07/31/2018,"United States, Canada","ES_92896_BLXHW150(N,P)****_08012018004701_5060728",No,Yes
+2323679,Bradford White Corporation,Bradford White,Brute LX,"BLXHW175(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,08/01/2014,07/31/2018,"United States, Canada","ES_92896_BLXHW175(N,P)****_08012018004703_8550502",No,Yes
+2323680,Bradford White Corporation,Bradford White,Brute LX,"BLXHW220(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,09/01/2014,07/31/2018,"United States, Canada","ES_92896_BLXHW220(N,P)****_08012018004705_8452225",No,Yes
+2326392,Bradford White Corporation,Bradford White,Brute FT,"BMFTCF199(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,06/01/2015,09/26/2018,"United States, Canada","ES_92896_BMFTCF199(N,P)****_09262018192640_6813663",Yes,Yes
+2323670,Bradford White Corporation,Bradford White,Brute FT,"BMFTC(F,W)140(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,06/01/2015,07/31/2018,"United States, Canada","ES_92896_BMFTC(F,W)140(N,P)****_08012018003638_6561629",Yes,Yes
+2326390,Bradford White Corporation,Bradford White,Brute FT,"BMFTCW199(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,06/01/2015,09/26/2018,"United States, Canada","ES_92896_BMFTCW199(N,P)****_09262018192646_6443952",No,Yes
+2326393,Bradford White Corporation,Bradford White,Brute FT,"BMFTHW080(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,06/01/2015,09/26/2018,"United States, Canada","ES_92896_BMFTHW080(N,P)****_09262018192650_9693746",No,Yes
+2326394,Bradford White Corporation,Bradford White,Brute FT,"BMFTHW100(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,06/01/2015,09/26/2018,"United States, Canada","ES_92896_BMFTHW100(N,P)****_09262018192653_4089375",No,Yes
+2323671,Bradford White Corporation,Bradford White,Brute FT,"BMFTHW140(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,06/01/2015,07/31/2018,"United States, Canada","ES_92896_BMFTHW140(N,P)****_08012018003640_2767401",No,Yes
+2326391,Bradford White Corporation,Bradford White,Brute FT,"BMFTHW199(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,06/01/2015,09/26/2018,"United States, Canada","ES_92896_BMFTHW199(N,P)****_09262018192655_3609415",Yes,Yes
+2323317,Bradford White Corporation,Bradford White,Brute Elite,BNTH080,,Boiler,"Natural Gas,Propane Gas",95,08/05/2008,07/27/2018,"United States, Canada",ES_92896_BNTH080_07272018183526_8238217,No,Yes
+2323318,Bradford White Corporation,Bradford White,Brute Elite,BNTH105,,Boiler,"Natural Gas,Propane Gas",95,08/05/2008,07/27/2018,"United States, Canada",ES_92896_BNTH105_07272018183534_0344525,No,Yes
+2323319,Bradford White Corporation,Bradford White,Brute Elite,BNTH150,,Boiler,"Natural Gas,Propane Gas",95,08/05/2008,07/27/2018,"United States, Canada",ES_92896_BNTH150_07272018183536_1849432,No,Yes
+2323320,Bradford White Corporation,Bradford White,Brute Elite,BNTH210,,Boiler,"Natural Gas,Propane Gas",95,08/05/2008,07/27/2018,"United States, Canada",ES_92896_BNTH210_07272018183538_2515306,No,Yes
+2323321,Bradford White Corporation,Bradford White,Brute Elite,BNTH285,,Boiler,"Natural Gas,Propane Gas",95,08/05/2008,07/27/2018,"United States, Canada",ES_92896_BNTH285_07272018183541_4053233,No,Yes
+2313237,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNC-0083,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNC-0083_03232018155159_0280046,Yes,No
+2313272,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNC-0083,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNC-0083_03232018155307_2359954,Yes,No
+2313233,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNC-0103,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNC-0103_03232018155151_2909741,Yes,No
+2313268,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNC-0103,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNC-0103_03232018155259_7288042,Yes,No
+2313232,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNC-0153,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNC-0153_03232018155149_0859617,Yes,No
+2313267,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNC-0153,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNC-0153_03232018155257_6273504,Yes,No
+2313218,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNC-0203,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNC-0203_03232018155121_3153956,Yes,No
+2313250,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNC-0203,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNC-0203_03232018155229_1122246,Yes,No
+2313227,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNC-0213,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNC-0213_03232018155139_7469454,Yes,No
+2313259,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNC-0213,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNC-0213_03232018155247_7678799,Yes,No
+2313220,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNC-0253,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNC-0253_03232018155125_0045084,Yes,No
+2313252,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNC-0253,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNC-0253_03232018155233_2246251,Yes,No
+2313231,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNC-0263,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNC-0263_03232018155147_1317748,Yes,No
+2313266,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNC-0263,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNC-0263_03232018155255_1355271,Yes,No
+2313229,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNC-0293,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNC-0293_03232018155143_0489907,Yes,No
+2313264,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNC-0293,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNC-0293_03232018155251_8279417,Yes,No
+2313222,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNH-0081,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNH-0081_03232018155129_3240259,No,No
+2313254,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNH-0081,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNH-0081_03232018155237_3718921,No,No
+2313238,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNH-0101,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNH-0101_03232018155201_4282017,No,No
+2313273,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNH-0101,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNH-0101_03232018155309_9437777,No,No
+2313236,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNH-0151,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNH-0151_03232018155157_0422532,No,No
+2313271,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNH-0151,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNH-0151_03232018155305_6361924,No,No
+2313230,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNH-0201,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNH-0201_03232018155145_0380440,No,No
+2313265,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNH-0201,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNH-0201_03232018155253_5357241,No,No
+2313228,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNH-0211,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNH-0211_03232018155141_1471426,No,No
+2313263,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNH-0211,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNH-0211_03232018155249_6741491,No,No
+2313223,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNH-0251,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNH-0251_03232018155131_4733975,No,No
+2313255,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNH-0251,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNH-0251_03232018155239_8670174,No,No
+2313235,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNH-0261,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNH-0261_03232018155155_9800867,No,No
+2313270,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNH-0261,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNH-0261_03232018155303_5380405,No,No
+2313214,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNH-0291,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNH-0291_03232018155113_0210734,No,No
+2313246,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMNH-0291,,Boiler,Natural Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMNH-0291_03232018155221_0477418,No,No
+2313234,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPC-0083,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPC-0083_03232018155154_7227356,Yes,No
+2313269,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPC-0083,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPC-0083_03232018155301_9698021,Yes,No
+2313219,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPC-0103,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPC-0103_03232018155123_5727468,Yes,No
+2313251,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPC-0103,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPC-0103_03232018155231_5168427,Yes,No
+2313242,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPC-0153,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPC-0153_03232018155209_5971503,Yes,No
+2313277,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPC-0153,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPC-0153_03232018155318_0082606,Yes,No
+2313240,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPC-0203,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPC-0203_03232018155205_1380887,Yes,No
+2313275,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPC-0203,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPC-0203_03232018155314_7530140,Yes,No
+2313243,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPC-0213,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPC-0213_03232018155211_5829016,Yes,No
+2313278,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPC-0213,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPC-0213_03232018155319_3921044,Yes,No
+2313217,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPC-0253,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPC-0253_03232018155119_2183628,Yes,No
+2313249,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPC-0253,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPC-0253_03232018155227_3139350,Yes,No
+2313244,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPC-0263,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPC-0263_03232018155213_3975445,Yes,No
+2313279,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPC-0263,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPC-0263_03232018155321_6887430,Yes,No
+2313216,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPC-0293,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPC-0293_03232018155116_0133504,Yes,No
+2313248,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPC-0293,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPC-0293_03232018155225_0521628,Yes,No
+2313241,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPH-0081,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPH-0081_03232018155207_0922756,No,No
+2313276,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPH-0081,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPH-0081_03232018155315_8544679,No,No
+2313239,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPH-0101,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPH-0101_03232018155203_0759223,No,No
+2313274,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPH-0101,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPH-0101_03232018155311_4356011,No,No
+2313226,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPH-0151,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPH-0151_03232018155137_2072043,No,No
+2313258,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPH-0151,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPH-0151_03232018155245_8616108,No,No
+2313225,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPH-0201,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPH-0201_03232018155135_5561817,No,No
+2313257,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPH-0201,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPH-0201_03232018155243_1746028,No,No
+2313213,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPH-0211,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPH-0211_03232018155111_7080815,No,No
+2313245,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPH-0211,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPH-0211_03232018155219_5002776,No,No
+2313224,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPH-0251,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPH-0251_03232018155133_8179539,No,No
+2313256,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPH-0251,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPH-0251_03232018155241_9128305,No,No
+2313221,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPH-0261,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPH-0261_03232018155127_0666748,No,No
+2313253,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPH-0261,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPH-0261_03232018155235_8244280,No,No
+2313215,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPH-0291,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPH-0291_03232018155115_1148043,No,No
+2313247,Camus Hydronics Ltd.,CAMUS HYDRONICS LTD.,DynaMax,DMPH-0291,,Boiler,Propane Gas,90,09/01/2007,03/23/2018,"United States, Canada",ES_1092003_DMPH-0291_03232018155223_1699700,No,No
+2328554,Carrier Corporation,Bryant,BWM Series,BWMAAN000050,,Boiler,"Natural Gas,Propane Gas",95,12/21/2013,10/29/2018,"United States, Canada",ES_1020846_BWMAAN000050_10292018191423_0804874,No,Yes
+2328556,Carrier Corporation,Bryant,BWM Series,BWMAAN000075,,Boiler,"Natural Gas,Propane Gas",95,12/21/2013,10/29/2018,"United States, Canada",ES_1020846_BWMAAN000075_10292018191430_3433786,No,Yes
+2328558,Carrier Corporation,Bryant,BWM Series,BWMAAN000100,,Boiler,"Natural Gas,Propane Gas",95,12/21/2013,10/29/2018,"United States, Canada",ES_1020846_BWMAAN000100_10292018191435_5779291,No,Yes
+2328560,Carrier Corporation,Bryant,BWM Series,BWMAAN000150,,Boiler,"Natural Gas,Propane Gas",95,12/21/2013,10/29/2018,"United States, Canada",ES_1020846_BWMAAN000150_10292018191440_0076643,No,Yes
+2328562,Carrier Corporation,Bryant,BWM series,BWMAAN000200,,Boiler,"Natural Gas,Propane Gas",95,10/01/2012,10/29/2018,"United States, Canada",ES_1020846_BWMAAN000200_10292018191446_7372618,No,Yes
+2323526,Carrier Corporation,Bryant,BWM series,BWMAAN000299,,Boiler,"Natural Gas,Propane Gas",95,12/21/2013,07/31/2018,"United States, Canada",ES_1020846_BWMAAN000299_07312018204456_2066034,No,Yes
+2328555,Carrier Corporation,Carrier,BWM Series,BWMAAN000050,,Boiler,"Natural Gas,Propane Gas",95,12/21/2013,10/29/2018,"United States, Canada",ES_1020846_BWMAAN000050_10292018191427_3149596,No,Yes
+2328553,Carrier Corporation,Carrier,BWM Series,BWMAAN000050AAAA,,Boiler,"Natural Gas,Propane Gas",95,10/01/2012,10/29/2018,"United States, Canada",ES_1020846_BWMAAN000050AAAA_10292018191416_2984728,No,Yes
+2328557,Carrier Corporation,Carrier,BWM Series,BWMAAN000075,,Boiler,"Natural Gas,Propane Gas",95,12/21/2013,10/29/2018,"United States, Canada",ES_1020846_BWMAAN000075_10292018191433_7970335,No,Yes
+2323522,Carrier Corporation,Carrier,BWM Series,BWMAAN000075AAAA,,Boiler,"Natural Gas,Propane Gas",95,10/01/2012,07/31/2018,"United States, Canada",ES_1020846_BWMAAN000075AAAA_07312018204446_5772624,No,Yes
+2328559,Carrier Corporation,Carrier,BWM Series,BWMAAN000100,,Boiler,"Natural Gas,Propane Gas",95,12/21/2013,10/29/2018,"United States, Canada",ES_1020846_BWMAAN000100_10292018191438_0872248,No,Yes
+2323523,Carrier Corporation,Carrier,BWM Series,BWMAAN000100AAAA,,Boiler,"Natural Gas,Propane Gas",95,10/01/2012,07/31/2018,"United States, Canada",ES_1020846_BWMAAN000100AAAA_07312018204448_3166093,No,Yes
+2328561,Carrier Corporation,Carrier,BWM Series,BWMAAN000150,,Boiler,"Natural Gas,Propane Gas",95,12/21/2013,10/29/2018,"United States, Canada",ES_1020846_BWMAAN000150_10292018191443_9073294,No,Yes
+2323524,Carrier Corporation,Carrier,BWM Series,BWMAAN000150AAAA,,Boiler,"Natural Gas,Propane Gas",95,10/01/2012,07/31/2018,"United States, Canada",ES_1020846_BWMAAN000150AAAA_07312018204451_4911763,No,Yes
+2328563,Carrier Corporation,Carrier,BWM series,BWMAAN000200,,Boiler,"Natural Gas,Propane Gas",95,10/01/2012,10/29/2018,"United States, Canada",ES_1020846_BWMAAN000200_10292018191448_6053625,No,Yes
+2323525,Carrier Corporation,Carrier,BWM series,BWMAAN000200AAAA,,Boiler,"Natural Gas,Propane Gas",95,10/01/2012,07/31/2018,"United States, Canada",ES_1020846_BWMAAN000200AAAA_07312018204453_0004720,No,Yes
+2323527,Carrier Corporation,Carrier,BWM series,BWMAAN000299,,Boiler,"Natural Gas,Propane Gas",95,12/21/2013,07/31/2018,"United States, Canada",ES_1020846_BWMAAN000299_07312018204458_2175501,No,Yes
+2313568,Crown Boiler Company,Crown,Phantom,PHNTM080B,,Boiler,"Natural Gas,Propane Gas",95,04/17/2017,03/24/2018,"United States, Canada",ES_22945_PHNTM080B_03242018212152_6699607,No,Yes
+2313961,Crown Boiler Company,Crown Boiler,Bimini,BWC070,,Boiler,"Natural Gas,Propane Gas",91,03/13/2007,11/05/2018,"United States, Canada",ES_22945_BWC070_03262018132543_8493762,No,No
+2313958,Crown Boiler Company,Crown Boiler,Bimini,BWC090,,Boiler,"Natural Gas,Propane Gas",91,02/27/2007,11/05/2018,"United States, Canada",ES_22945_BWC090_03262018132531_2995957,No,No
+2313959,Crown Boiler Company,Crown Boiler,Bimini,BWC120,,Boiler,"Natural Gas,Propane Gas",92,10/27/2006,11/05/2018,"United States, Canada",ES_22945_BWC120_03262018132538_4927541,No,No
+2313962,Crown Boiler Company,Crown Boiler,Bimini,BWC150,,Boiler,"Natural Gas,Propane Gas",90,07/11/2005,11/05/2018,United States,ES_22945_BWC150_03262018132545_2158260,No,No
+2313960,Crown Boiler Company,Crown Boiler,Bimini,BWC151,,Boiler,"Natural Gas,Propane Gas",90,09/16/2008,11/05/2018,"United States, Canada",ES_22945_BWC151_03262018132541_1100294,No,No
+2313957,Crown Boiler Company,Crown Boiler,Bimini,BWC225,,Boiler,"Natural Gas,Propane Gas",91,08/30/2005,11/05/2018,United States,ES_22945_BWC225_03262018132527_6714520,No,No
+2313968,Crown Boiler Company,Crown Boiler,Freeport II,FWZ100,,Boiler,Oil,87,09/01/2012,03/26/2018,"United States, Canada",ES_22945_FWZ100_03262018132843_1758791,No,No
+2321184,Allied Engineering Company Div. of E-Z-Rect Manufacturing Ltd.,INTERGAS,Intergas,HSE-125-N,,Boiler,Natural Gas,92,10/15/2010,06/11/2018,"United States, Canada",ES_1016086_HSE-125-N_06112018201540_1347861,Yes,No
+2321186,Allied Engineering Company Div. of E-Z-Rect Manufacturing Ltd.,INTERGAS,Intergas,HSE-125-P,,Boiler,Propane Gas,92,08/15/2010,06/11/2018,"United States, Canada",ES_1016086_HSE-125-P_06112018201548_4500944,Yes,No
+2313199,Allied Engineering Company Div. of E-Z-Rect Manufacturing Ltd.,INTERGAS,Intergas,HSE-145-N,,Boiler,Natural Gas,92,09/01/2012,03/23/2018,"United States, Canada",ES_1016086_HSE-145-N_03232018154249_9491181,No,No
+2313203,Allied Engineering Company Div. of E-Z-Rect Manufacturing Ltd.,INTERGAS,Intergas,HSE-145-N,,Boiler,Natural Gas,92,09/01/2012,11/05/2018,"United States, Canada",ES_1016086_HSE-145-N_03232018154301_3385804,Yes,No
+2313201,Allied Engineering Company Div. of E-Z-Rect Manufacturing Ltd.,INTERGAS,Intergas,HSE-145-P,,Boiler,Propane Gas,92,09/01/2012,03/23/2018,"United States, Canada",ES_1016086_HSE-145-P_03232018154255_7833932,No,No
+2313205,Allied Engineering Company Div. of E-Z-Rect Manufacturing Ltd.,INTERGAS,Intergas,HSE-145-P,,Boiler,Propane Gas,92,09/01/2012,11/05/2018,"United States, Canada",ES_1016086_HSE-145-P_03232018154305_9493299,Yes,No
+2321185,Allied Engineering Company Div. of E-Z-Rect Manufacturing Ltd.,Super Hot,Intergas,HSE-125-N,,Boiler,Natural Gas,92,08/15/2010,06/11/2018,"United States, Canada",ES_1016086_HSE-125-N_06112018201544_6026897,Yes,No
+2321187,Allied Engineering Company Div. of E-Z-Rect Manufacturing Ltd.,Super Hot,Intergas,HSE-125-P,,Boiler,Propane Gas,92,08/15/2010,06/11/2018,"United States, Canada",ES_1016086_HSE-125-P_06112018201551_9910328,Yes,No
+2313200,Allied Engineering Company Div. of E-Z-Rect Manufacturing Ltd.,Super Hot,Intergas,HSE-145-N,,Boiler,Natural Gas,92,09/01/2012,03/23/2018,"United States, Canada",ES_1016086_HSE-145-N_03232018154253_8455597,No,No
+2313204,Allied Engineering Company Div. of E-Z-Rect Manufacturing Ltd.,Super Hot,Intergas,HSE-145-N,,Boiler,Natural Gas,92,09/01/2012,11/05/2018,"United States, Canada",ES_1016086_HSE-145-N_03232018154303_5447118,Yes,No
+2313202,Allied Engineering Company Div. of E-Z-Rect Manufacturing Ltd.,Super Hot,Intergas,HSE-145-P,,Boiler,Propane Gas,92,09/01/2012,03/23/2018,"United States, Canada",ES_1016086_HSE-145-P_03232018154257_4944777,No,No
+2313206,Allied Engineering Company Div. of E-Z-Rect Manufacturing Ltd.,Super Hot,Intergas,HSE-145-P,,Boiler,Propane Gas,92,09/01/2012,11/05/2018,"United States, Canada",ES_1016086_HSE-145-P_03232018154307_2983074,Yes,No
+2313212,Baxi SPA,Baxi,DUO-TEC COMPACT 30 GA,DUO-TEC COMPACT 30 GA,,Boiler,"Natural Gas,Propane Gas",95,09/30/2017,03/23/2018,"United States, Canada",ES_1137372_DUO-TEC COMPACT 30 GA_03232018154954_2653913,Yes,Yes
+2313210,Baxi SPA,Baxi,LUNA DUO-TEC 1.33 GA,LUNA DUO-TEC 1.33 GA,,Boiler,"Natural Gas,Propane Gas",95,09/01/2013,03/23/2018,"United States, Canada",ES_1137372_LUNA DUO-TEC 1.33 GA_03232018154950_6601818,No,Yes
+2313211,Baxi SPA,Baxi,LUNA DUO-TEC 1.70,LUNA DUO-TEC 1.70,,Boiler,"Natural Gas,Propane Gas",95,10/01/2016,03/23/2018,"United States, Canada",ES_1137372_LUNA DUO-TEC 1.70_03232018154952_3460708,No,Yes
+2313209,Baxi SPA,Baxi,LUNA DUO-TEC 40 GA,LUNA DUO-TEC 40 GA,,Boiler,"Natural Gas,Propane Gas",95,09/01/2013,03/23/2018,"United States, Canada",ES_1137372_LUNA DUO-TEC 40 GA_03232018154946_8456171,Yes,Yes
+2314062,Bosch Thermotechnology Corporation,Bosch,Greenstar FS,KBR 16-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2015,03/26/2018,"United States, Canada",ES_16809_KBR 16-3_03262018141913_0743934,No,Yes
+2314063,Bosch Thermotechnology Corporation,Bosch,Greenstar FS,KBR 21-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2015,03/26/2018,"United States, Canada",ES_16809_KBR 21-3_03262018141916_8682619,No,Yes
+2314064,Bosch Thermotechnology Corporation,Bosch,Greenstar FS,KBR 28-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2015,03/26/2018,"United States, Canada",ES_16809_KBR 28-3_03262018141917_3207979,No,Yes
+2314065,Bosch Thermotechnology Corporation,Bosch,Greenstar FS,KBR 35-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2015,03/26/2018,"United States, Canada",ES_16809_KBR 35-3_03262018141920_0590257,No,Yes
+2314066,Bosch Thermotechnology Corporation,Bosch,Greenstar FS,KBR 42-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2015,03/26/2018,"United States, Canada",ES_16809_KBR 42-3_03262018141922_8180278,No,Yes
+2314036,Bosch Thermotechnology Corporation,Bosch,Greenstar FS,KWB 28-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2015,03/26/2018,"United States, Canada",ES_16809_KWB 28-3_03262018141756_3950481,Yes,Yes
+2314042,Bosch Thermotechnology Corporation,Bosch,Greenstar FS,KWB 28-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2015,03/26/2018,"United States, Canada",ES_16809_KWB 28-3_03262018141808_7198157,Yes,Yes
+2314048,Bosch Thermotechnology Corporation,Bosch,Greenstar FS,KWB 28-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2015,03/26/2018,"United States, Canada",ES_16809_KWB 28-3_03262018141821_1028670,Yes,Yes
+2314054,Bosch Thermotechnology Corporation,Bosch,Greenstar FS,KWB 28-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2015,03/26/2018,"United States, Canada",ES_16809_KWB 28-3_03262018141834_9855853,Yes,Yes
+2314037,Bosch Thermotechnology Corporation,Bosch,Greenstar FS,KWB 35-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2015,03/26/2018,"United States, Canada",ES_16809_KWB 35-3_03262018141757_1507483,Yes,Yes
+2314043,Bosch Thermotechnology Corporation,Bosch,Greenstar FS,KWB 35-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2015,03/26/2018,"United States, Canada",ES_16809_KWB 35-3_03262018141810_7786801,Yes,Yes
+2314049,Bosch Thermotechnology Corporation,Bosch,Greenstar FS,KWB 35-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2015,03/26/2018,"United States, Canada",ES_16809_KWB 35-3_03262018141822_3787313,Yes,Yes
+2314055,Bosch Thermotechnology Corporation,Bosch,Greenstar FS,KWB 35-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2015,03/26/2018,"United States, Canada",ES_16809_KWB 35-3_03262018141836_9364702,Yes,Yes
+2314038,Bosch Thermotechnology Corporation,Bosch,Greenstar FS,KWB 42-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2015,03/26/2018,"United States, Canada",ES_16809_KWB 42-3_03262018141800_3873251,Yes,Yes
+2314044,Bosch Thermotechnology Corporation,Bosch,Greenstar FS,KWB 42-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2015,03/26/2018,"United States, Canada",ES_16809_KWB 42-3_03262018141812_6248875,Yes,Yes
+2314050,Bosch Thermotechnology Corporation,Bosch,Greenstar FS,KWB 42-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2015,03/26/2018,"United States, Canada",ES_16809_KWB 42-3_03262018141824_0898157,Yes,Yes
+2314056,Bosch Thermotechnology Corporation,Bosch,Greenstar FS,KWB 42-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2015,03/26/2018,"United States, Canada",ES_16809_KWB 42-3_03262018141838_8906571,Yes,Yes
+2314081,Bosch Thermotechnology Corporation,Bosch,Buderus,SSB 120,,Boiler,Natural Gas,96,03/31/2016,03/26/2018,"United States, Canada",ES_16809_SSB 120_03262018145010_3275164,No,Yes
+2314082,Bosch Thermotechnology Corporation,Bosch,Buderus,SSB 160,,Boiler,Natural Gas,96,03/31/2016,03/26/2018,"United States, Canada",ES_16809_SSB 160_03262018145012_0352988,No,Yes
+2314079,Bosch Thermotechnology Corporation,Bosch,Buderus,SSB255,,Boiler,"Natural Gas,Propane Gas",96,08/27/2015,03/26/2018,"United States, Canada",ES_16809_SSB255_03262018145005_4169045,No,Yes
+2314080,Bosch Thermotechnology Corporation,Bosch,Buderus,SSB 85,,Boiler,Natural Gas,96,03/31/2016,03/26/2018,"United States, Canada",ES_16809_SSB 85_03262018145007_7102411,No,Yes
+2314057,Bosch Thermotechnology Corporation,Bosch,Greenstar,ZBR 16-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2010,03/26/2018,"United States, Canada",ES_16809_ZBR 16-3_03262018141903_8989974,No,Yes
+2314061,Bosch Thermotechnology Corporation,Bosch,Greenstar,ZBR 21-3,,Boiler,"Natural Gas,Propane Gas",95,10/01/2013,03/26/2018,"United States, Canada",ES_16809_ZBR 21-3_03262018141911_8901553,No,Yes
+2314058,Bosch Thermotechnology Corporation,Bosch,Greenstar,ZBR 28-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2010,03/26/2018,"United States, Canada",ES_16809_ZBR 28-3_03262018141905_4071741,No,Yes
+2314059,Bosch Thermotechnology Corporation,Bosch,Greenstar,ZBR 35-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2010,03/26/2018,"United States, Canada",ES_16809_ZBR 35-3_03262018141907_9469151,No,Yes
+2314060,Bosch Thermotechnology Corporation,Bosch,Greenstar,ZBR 42-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2010,03/26/2018,"United States, Canada",ES_16809_ZBR 42-3_03262018141909_4899582,No,Yes
+2314033,Bosch Thermotechnology Corporation,Bosch,Greenstar,ZWB 28-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2010,03/26/2018,"United States, Canada",ES_16809_ZWB 28-3_03262018141750_6437689,Yes,Yes
+2314039,Bosch Thermotechnology Corporation,Bosch,Greenstar,ZWB 28-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2010,03/26/2018,"United States, Canada",ES_16809_ZWB 28-3_03262018141802_6828446,Yes,Yes
+2314045,Bosch Thermotechnology Corporation,Bosch,Greenstar,ZWB 28-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2010,03/26/2018,"United States, Canada",ES_16809_ZWB 28-3_03262018141815_1365361,Yes,Yes
+2314051,Bosch Thermotechnology Corporation,Bosch,Greenstar,ZWB 28-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2010,03/26/2018,"United States, Canada",ES_16809_ZWB 28-3_03262018141828_3389838,Yes,Yes
+2314035,Bosch Thermotechnology Corporation,Bosch,Greenstar,ZWB 35-3,,Boiler,"Natural Gas,Propane Gas",95,10/01/2013,03/26/2018,"United States, Canada",ES_16809_ZWB 35-3_03262018141754_1376970,Yes,Yes
+2314041,Bosch Thermotechnology Corporation,Bosch,Greenstar,ZWB 35-3,,Boiler,"Natural Gas,Propane Gas",95,10/01/2013,03/26/2018,"United States, Canada",ES_16809_ZWB 35-3_03262018141806_0895674,Yes,Yes
+2314047,Bosch Thermotechnology Corporation,Bosch,Greenstar,ZWB 35-3,,Boiler,"Natural Gas,Propane Gas",95,10/01/2013,03/26/2018,"United States, Canada",ES_16809_ZWB 35-3_03262018141818_7854540,Yes,Yes
+2314053,Bosch Thermotechnology Corporation,Bosch,Greenstar,ZWB 35-3,,Boiler,"Natural Gas,Propane Gas",95,10/01/2013,03/26/2018,"United States, Canada",ES_16809_ZWB 35-3_03262018141832_8885525,Yes,Yes
+2314034,Bosch Thermotechnology Corporation,Bosch,Greenstar,ZWB 42-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2010,03/26/2018,"United States, Canada",ES_16809_ZWB 42-3_03262018141752_2391508,Yes,Yes
+2314040,Bosch Thermotechnology Corporation,Bosch,Greenstar,ZWB 42-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2010,03/26/2018,"United States, Canada",ES_16809_ZWB 42-3_03262018141804_8845550,Yes,Yes
+2314046,Bosch Thermotechnology Corporation,Bosch,Greenstar,ZWB 42-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2010,03/26/2018,"United States, Canada",ES_16809_ZWB 42-3_03262018141817_7919797,Yes,Yes
+2314052,Bosch Thermotechnology Corporation,Bosch,Greenstar,ZWB 42-3,,Boiler,"Natural Gas,Propane Gas",95,04/01/2010,03/26/2018,"United States, Canada",ES_16809_ZWB 42-3_03262018141829_2898687,Yes,Yes
+2222415,Bosch Thermotechnology Corporation,Buderus,Buderus,G115WS/3,,Boiler,Oil,87,09/23/2014,09/15/2014,"United States, Canada",ES_0016809_G115WS/3_09232014115757_2755104,No,No
+2222409,Bosch Thermotechnology Corporation,Buderus,Buderus,G115WS/4,,Boiler,Oil,87,09/23/2014,09/15/2014,"United States, Canada",ES_0016809_G115WS/4_09232014115757_2755104,No,No
+2222410,Bosch Thermotechnology Corporation,Buderus,Buderus,G115WS/5,,Boiler,Oil,87,09/23/2014,09/15/2014,"United States, Canada",ES_0016809_G115WS/5_09232014115757_2755104,No,No
+2222411,Bosch Thermotechnology Corporation,Buderus,Buderus,G215/3,,Boiler,Oil,87,09/23/2014,09/15/2014,"United States, Canada",ES_0016809_G215/3_09232014115757_2755104,No,No
+2222412,Bosch Thermotechnology Corporation,Buderus,Buderus,G215/4,,Boiler,Oil,87,09/23/2014,09/15/2014,"United States, Canada",ES_0016809_G215/4_09232014115757_2755104,No,No
+2222413,Bosch Thermotechnology Corporation,Buderus,Buderus,G215/5,,Boiler,Oil,87,09/23/2014,09/15/2014,"United States, Canada",ES_0016809_G215/5_09232014115757_2755104,No,No
+2222414,Bosch Thermotechnology Corporation,Buderus,Buderus,G215/6,,Boiler,Oil,87,09/23/2014,09/15/2014,"United States, Canada",ES_0016809_G215/6_09232014115757_2755104,No,No
+2314072,Bosch Thermotechnology Corporation,Buderus,GB142 series,GB 142 24,,Boiler,"Natural Gas,Propane Gas",95,05/01/2006,03/26/2018,"United States, Canada",ES_16809_GB 142 24_03262018143145_1045119,No,Yes
+2314069,Bosch Thermotechnology Corporation,Buderus,GB142 series,GB 142 30,,Boiler,"Natural Gas,Propane Gas",95,05/01/2006,03/26/2018,"United States, Canada",ES_16809_GB 142 30_03262018143139_7859798,No,Yes
+2314071,Bosch Thermotechnology Corporation,Buderus,GB142 series,GB 142 45,,Boiler,"Natural Gas,Propane Gas",95,05/01/2006,03/26/2018,"United States, Canada",ES_16809_GB 142 45_03262018143143_0586988,No,Yes
+2314070,Bosch Thermotechnology Corporation,Buderus,GB142 series,GB 142 60,,Boiler,"Natural Gas,Propane Gas",95,05/01/2006,03/26/2018,"United States, Canada",ES_16809_GB 142 60_03262018143141_8525673,No,Yes
+2314068,Bosch Thermotechnology Corporation,Buderus,GB162 series,GB162 80,,Boiler,Propane Gas,92,07/01/2011,03/26/2018,"United States, Canada",ES_16809_GB162 80_03262018142842_8641734,No,No
+2314067,Bosch Thermotechnology Corporation,Buderus,GB162 series,GB162-80,,Boiler,Natural Gas,92,07/01/2011,03/26/2018,"United States, Canada",ES_16809_GB162-80_03262018142840_4595553,No,No
+2323668,Bradford White Corporation,Bradford White,Brute Elite,BLMC125,,Boiler,"Natural Gas,Propane Gas",95,07/19/2010,07/31/2018,"United States, Canada",ES_92896_BLMC125_08012018003243_9768680,No,Yes
+2323669,Bradford White Corporation,Bradford White,Brute Elite,BLMH125,,Boiler,"Natural Gas,Propane Gas",95,07/19/2010,07/31/2018,"United States, Canada",ES_92896_BLMH125_08012018003245_4338249,No,Yes
+2323672,Bradford White Corporation,Bradford White,Brute LX,"BLXCW150(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,09/01/2014,07/31/2018,"United States, Canada","ES_92896_BLXCW150(N,P)****_08012018004647_9420436",Yes,Yes
+2313313,HTP Comfort Solutions LLC,Westinghouse,Medium Mass Boiler,WBRU**140*,,Boiler,"Natural Gas,Propane Gas",95,01/21/2016,03/23/2018,"United States, Canada",ES_29975_WBRU**140*_03232018170156_5034761,No,Yes
+2313314,HTP Comfort Solutions LLC,Westinghouse,Medium Mass Boiler,WBRU**175*,,Boiler,"Natural Gas,Propane Gas",95,11/20/2015,03/23/2018,"United States, Canada",ES_29975_WBRU**175*_03232018170158_1511968,No,Yes
+2313315,HTP Comfort Solutions LLC,Westinghouse,Medium Mass Boiler,WBRU**199*,,Boiler,"Natural Gas,Propane Gas",96,11/20/2015,03/23/2018,"United States, Canada",ES_29975_WBRU**199*_03232018170200_6037326,No,Yes
+2313322,HTP Comfort Solutions LLC,Westinghouse,Combi,WBRUC**140*,,Boiler,"Natural Gas,Propane Gas",96,09/28/2017,03/23/2018,"United States, Canada",ES_29975_WBRUC**140*_03232018171709_0114697,Yes,Yes
+2313323,HTP Comfort Solutions LLC,Westinghouse,Combi,WBRUC**199*,,Boiler,"Natural Gas,Propane Gas",95,09/28/2017,03/23/2018,"United States, Canada",ES_29975_WBRUC**199*_03232018171711_3081082,Yes,Yes
+2316369,IBC Technologies Inc.,IBC Technologies,DC 15-96,DC 15-96,,Boiler,"Natural Gas,Propane Gas",96,03/01/2018,04/02/2018,"United States, Canada",ES_1084006_DC 15-96_04022018225841_7801003,Yes,Yes
+2316366,IBC Technologies Inc.,IBC Technologies,DC 20-125,DC 20-125,,Boiler,"Natural Gas,Propane Gas",95,12/15/2015,04/02/2018,"United States, Canada",ES_1084006_DC 20-125_04022018225834_8552397,Yes,Yes
+2316357,IBC Technologies Inc.,IBC Technologies,DC 23-84,DC 23-84,,Boiler,"Natural Gas,Propane Gas",94,07/30/2014,04/02/2018,"United States, Canada",ES_1084006_DC 23-84_04022018225805_4273191,Yes,No
+2316359,IBC Technologies Inc.,IBC Technologies,DC 29-106,DC 29-106,,Boiler,"Natural Gas,Propane Gas",94,07/30/2014,04/02/2018,"United States, Canada",ES_1084006_DC 29-106_04022018225818_4613565,Yes,No
+2316361,IBC Technologies Inc.,IBC Technologies,DC 33-124,DC 33-124,,Boiler,"Natural Gas,Propane Gas",94,07/30/2014,04/02/2018,"United States, Canada",ES_1084006_DC 33-124_04022018225823_9259581,Yes,No
+2316364,IBC Technologies Inc.,IBC Technologies,DC 33-160,DC 33-160,,Boiler,"Natural Gas,Propane Gas",94,07/30/2014,04/02/2018,"United States, Canada",ES_1084006_DC 33-160_04022018225829_4396749,Yes,No
+2316365,IBC Technologies Inc.,IBC Technologies,HC 13-50,HC 13-50,,Boiler,"Natural Gas,Propane Gas",95,02/02/2015,04/02/2018,"United States, Canada",ES_1084006_HC 13-50_04022018225831_8442930,No,Yes
+2316368,IBC Technologies Inc.,IBC Technologies,HC 15-96,HC 15-96,,Boiler,"Natural Gas,Propane Gas",96,03/01/2018,04/02/2018,"United States, Canada",ES_1084006_HC 15-96_04022018225838_2151639,No,Yes
+2316367,IBC Technologies Inc.,IBC Technologies,HC 20-125,HC 20-125,,Boiler,"Natural Gas,Propane Gas",95,12/15/2015,04/02/2018,"United States, Canada",ES_1084006_HC 20-125_04022018225836_2042172,No,Yes
+2316358,IBC Technologies Inc.,IBC Technologies,HC 23-84,HC 23-84,,Boiler,"Natural Gas,Propane Gas",94,07/30/2014,04/02/2018,"United States, Canada",ES_1084006_HC 23-84_04022018225816_7012353,No,No
+2316360,IBC Technologies Inc.,IBC Technologies,HC 29-106,HC 29-106,,Boiler,"Natural Gas,Propane Gas",94,07/30/2014,04/02/2018,"United States, Canada",ES_1084006_HC 29-106_04022018225820_2530422,No,No
+2316362,IBC Technologies Inc.,IBC Technologies,HC 33-124,HC 33-124,,Boiler,"Natural Gas,Propane Gas",94,07/30/2014,04/02/2018,"United States, Canada",ES_1084006_HC 33-124_04022018225825_0241101,No,No
+2316363,IBC Technologies Inc.,IBC Technologies,HC 33-160,HC 33-160,,Boiler,"Natural Gas,Propane Gas",94,07/30/2014,04/02/2018,"United States, Canada",ES_1084006_HC 33-160_04022018225827_8955127,No,No
+2316401,IBC Technologies Inc.,IBC Technologies,SL 10-85G3,SL 10-85G3,,Boiler,"Natural Gas,Propane Gas",96,11/06/2017,04/03/2018,"United States, Canada",ES_1084006_SL 10-85G3_04032018132413_4284933,No,Yes
+2316398,IBC Technologies Inc.,IBC Technologies,SL 14-115G3,SL 14-115G3,,Boiler,"Natural Gas,Propane Gas",95,05/30/2017,04/03/2018,"United States, Canada",ES_1084006_SL 14-115G3_04032018132406_9147765,No,Yes
+2316394,IBC Technologies Inc.,IBC Technologies,SL 20-115-G2,SL 20-115-G2,,Boiler,"Natural Gas,Propane Gas",95,10/30/2013,04/03/2018,"United States, Canada",ES_1084006_SL 20-115-G2_04032018132358_9615752,No,Yes
+2316399,IBC Technologies Inc.,IBC Technologies,SL 20-160G3,SL 20-160G3,,Boiler,"Natural Gas,Propane Gas",95,05/30/2017,04/03/2018,"United States, Canada",ES_1084006_SL 20-160G3_04032018132409_2637540,No,Yes
+2316397,IBC Technologies Inc.,IBC Technologies,SL 26-260G3,SL 26-260G3,,Boiler,"Natural Gas,Propane Gas",95,05/30/2017,04/03/2018,"United States, Canada",ES_1084006_SL 26-260G3_04032018132405_2593330,No,Yes
+2316396,IBC Technologies Inc.,IBC Technologies,SL 28-160,SL 28-160,,Boiler,"Natural Gas,Propane Gas",95,08/28/2014,04/03/2018,"United States, Canada",ES_1084006_SL 28-160_04032018132402_4120065,No,Yes
+2316400,IBC Technologies Inc.,IBC Technologies,SL 30-199G3,SL 30-199G3,,Boiler,"Natural Gas,Propane Gas",95,08/30/2017,04/03/2018,"United States, Canada",ES_1084006_SL 30-199G3_04032018132411_2190599,No,Yes
+2316395,IBC Technologies Inc.,IBC Technologies,SL 35-199,SL 35-199,,Boiler,"Natural Gas,Propane Gas",95,09/19/2014,04/03/2018,"United States, Canada",ES_1084006_SL 35-199_04032018132400_4533986,No,Yes
+2316393,IBC Technologies Inc.,IBC Technologies,SL 45-260,SL 45-260,,Boiler,"Natural Gas,Propane Gas",95,08/30/2012,04/03/2018,"United States, Canada",ES_1084006_SL 45-260_04032018132356_4838440,No,Yes
+2316391,IBC Technologies Inc.,IBC Technologies,VFC 15-150,VFC 15-150,,Boiler,"Natural Gas,Propane Gas",95,08/08/2003,04/03/2018,"United States, Canada",ES_1084006_VFC 15-150_04032018132346_1925337,No,Yes
+2316392,IBC Technologies Inc.,IBC Technologies,VFC 45-225,VFC 45-225,,Boiler,"Natural Gas,Propane Gas",95,08/25/2005,04/03/2018,"United States, Canada",ES_1084006_VFC 45-225_04032018132349_0606345,No,Yes
+2323660,Kenmore,Kenmore,DKVLT series,DKVLT-050,,Boiler,"Natural Gas,Propane Gas",95,02/01/2012,07/31/2018,United States,ES_15649_DKVLT-050_08012018000645_4407972,No,Yes
+2323661,Kenmore,Kenmore,DKVLT Series,DKVLT-075,,Boiler,"Natural Gas,Propane Gas",95,02/01/2012,07/31/2018,United States,ES_15649_DKVLT-075_08012018000648_9708672,No,Yes
+2328564,Kenmore,Kenmore,DKVLT Series,DKVLT-100,,Boiler,"Natural Gas,Propane Gas",95,02/01/2012,10/29/2018,United States,ES_15649_DKVLT-100_10292018192032_1554912,No,Yes
+2328565,Kenmore,Kenmore,DKVLT Series,DKVLT-150,,Boiler,"Natural Gas,Propane Gas",95,02/01/2012,10/29/2018,United States,ES_15649_DKVLT-150_10292018192034_4696021,No,Yes
+2328566,Kenmore,Kenmore,DKVLT series,DKVLT-200,,Boiler,"Natural Gas,Propane Gas",95,02/01/2012,10/29/2018,"United States, Canada",ES_15649_DKVLT-200_10292018192037_1915550,No,Yes
+2323662,Kenmore,Kenmore,DKVLT series,DKVLT-299,,Boiler,"Natural Gas,Propane Gas",95,08/16/2013,07/31/2018,"United States, Canada",ES_15649_DKVLT-299_08012018000650_1213579,No,Yes
+2241083,"King Heating Products, Inc.",Eco King Supreme,C100,C100,,Boiler,Natural Gas,92,11/01/2014,05/29/2015,Canada,ES_1125479_C100_04022015135407_2697412,Yes,No
+2240397,"King Heating Products, Inc.",Eco King Supreme,C140,C140,,Boiler,Natural Gas,92,11/01/2014,05/29/2015,Canada,ES_1125479_C140_04022015135407_7520411,Yes,No
+2240344,"King Heating Products, Inc.",Eco King Supreme,C200,C200,,Boiler,Natural Gas,92,11/01/2014,05/29/2015,Canada,ES_1125479_C200_05122015134937_3969079,Yes,No
+2240373,"King Heating Products, Inc.",Eco King Supreme,H100,H100,",H100,Models in the H series are identical to corresponding models in the C series, with the exception that the H series models do not include a hot potable water (combi) module.",Boiler,Natural Gas,92,11/01/2014,05/29/2015,Canada,ES_1125479_H100_05122015134937_2694208,Yes,No
+2240398,"King Heating Products, Inc.",Eco King Supreme,H140,H140,",H140,Models in the H series are identical to corresponding models in the C series, with the exception that the H series models do not include a hot potable water (combi) module.",Boiler,Natural Gas,92,11/01/2014,05/29/2015,Canada,ES_1125479_H140_05122015134937_8290811,Yes,No
+2240374,"King Heating Products, Inc.",Eco King Supreme,H200,H200,",H200,Models in the H series are identical to corresponding models in the C series, with the exception that the H series models do not include a hot potable water (combi) module.",Boiler,Natural Gas,92,11/01/2014,05/29/2015,Canada,ES_1125479_H200_05122015134937_4706498,Yes,No
+2321335,"King Heating Products, Inc.",King Heating Products Inc.,Ecoking Ultimate Boiler,EK 299-CHB,,Boiler,Natural Gas,92,05/01/2018,06/14/2018,Canada,ES_1125479_EK 299-CHB_06152018134013_0013900,No,No
+2257044,Kiturami,Kiturami,CB199-DV,KCGB-120,"CB180-DV,KCGB-100,",Boiler,"Natural Gas,Propane Gas",95,01/15/2016,01/12/2016,"United States, Canada",ES_1124110_KCGB-120_01122016134555_7561303,Yes,Yes
+2313344,LAARS Heating Systems Company,Laars,Mascot II,LMC125,,Boiler,"Natural Gas,Propane Gas",95,07/19/2010,11/05/2018,"United States, Canada",ES_1108210_LMC125_03232018172456_8697573,No,Yes
+2313345,LAARS Heating Systems Company,Laars,Mascot II,LMH125,,Boiler,"Natural Gas,Propane Gas",95,07/19/2010,11/05/2018,"United States, Canada",ES_1108210_LMH125_03232018172457_1271086,No,Yes
+2323513,LAARS Heating Systems Company,Laars,Mascot FT,"MFTCF199(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,06/01/2016,07/31/2018,"United States, Canada","ES_1108210_MFTCF199(N,P)****_07312018194234_6950780",Yes,Yes
+2313347,LAARS Heating Systems Company,Laars,Mascot FT,"MFTC(F,W)140(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,06/01/2015,11/05/2018,"United States, Canada","ES_1108210_MFTC(F,W)140(N,P)****_03232018172503_6450345",Yes,Yes
+2313353,LAARS Heating Systems Company,Laars,Mascot FT,MFTCW120****,,Boiler,"Natural Gas,Propane Gas",95,06/01/2016,11/05/2018,"United States, Canada",ES_1108210_MFTCW120****_03232018172515_9316337,Yes,Yes
+2313352,LAARS Heating Systems Company,Laars,Mascot FT,"MFTCW199(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,06/01/2016,11/05/2018,"United States, Canada","ES_1108210_MFTCW199(N,P)****_03232018172513_8030364",No,Yes
+2313348,LAARS Heating Systems Company,Laars,Mascot FT,"MFTHW080(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,06/01/2016,11/05/2018,"United States, Canada","ES_1108210_MFTHW080(N,P)****_03232018172505_4356011",No,Yes
+2313349,LAARS Heating Systems Company,Laars,Mascot FT,"MFTHW100(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,06/01/2016,11/05/2018,"United States, Canada","ES_1108210_MFTHW100(N,P)****_03232018172507_1946033",No,Yes
+2313350,LAARS Heating Systems Company,Laars,Mascot FT,"MFTHW120(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,06/01/2016,11/05/2018,"United States, Canada","ES_1108210_MFTHW120(N,P)****_03232018172509_9503034",No,Yes
+2313346,LAARS Heating Systems Company,Laars,Mascot FT,"MFTHW140(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,06/01/2015,11/05/2018,"United States, Canada","ES_1108210_MFTHW140(N,P)****_03232018172501_7464884",No,Yes
+2313351,LAARS Heating Systems Company,Laars,Mascot FT,"MFTHW199(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,06/01/2016,11/05/2018,"United States, Canada","ES_1108210_MFTHW199(N,P)****_03232018172510_5980241",Yes,Yes
+2323514,LAARS Heating Systems Company,Laars,Mascot LX,"MLXCW125(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,08/01/2014,07/31/2018,"United States, Canada","ES_1108210_MLXCW125(N,P)****_07312018194442_5464381",Yes,Yes
+2313360,LAARS Heating Systems Company,Laars,Mascot LX,"MLXCW150(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,09/01/2014,11/05/2018,"United States, Canada","ES_1108210_MLXCW150(N,P)****_03232018172530_3567362",No,Yes
+2313356,LAARS Heating Systems Company,Laars,Mascot LX,"MLXCW175(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,08/01/2014,11/05/2018,"United States, Canada","ES_1108210_MLXCW175(N,P)****_03232018172522_0449417",Yes,Yes
+2313358,LAARS Heating Systems Company,Laars,Mascot LX,"MLXHW050(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,09/01/2014,11/05/2018,"United States, Canada","ES_1108210_MLXHW050(N,P)****_03232018172526_0056542",No,Yes
+2313354,LAARS Heating Systems Company,Laars,Mascot LX,"MLXHW075(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,08/01/2014,11/05/2018,"United States, Canada","ES_1108210_MLXHW075(N,P)****_03232018172518_8541779",No,Yes
+2313359,LAARS Heating Systems Company,Laars,Mascot LX,"MLXHW100(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,09/01/2014,11/05/2018,"United States, Canada","ES_1108210_MLXHW100(N,P)****_03232018172528_5138308",No,Yes
+2313355,LAARS Heating Systems Company,Laars,Mascot LX,"MLXHW125(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,08/01/2014,11/05/2018,"United States, Canada","ES_1108210_MLXHW125(N,P)****_03232018172520_4495598",No,Yes
+2323515,LAARS Heating Systems Company,Laars,Mascot LX,"MLXHW150(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,09/01/2014,07/31/2018,"United States, Canada","ES_1108210_MLXHW150(N,P)****_07312018194444_6445900",No,Yes
+2313357,LAARS Heating Systems Company,Laars,Mascot LX,"MLXHW175(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,08/01/2014,11/05/2018,"United States, Canada","ES_1108210_MLXHW175(N,P)****_03232018172524_4974775",No,Yes
+2313361,LAARS Heating Systems Company,Laars,Mascot LX,"MLXHW220(N,P)****",,Boiler,"Natural Gas,Propane Gas",95,09/01/2014,11/05/2018,"United States, Canada","ES_1108210_MLXHW220(N,P)****_03232018172532_7220668",No,Yes
+2313340,LAARS Heating Systems Company,Laars,NeoTherm,NTH080,,Boiler,"Natural Gas,Propane Gas",95,08/05/2008,11/05/2018,"United States, Canada",ES_1108210_NTH080_03232018171954_4084517,No,Yes
+2313339,LAARS Heating Systems Company,Laars,NeoTherm,NTH105,,Boiler,"Natural Gas,Propane Gas",95,08/05/2008,11/05/2018,"United States, Canada",ES_1108210_NTH105_03232018171952_0605934,No,Yes
+2313342,LAARS Heating Systems Company,Laars,NeoTherm,NTH150,,Boiler,"Natural Gas,Propane Gas",95,08/05/2008,11/05/2018,"United States, Canada",ES_1108210_NTH150_03232018171959_9056816,No,Yes
+2313341,LAARS Heating Systems Company,Laars,NeoTherm,NTH210,,Boiler,"Natural Gas,Propane Gas",95,08/05/2008,11/05/2018,"United States, Canada",ES_1108210_NTH210_03232018171957_7878744,No,Yes
+2313343,LAARS Heating Systems Company,Laars,NeoTherm,NTH285,,Boiler,"Natural Gas,Propane Gas",95,08/05/2008,11/05/2018,"United States, Canada",ES_1108210_NTH285_03232018172001_7518889,No,Yes
+2327916,"Lochinvar, LLC",A. O. Smith,ProLine XE,"ACB-110(S,H)-(N,P)",,Boiler,"Natural Gas,Propane Gas",95,02/01/2018,10/15/2018,"United States, Canada","ES_1028919_ACB-110(S,H)-(N,P)_10152018200134_1139115",Yes,Yes
+2327917,"Lochinvar, LLC",A. O. Smith,ProLine XE,"ACB-150(S,H)-(N,P)",,Boiler,"Natural Gas,Propane Gas",95,02/01/2018,10/15/2018,"United States, Canada","ES_1028919_ACB-150(S,H)-(N,P)_10152018200140_8435090",Yes,Yes
+2327918,"Lochinvar, LLC",A. O. Smith,ProLine XE,"ACB-199(S,H)-(N,P)",,Boiler,"Natural Gas,Propane Gas",95,02/01/2018,10/15/2018,"United States, Canada","ES_1028919_ACB-199(S,H)-(N,P)_10152018200142_8195892",Yes,Yes
+2323509,"Lochinvar, LLC",Lochinvar,EPIC,"EPB080(N,L)",,Boiler,"Natural Gas,Propane Gas",95,05/01/2018,07/31/2018,"United States, Canada","ES_1028919_EPB080(N,L)_07312018193835_7974633",No,Yes
+2323510,"Lochinvar, LLC",Lochinvar,EPIC,"EPB110(N,L)",,Boiler,"Natural Gas,Propane Gas",95,05/01/2018,07/31/2018,"United States, Canada","ES_1028919_EPB110(N,L)_07312018193837_8051080",No,Yes
+2327984,"Lochinvar, LLC",Lochinvar,EPIC,"EPB110(N,L)-CAN",,Boiler,"Natural Gas,Propane Gas",95,05/01/2018,10/17/2018,"United States, Canada","ES_1028919_EPB110(N,L)-CAN_10172018141528_0914634",No,Yes
+2323511,"Lochinvar, LLC",Lochinvar,EPIC,"EPB150(N,L)",,Boiler,"Natural Gas,Propane Gas",95,05/01/2018,07/31/2018,"United States, Canada","ES_1028919_EPB150(N,L)_07312018193840_4780240",No,Yes
+2323512,"Lochinvar, LLC",Lochinvar,EPIC,"EPB199(N,L)",,Boiler,"Natural Gas,Propane Gas",95,05/01/2018,07/31/2018,"United States, Canada","ES_1028919_EPB199(N,L)_07312018193842_2173709",No,Yes
+2323506,"Lochinvar, LLC",Lochinvar,EPIC,"EPC110(N,L)",,Boiler,"Natural Gas,Propane Gas",95,05/01/2018,07/31/2018,"United States, Canada","ES_1028919_EPC110(N,L)_07312018193828_3742538",Yes,Yes
+2323507,"Lochinvar, LLC",Lochinvar,EPIC,"EPC150(N,L)",,Boiler,"Natural Gas,Propane Gas",95,05/01/2018,07/31/2018,"United States, Canada","ES_1028919_EPC150(N,L)_07312018193830_7232311",Yes,Yes
+2323508,"Lochinvar, LLC",Lochinvar,EPIC,"EPC199(N,L)",,Boiler,"Natural Gas,Propane Gas",95,05/01/2018,07/31/2018,"United States, Canada","ES_1028919_EPC199(N,L)_07312018193832_5356911",Yes,Yes
+2327968,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"KHB055(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/01/2015,10/16/2018,"United States, Canada","ES_1028919_KHB055(N,L)_10162018214447_0983905",No,Yes
+2327974,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"KHB055(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/01/2015,10/16/2018,"United States, Canada","ES_1028919_KHB055(N,L)_10162018214503_2447502",No,Yes
+2327969,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"KHB085(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/01/2015,10/16/2018,"United States, Canada","ES_1028919_KHB085(N,L)_10162018214450_2729575",No,Yes
+2327975,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"KHB085(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/01/2015,10/16/2018,"United States, Canada","ES_1028919_KHB085(N,L)_10162018214505_0048714",No,Yes
+2327970,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"KHB110(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/01/2015,10/16/2018,"United States, Canada","ES_1028919_KHB110(N,L)_10162018214453_7440847",No,Yes
+2327976,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"KHB110(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/01/2015,10/16/2018,"United States, Canada","ES_1028919_KHB110(N,L)_10162018214507_7475202",No,Yes
+2327971,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"KHB155(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/01/2015,10/16/2018,"United States, Canada","ES_1028919_KHB155(N,L)_10162018214455_7550314",No,Yes
+2327977,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"KHB155(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/01/2015,10/16/2018,"United States, Canada","ES_1028919_KHB155(N,L)_10162018214509_9013128",No,Yes
+2327972,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"KHB199(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/01/2015,10/16/2018,"United States, Canada","ES_1028919_KHB199(N,L)_10162018214457_9055221",No,Yes
+2327978,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"KHB199(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/01/2015,10/16/2018,"United States, Canada","ES_1028919_KHB199(N,L)_10162018214512_3582698",No,Yes
+2327967,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"KHB285(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/01/2015,10/16/2018,"United States, Canada","ES_1028919_KHB285(N,L)_10162018214444_7526368",No,Yes
+2327973,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"KHB285(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/01/2015,10/16/2018,"United States, Canada","ES_1028919_KHB285(N,L)_10162018214500_9862799",No,Yes
+2327981,"Lochinvar, LLC",Lochinvar,Noble,"NKB080(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/24/2016,10/17/2018,"United States, Canada","ES_1028919_NKB080(N,L)_10172018141517_2178225",Yes,Yes
+2327982,"Lochinvar, LLC",Lochinvar,Noble,"NKB110(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/24/2016,10/17/2018,"United States, Canada","ES_1028919_NKB110(N,L)_10172018141522_2505843",Yes,Yes
+2327983,"Lochinvar, LLC",Lochinvar,Noble,"NKB150(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/24/2016,10/17/2018,"United States, Canada","ES_1028919_NKB150(N,L)_10172018141525_6170340",Yes,Yes
+2313419,"Lochinvar, LLC",Lochinvar,Noble,"NKC110(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/24/2016,03/23/2018,"United States, Canada","ES_1028919_NKC110(N,L)_03232018182703_3159327",Yes,Yes
+2313420,"Lochinvar, LLC",Lochinvar,Noble,"NKC150(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/24/2016,03/23/2018,"United States, Canada","ES_1028919_NKC150(N,L)_03232018182705_6081502",Yes,Yes
+2313421,"Lochinvar, LLC",Lochinvar,Noble,"NKC199(N,L)",,Boiler,"Natural Gas,Propane Gas",95,10/24/2016,03/23/2018,"United States, Canada","ES_1028919_NKC199(N,L)_03232018182708_2068341",Yes,Yes
+2327961,"Lochinvar, LLC",Lochinvar,KNIGHT,"WHB055(N,L)",,Boiler,"Natural Gas,Propane Gas",95,12/07/2010,10/16/2018,"United States, Canada","ES_1028919_WHB055(N,L)_10162018214244_6800676",No,Yes
+2327962,"Lochinvar, LLC",Lochinvar,KNIGHT,"WHB085(N,L)",,Boiler,"Natural Gas,Propane Gas",95,12/07/2010,10/16/2018,"United States, Canada","ES_1028919_WHB085(N,L)_10162018214309_2954501",No,Yes
+2327963,"Lochinvar, LLC",Lochinvar,KNIGHT,"WHB110(N,L)",,Boiler,"Natural Gas,Propane Gas",95,12/07/2010,10/16/2018,"United States, Canada","ES_1028919_WHB110(N,L)_10162018214311_7524069",No,Yes
+2327964,"Lochinvar, LLC",Lochinvar,KNIGHT,"WHB155(N,L)",,Boiler,"Natural Gas,Propane Gas",95,12/07/2010,10/16/2018,"United States, Canada","ES_1028919_WHB155(N,L)_10162018214313_1744975",No,Yes
+2327965,"Lochinvar, LLC",Lochinvar,KNIGHT,"WHB199(N,L)",,Boiler,"Natural Gas,Propane Gas",95,12/07/2010,10/16/2018,"United States, Canada","ES_1028919_WHB199(N,L)_10162018214315_7743003",No,Yes
+2327966,"Lochinvar, LLC",Lochinvar,KNIGHT,"WHB285(N,L)",,Boiler,"Natural Gas,Propane Gas",95,12/07/2010,10/16/2018,"United States, Canada","ES_1028919_WHB285(N,L)_10162018214318_0884114",No,Yes
+2313413,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"WH(N,L)056",,Boiler,"Natural Gas,Propane Gas",95,05/15/2017,11/05/2018,"United States, Canada","ES_1028919_WH(N,L)056_03232018182614_6579789",No,Yes
+2313414,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"WH(N,L)086",,Boiler,"Natural Gas,Propane Gas",95,05/15/2017,11/05/2018,"United States, Canada","ES_1028919_WH(N,L)086_03232018182616_3090015",No,Yes
+2313415,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"WH(N,L)111",,Boiler,"Natural Gas,Propane Gas",95,05/15/2017,11/05/2018,"United States, Canada","ES_1028919_WH(N,L)111_03232018182618_9043833",No,Yes
+2313416,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"WH(N,L)156",,Boiler,"Natural Gas,Propane Gas",95,05/15/2017,11/05/2018,"United States, Canada","ES_1028919_WH(N,L)156_03232018182621_5869704",No,Yes
+2313417,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"WH(N,L)200",,Boiler,"Natural Gas,Propane Gas",95,05/15/2017,11/05/2018,"United States, Canada","ES_1028919_WH(N,L)200_03232018182623_0951471",No,Yes
+2313418,"Lochinvar, LLC",Lochinvar,KNIGHT FIRE TUBE,"WH(N,L)286",,Boiler,"Natural Gas,Propane Gas",95,05/15/2017,11/05/2018,"United States, Canada","ES_1028919_WH(N,L)286_03232018182625_8333749",No,Yes
+2327919,"Lochinvar, LLC",State,ProLine XE,"SCB-110(S,H)-(N,P)",,Boiler,"Natural Gas,Propane Gas",95,02/01/2018,10/15/2018,"United States, Canada","ES_1028919_SCB-110(S,H)-(N,P)_10152018200145_3288850",Yes,Yes
+2327920,"Lochinvar, LLC",State,ProLine XE,"SCB-150(S,H)-(N,P)",,Boiler,"Natural Gas,Propane Gas",95,02/01/2018,10/15/2018,"United States, Canada","ES_1028919_SCB-150(S,H)-(N,P)_10152018200148_6081295",Yes,Yes
+2327921,"Lochinvar, LLC",State,ProLine XE,"SCB-199(S,H)-(N,P)",,Boiler,"Natural Gas,Propane Gas",95,02/01/2018,10/15/2018,"United States, Canada","ES_1028919_SCB-199(S,H)-(N,P)_10152018200150_9189385",Yes,Yes
+2313177,"Mestek, Inc.",Advanced Thermal Hydronics,KN Series,KN-2,,Boiler,"Natural Gas,Propane Gas",90,04/22/2013,03/22/2018,"United States, Canada",ES_1083631_KN-2_03232018011952_7675179,No,No
+2323666,"Mestek, Inc.",Embassy,Combi Heating Only,OX-160-B,,Boiler,"Natural Gas,Propane Gas",91,08/15/2013,07/31/2018,"United States, Canada",ES_1083631_OX-160-B_08012018003043_9391653,No,No
+2323667,"Mestek, Inc.",Embassy,Combi,OX-160C,,Boiler,"Natural Gas,Propane Gas",91,08/15/2013,07/31/2018,"United States, Canada",ES_1083631_OX-160C_08012018003045_3612558,Yes,No
+2313517,"Mestek, Inc.",RBI WATER HEATERS,Infinite Energy 2,IB199,,Boiler,"Natural Gas,Propane Gas",91,10/08/2014,03/23/2018,"United States, Canada",ES_1083631_IB199_03232018195822_7828353,No,No
+2313362,"Mestek, Inc.",Smith Cast Iron Boilers,Combi Heating Only,GC-160-B,,Boiler,"Natural Gas,Propane Gas",91,08/15/2013,11/05/2018,"United States, Canada",ES_1083631_GC-160-B_03232018173041_5508079,No,No
+2313363,"Mestek, Inc.",Smith Cast Iron Boilers,Combi,GC-160C,,Boiler,"Natural Gas,Propane Gas",91,08/15/2013,11/05/2018,"United States, Canada",ES_1083631_GC-160C_03232018173043_2890357,Yes,No
+2323546,"Mestek, Inc.",Spacepak,Combi,SS-160C,,Boiler,"Natural Gas,Propane Gas",91,08/15/2013,07/31/2018,"United States, Canada",ES_1083631_SS-160C_07312018210347_0953471,Yes,No
+2313464,"Navien, Inc.",Navien,NCB,NCB-150E,,Boiler,"Natural Gas,Propane Gas",95,10/30/2015,03/23/2018,"United States, Canada",ES_1074959_NCB-150E_03232018191053_0951183,Yes,Yes
+2313465,"Navien, Inc.",Navien,NCB,NCB-180E,,Boiler,"Natural Gas,Propane Gas",95,10/30/2015,03/23/2018,"United States, Canada",ES_1074959_NCB-180E_03232018191055_2270176,Yes,Yes
+2313466,"Navien, Inc.",Navien,NCB,NCB-210E,,Boiler,"Natural Gas,Propane Gas",95,10/30/2015,03/23/2018,"United States, Canada",ES_1074959_NCB-210E_03232018191057_7908349,Yes,Yes
+2313467,"Navien, Inc.",Navien,NCB,NCB-240E,,Boiler,"Natural Gas,Propane Gas",95,10/30/2015,03/23/2018,"United States, Canada",ES_1074959_NCB-240E_03232018191100_3164057,Yes,Yes
+2325891,"Navien, Inc.",Navien,NFB,NFB-175,,Boiler,"Natural Gas,Propane Gas",95,03/01/2018,09/13/2018,"United States, Canada",ES_1074959_NFB-175_09132018195522_3980745,No,Yes
+2313463,"Navien, Inc.",Navien,NFB,NFB-200,,Boiler,"Natural Gas,Propane Gas",95,03/01/2018,03/23/2018,"United States, Canada",ES_1074959_NFB-200_03232018190514_5797927,No,Yes
+2328535,"Navien, Inc.",Navien,NFC,NFC-175,,Boiler,"Natural Gas,Propane Gas",95,11/01/2018,10/29/2018,"United States, Canada",ES_1074959_NFC-175_10292018141023_3408996,Yes,Yes
+2328536,"Navien, Inc.",Navien,NFC,NFC-200,,Boiler,"Natural Gas,Propane Gas",95,11/01/2018,10/29/2018,"United States, Canada",ES_1074959_NFC-200_10292018141052_5113908,Yes,Yes
+2313468,"Navien, Inc.",Navien,NHB,NHB-055,,Boiler,"Natural Gas,Propane Gas",95,11/03/2014,03/23/2018,"United States, Canada",ES_1074959_NHB-055_03232018191105_4036258,No,Yes
+2313469,"Navien, Inc.",Navien,NHB,NHB-080,,Boiler,"Natural Gas,Propane Gas",95,11/03/2014,03/23/2018,"United States, Canada",ES_1074959_NHB-080_03232018191107_5258540,No,Yes
+2313470,"Navien, Inc.",Navien,NHB,NHB-110,,Boiler,"Natural Gas,Propane Gas",95,11/03/2014,03/23/2018,"United States, Canada",ES_1074959_NHB-110_03232018191109_6588723,No,Yes
+2313471,"Navien, Inc.",Navien,NHB,NHB-150,,Boiler,"Natural Gas,Propane Gas",95,11/03/2014,03/23/2018,"United States, Canada",ES_1074959_NHB-150_03232018191112_1681680,No,Yes
+2323620,"New Yorker Boiler Company, Inc.",New Yorker,CI-HGS-_B,CI-HGS-101B,,Boiler,Oil,87,01/01/2015,07/31/2018,United States,ES_1016199_CI-HGS-101B_07312018234014_1105570,No,No
+2323621,"New Yorker Boiler Company, Inc.",New Yorker,CI-HGS-_B,CI-HGS-129B,,Boiler,Oil,87,01/01/2015,07/31/2018,United States,ES_1016199_CI-HGS-129B_07312018234016_2261812,No,No
+2323622,"New Yorker Boiler Company, Inc.",New Yorker,CI-HGS-_B,CI-HGS-167B,,Boiler,Oil,87,01/01/2015,07/31/2018,United States,ES_1016199_CI-HGS-167B_07312018234018_5751585,No,No
+2323619,"New Yorker Boiler Company, Inc.",New Yorker,CI-HGS-_B,CI-HGS-74B,,Boiler,Oil,87,01/01/2015,07/31/2018,United States,ES_1016199_CI-HGS-74B_07312018234011_8487847,No,No
+2323651,"New Yorker Boiler Company, Inc.",New Yorker,CL,CL3-091-WD,,Boiler,Oil,88,08/15/2015,07/31/2018,United States,ES_1016199_CL3-091-WD_07312018235825_6964974,No,No
+2323652,"New Yorker Boiler Company, Inc.",New Yorker,CL,CL3-105-WD,,Boiler,Oil,87,08/15/2015,07/31/2018,United States,ES_1016199_CL3-105-WD_07312018235828_2929983,No,No
+2323653,"New Yorker Boiler Company, Inc.",New Yorker,CL,CL4-126-WD,,Boiler,Oil,88,08/15/2015,07/31/2018,United States,ES_1016199_CL4-126-WD_07312018235830_6627500,No,No
+2323654,"New Yorker Boiler Company, Inc.",New Yorker,CL,CL4-175-WD,,Boiler,Oil,87,08/15/2015,07/31/2018,United States,ES_1016199_CL4-175-WD_07312018235832_4577377,No,No
+2323655,"New Yorker Boiler Company, Inc.",New Yorker,CL,CL5-168-WD,,Boiler,Oil,87,08/15/2015,07/31/2018,United States,ES_1016199_CL5-168-WD_07312018235834_1098794,No,No
+2328035,"New Yorker Boiler Company, Inc.",New Yorker,GHE-HB,GHE100HB,,Boiler,"Natural Gas,Propane Gas",95,10/01/2018,10/18/2018,United States,ES_1016199_GHE100HB_10182018151433_8443056,No,Yes
+2328036,"New Yorker Boiler Company, Inc.",New Yorker,GHE,GHE120HB,,Boiler,"Natural Gas,Propane Gas",95,10/01/2018,10/18/2018,United States,ES_1016199_GHE120HB_10182018151435_0504371,No,Yes
+2323657,"New Yorker Boiler Company, Inc.",New Yorker,GHE,GHE135CB,,Boiler,"Natural Gas,Propane Gas",95,08/01/2017,07/31/2018,United States,ES_1016199_GHE135CB_08012018000057_6124737,Yes,Yes
+2313969,Crown Boiler Company,Crown Boiler,Freeport II,FWZ130,,Boiler,Oil,87,09/01/2012,03/26/2018,"United States, Canada",ES_22945_FWZ130_03262018132845_3296717,No,No
+2313970,Crown Boiler Company,Crown Boiler,Freeport II,FWZ160,,Boiler,Oil,87,09/01/2012,03/26/2018,"United States, Canada",ES_22945_FWZ160_03262018132847_6230083,No,No
+2313963,Crown Boiler Company,Crown Boiler,Phantom,PHNTM080,,Boiler,"Natural Gas,Propane Gas",94,05/11/2015,03/26/2018,"United States, Canada",ES_22945_PHNTM080_03262018132800_5807180,No,No
+2313964,Crown Boiler Company,Crown Boiler,Phantom,PHNTM100,,Boiler,"Natural Gas,Propane Gas",93,07/07/2014,03/26/2018,"United States, Canada",ES_22945_PHNTM100_03262018132802_8937098,No,No
+2313965,Crown Boiler Company,Crown Boiler,Phantom,PHNTM120,,Boiler,"Natural Gas,Propane Gas",94,05/11/2015,03/26/2018,"United States, Canada",ES_22945_PHNTM120_03262018132804_7191429,No,No
+2313966,Crown Boiler Company,Crown Boiler,Phantom,PHNTM150,,Boiler,"Natural Gas,Propane Gas",95,05/11/2015,03/26/2018,"United States, Canada",ES_22945_PHNTM150_03262018132806_2273196,No,Yes
+2313967,Crown Boiler Company,Crown Boiler,Phantom,PHNTM180,,Boiler,"Natural Gas,Propane Gas",94,05/11/2015,03/26/2018,"United States, Canada",ES_22945_PHNTM180_03262018132808_2687116,No,No
+2313971,Crown Boiler Company,Crown Boiler,Phantom,PHNTM210,,Boiler,"Natural Gas,Propane Gas",95,09/01/2014,03/26/2018,"United States, Canada",ES_22945_PHNTM210_03262018133121_0958680,No,Yes
+2313972,Crown Boiler Company,Crown Boiler,Phantom,PHNTM285,,Boiler,"Natural Gas,Propane Gas",95,09/01/2014,03/26/2018,"United States, Canada",ES_22945_PHNTM285_03262018133123_6389110,No,Yes
+2313952,Crown Boiler Company,Crown Boiler,Tobago,TWD065,,Boiler,Oil,88,11/01/2015,03/26/2018,United States,ES_22945_TWD065_03262018132416_6384392,Yes,No
+2313953,Crown Boiler Company,Crown Boiler,Tobago,TWD075,,Boiler,Oil,87,11/01/2015,03/26/2018,United States,ES_22945_TWD075_03262018132420_3864947,Yes,No
+2313954,Crown Boiler Company,Crown Boiler,Tobago,TWD090,,Boiler,Oil,88,11/01/2015,03/26/2018,United States,ES_22945_TWD090_03262018132423_2327021,Yes,No
+2313956,Crown Boiler Company,Crown Boiler,Tobago,TWD120,,Boiler,Oil,87,11/01/2015,03/26/2018,United States,ES_22945_TWD120_03262018132427_9076443,Yes,No
+2313955,Crown Boiler Company,Crown Boiler,Tobago,TWD125,,Boiler,Oil,87,11/01/2015,03/26/2018,United States,ES_22945_TWD125_03262018132425_3646013,Yes,No
+2334312,ECR International,Baxi,Luna DUO-TEC 1.48 GA,LUNA DUO-TEC 1.48 GA,,Boiler,"Natural Gas,Propane Gas",95,04/01/2019,03/07/2019,"United States, Canada",ES_1017619_LUNA DUO-TEC 1.48 GA_03072019183320_8110742,No,Yes
+2334311,ECR International,Baxi,Luna DUO-TEC 60 GA,LUNA DUO-TEC 60 GA,,Boiler,"Natural Gas,Propane Gas",95,04/01/2019,03/07/2019,"United States, Canada",ES_1017619_LUNA DUO-TEC 60 GA_03072019183315_1305136,Yes,Yes
+2313985,ECR International,Dunkirk Boilers,DCB-125,DCB-125,,Boiler,"Natural Gas,Propane Gas",95,05/01/2016,03/26/2018,United States,ES_1017619_DCB-125_03262018135616_8400113,No,Yes
+2313989,ECR International,Dunkirk Boilers,DCB-165,DCB-165,,Boiler,"Natural Gas,Propane Gas",95,03/01/2018,03/26/2018,United States,ES_1017619_DCB-165_03262018135624_6534569,No,Yes
+2313984,ECR International,Dunkirk Boilers,DCC-150,DCC-150,,Boiler,"Natural Gas,Propane Gas",95,05/01/2016,03/26/2018,United States,ES_1017619_DCC-150_03262018135614_3526091,Yes,Yes
+2313990,ECR International,Dunkirk Boilers,DCC-205,DCC-205,,Boiler,"Natural Gas,Propane Gas",95,03/01/2018,03/26/2018,United States,ES_1017619_DCC-205_03262018135626_7995265,Yes,Yes
+2314015,ECR International,Dunkirk Boilers,DKVLT series,DKVLT-050,,Boiler,"Natural Gas,Propane Gas",95,07/01/2011,03/26/2018,United States,ES_1017619_DKVLT-050_03262018140934_3487813,No,Yes
+2314016,ECR International,Dunkirk Boilers,DKVLT series,DKVLT-075,,Boiler,"Natural Gas,Propane Gas",95,07/01/2011,03/26/2018,United States,ES_1017619_DKVLT-075_03262018140936_8569579,No,Yes
+2314017,ECR International,Dunkirk Boilers,DKVLT series,DKVLT-100,,Boiler,"Natural Gas,Propane Gas",95,07/01/2011,03/26/2018,United States,ES_1017619_DKVLT-100_03262018140938_6998633,No,Yes
+2314018,ECR International,Dunkirk Boilers,DKVLT series,DKVLT-150,,Boiler,"Natural Gas,Propane Gas",95,07/01/2011,03/26/2018,United States,ES_1017619_DKVLT-150_03262018140939_6191837,No,Yes
+2314019,ECR International,Dunkirk Boilers,DKVLT series,DKVLT-200,,Boiler,"Natural Gas,Propane Gas",95,02/01/2012,03/26/2018,United States,ES_1017619_DKVLT-200_03262018140941_2669044,No,Yes
+2314030,ECR International,Dunkirk Boilers,DKVLT series,DKVLT-299,,Boiler,"Natural Gas,Propane Gas",95,03/06/2013,03/26/2018,United States,ES_1017619_DKVLT-299_03262018141003_3560025,No,Yes
+2313980,ECR International,Dunkirk Boilers,DMG-240,DMG-240,,Boiler,"Natural Gas,Propane Gas",95,03/07/2017,03/26/2018,United States,ES_1017619_DMG-240_03262018134937_1435949,No,Yes
+2314009,ECR International,Dunkirk Boilers,Dunkirk Excelsior,EXB4075,,Boiler,Oil,87,05/15/2012,03/26/2018,United States,ES_1017619_EXB4075_03262018140823_3857704,No,No
+2314010,ECR International,Dunkirk Boilers,Dunkirk Excelsior,EXB5100,,Boiler,Oil,87,05/15/2012,03/26/2018,United States,ES_1017619_EXB5100_03262018140825_7859675,No,No
+2314011,ECR International,Dunkirk Boilers,Dunkirk Excelsior,EXB6130,,Boiler,Oil,87,05/15/2012,03/26/2018,United States,ES_1017619_EXB6130_03262018140827_1338259,No,No
+2314012,ECR International,Dunkirk Boilers,Dunkirk Excelsior,EXB7165,,Boiler,Oil,87,05/15/2012,03/26/2018,United States,ES_1017619_EXB7165_03262018140829_4435158,No,No
+2313988,ECR International,Dunkirk Boilers,MAH,MAH-165,,Boiler,"Natural Gas,Propane Gas",95,03/01/2018,03/26/2018,"United States, Canada",ES_1017619_MAH-165_03262018135622_5389517,No,Yes
+2313991,ECR International,Dunkirk Boilers,VX series,VX-050,,Boiler,"Natural Gas,Propane Gas",95,08/15/2014,03/26/2018,United States,ES_1017619_VX-050_03262018140400_9435398,No,Yes
+2313992,ECR International,Dunkirk Boilers,VX series,VX-075,,Boiler,"Natural Gas,Propane Gas",95,08/15/2014,03/26/2018,United States,ES_1017619_VX-075_03262018140403_7897471,No,Yes
+2313993,ECR International,Dunkirk Boilers,VX series,VX-100,,Boiler,"Natural Gas,Propane Gas",95,08/15/2014,03/26/2018,United States,ES_1017619_VX-100_03262018140405_7754985,No,Yes
+2313994,ECR International,Dunkirk Boilers,VX series,VX-150,,Boiler,"Natural Gas,Propane Gas",95,08/15/2014,03/26/2018,United States,ES_1017619_VX-150_03262018140407_8725313,No,Yes
+2313995,ECR International,Dunkirk Boilers,VX series,VX-200,,Boiler,"Natural Gas,Propane Gas",95,08/15/2014,03/26/2018,United States,ES_1017619_VX-200_03262018140409_0775437,No,Yes
+2323501,ECR International,ECR International,ECR-122,ECR-122,,Boiler,"Natural Gas,Propane Gas",95,08/01/2018,07/31/2018,"United States, Canada",ES_1017619_ECR-122_07312018193609_6077826,No,Yes
+2323502,ECR International,ECR International,ECR-147,ECR-147,,Boiler,"Natural Gas,Propane Gas",95,08/01/2018,07/31/2018,"United States, Canada",ES_1017619_ECR-147_07312018193612_1727191,Yes,Yes
+2323503,ECR International,ECR International,ECR-160,ECR-160,,Boiler,"Natural Gas,Propane Gas",95,08/01/2018,07/31/2018,"United States, Canada",ES_1017619_ECR-160_07312018193614_7376555,No,Yes
+2323504,ECR International,ECR International,ECR-200,ECR-200,,Boiler,"Natural Gas,Propane Gas",95,08/01/2018,07/31/2018,"United States, Canada",ES_1017619_ECR-200_07312018193616_3025920,Yes,Yes
+2323505,ECR International,ECR International,ECR-227,ECR-227,,Boiler,"Natural Gas,Propane Gas",95,08/01/2018,07/31/2018,"United States, Canada",ES_1017619_ECR-227_07312018193619_7562469,No,Yes
+2314014,ECR International,ECR International,ECR97gb,ECR97A-075,,Boiler,"Natural Gas,Propane Gas",95,07/01/2011,03/26/2018,"United States, Canada",ES_1017619_ECR97A-075_03262018140932_5582146,No,Yes
+2314013,ECR International,ECR International,ECR97gb,ECR97A-100,,Boiler,"Natural Gas,Propane Gas",95,07/01/2011,03/26/2018,"United States, Canada",ES_1017619_ECR97A-100_03262018140930_1928840,No,Yes
+2328028,ECR International,GREEN MOUNTAIN,ECR-122,ECR-122,,Boiler,"Natural Gas,Propane Gas",95,08/01/2018,10/18/2018,"United States, Canada",ES_1017619_ECR-122_10182018150754_1231699,No,Yes
+2328030,ECR International,GREEN MOUNTAIN,GMCB150,GMCB150,,Boiler,"Natural Gas,Propane Gas",95,09/01/2018,10/18/2018,United States,ES_1017619_GMCB150_10182018150759_7513917,Yes,Yes
+2328032,ECR International,GREEN MOUNTAIN,GMCB200,GMCB200,,Boiler,"Natural Gas,Propane Gas",95,09/01/2018,10/18/2018,United States,ES_1017619_GMCB200_10182018150804_5747984,Yes,Yes
+2328029,ECR International,GREEN MOUNTAIN,GMHB125,GMHB125,,Boiler,"Natural Gas,Propane Gas",95,09/01/2018,10/18/2018,"United States, Canada",ES_1017619_GMHB125_10182018150757_6009011,No,Yes
+2328031,ECR International,GREEN MOUNTAIN,GMHB160,GMHB160,,Boiler,"Natural Gas,Propane Gas",95,09/01/2018,10/18/2018,United States,ES_1017619_GMHB160_10182018150802_1178415,No,Yes
+2328033,ECR International,GREEN MOUNTAIN,GMHB227,GMHB227,,Boiler,"Natural Gas,Propane Gas",95,09/01/2018,10/18/2018,United States,ES_1017619_GMHB227_10182018150806_2302421,No,Yes
+2314025,ECR International,Olsen,OLSSC Series,OLSSC-050,,Boiler,"Natural Gas,Propane Gas",95,07/01/2011,03/26/2018,Canada,ES_1017619_OLSSC-050_03262018140952_8392737,No,Yes
+2314026,ECR International,Olsen,OLSSC Series,OLSSC-075,,Boiler,"Natural Gas,Propane Gas",95,07/01/2011,03/26/2018,Canada,ES_1017619_OLSSC-075_03262018140955_9711730,No,Yes
+2314027,ECR International,Olsen,OLSSC Series,OLSSC-100,,Boiler,"Natural Gas,Propane Gas",95,07/01/2011,03/26/2018,Canada,ES_1017619_OLSSC-100_03262018140957_4793497,No,Yes
+2314028,ECR International,Olsen,OLSSC Series,OLSSC-150,,Boiler,"Natural Gas,Propane Gas",95,07/01/2011,03/26/2018,Canada,ES_1017619_OLSSC-150_03262018140959_6079470,No,Yes
+2314029,ECR International,Olsen,OLSSC series,OLSSC-200,,Boiler,"Natural Gas,Propane Gas",95,02/01/2012,03/26/2018,Canada,ES_1017619_OLSSC-200_03262018141001_5097951,No,Yes
+2314032,ECR International,Olsen,OLSSC series,OLSSC-299,,Boiler,"Natural Gas,Propane Gas",95,03/06/2013,03/26/2018,Canada,ES_1017619_OLSSC-299_03262018141007_8532324,No,Yes
+2313996,ECR International,Olsen,OLSSV series,OLSSV-050,,Boiler,"Natural Gas,Propane Gas",95,08/15/2014,03/26/2018,Canada,ES_1017619_OLSSV-050_03262018140411_0632951,No,Yes
+2313997,ECR International,Olsen,OLSSV series,OLSSV-075,,Boiler,"Natural Gas,Propane Gas",95,08/15/2014,03/26/2018,Canada,ES_1017619_OLSSV-075_03262018140413_8746359,No,Yes
+2313998,ECR International,Olsen,OLSSV series,OLSSV-100,,Boiler,"Natural Gas,Propane Gas",95,08/15/2014,03/26/2018,Canada,ES_1017619_OLSSV-100_03262018140414_1843259,No,Yes
+2313999,ECR International,Olsen,OLSSV series,OLSSV-150,,Boiler,"Natural Gas,Propane Gas",95,08/15/2014,03/26/2018,Canada,ES_1017619_OLSSV-150_03262018140416_9748924,No,Yes
+2314000,ECR International,Olsen,OLSSV series,OLSSV-200,,Boiler,"Natural Gas,Propane Gas",95,08/15/2014,03/26/2018,Canada,ES_1017619_OLSSV-200_03262018140418_2878844,No,Yes
+2313982,ECR International,Utica Boilers,MAC-150,MAC-150,,Boiler,"Natural Gas,Propane Gas",95,05/01/2016,03/26/2018,"United States, Canada",ES_1017619_MAC-150_03262018135610_3046913,Yes,Yes
+2313987,ECR International,Utica Boilers,MAC-205,MAC-205,,Boiler,"Natural Gas,Propane Gas",95,03/01/2018,03/26/2018,"United States, Canada",ES_1017619_MAC-205_03262018135620_4452209,Yes,Yes
+2313983,ECR International,Utica Boilers,MAH-125,MAH-125,,Boiler,"Natural Gas,Propane Gas",95,05/01/2016,03/26/2018,"United States, Canada",ES_1017619_MAH-125_03262018135612_4856274,No,Yes
+2313986,ECR International,Utica Boilers,MAH-165,MAH-165,,Boiler,"Natural Gas,Propane Gas",95,03/01/2018,03/26/2018,"United States, Canada",ES_1017619_MAH-165_03262018135619_5259004,No,Yes
+2314001,ECR International,Utica Boilers,SSV Series,SSV-050,,Boiler,"Natural Gas,Propane Gas",95,08/15/2014,03/26/2018,"United States, Canada",ES_1017619_SSV-050_03262018140420_1864306,No,Yes
+2314002,ECR International,Utica Boilers,SSV Series,SSV-075,,Boiler,"Natural Gas,Propane Gas",95,08/15/2014,03/26/2018,"United States, Canada",ES_1017619_SSV-075_03262018140422_4437817,No,Yes
+2314003,ECR International,Utica Boilers,SSV Series,SSV-100,,Boiler,"Natural Gas,Propane Gas",95,08/15/2014,03/26/2018,"United States, Canada",ES_1017619_SSV-100_03262018140424_7883380,No,Yes
+2314004,ECR International,Utica Boilers,SSV Series,SSV-150,,Boiler,"Natural Gas,Propane Gas",95,08/15/2014,03/26/2018,"United States, Canada",ES_1017619_SSV-150_03262018140426_6868842,No,Yes
+2314005,ECR International,Utica Boilers,SSV Series,SSV-200,,Boiler,"Natural Gas,Propane Gas",95,08/15/2014,03/26/2018,"United States, Canada",ES_1017619_SSV-200_03262018140429_5679579,No,Yes
+2248250,ECR International,Utica Boilers,Utica TriFire,TRB4075,,Boiler,Oil,87,05/15/2012,09/21/2015,United States,ES_1017619_09212015103400_8059288,No,No
+2314006,ECR International,Utica Boilers,Utica TriFire,TRB5100,,Boiler,Oil,87,05/15/2012,03/26/2018,United States,ES_1017619_TRB5100_03262018140817_2441218,No,No
+2314007,ECR International,Utica Boilers,Utica TriFire,TRB6130,,Boiler,Oil,87,05/15/2012,03/26/2018,United States,ES_1017619_TRB6130_03262018140819_0870272,No,No
+2314008,ECR International,Utica Boilers,Utica TriFire,TRB7165,,Boiler,Oil,87,05/15/2012,03/26/2018,United States,ES_1017619_TRB7165_03262018140821_9365364,No,No
+2314020,ECR International,Utica Boilers,UBSSC Series,UBSSC-050,,Boiler,"Natural Gas,Propane Gas",95,07/01/2011,03/26/2018,"United States, Canada",ES_1017619_UBSSC-050_03262018140943_2177893,No,Yes
+2314021,ECR International,Utica Boilers,UBSSC Series,UBSSC-075,,Boiler,"Natural Gas,Propane Gas",95,07/01/2011,03/26/2018,"United States, Canada",ES_1017619_UBSSC-075_03262018140945_3115202,No,Yes
+2314022,ECR International,Utica Boilers,UBSSC Series,UBSSC-100,,Boiler,"Natural Gas,Propane Gas",95,07/01/2011,03/26/2018,"United States, Canada",ES_1017619_UBSSC-100_03262018140947_6245120,No,Yes
+2314023,ECR International,Utica Boilers,UBSSC Series,UBSSC-150,,Boiler,"Natural Gas,Propane Gas",95,07/01/2011,03/26/2018,"United States, Canada",ES_1017619_UBSSC-150_03262018140949_2165920,No,Yes
+2314024,ECR International,Utica Boilers,UBSSC Series,UBSSC-200,,Boiler,"Natural Gas,Propane Gas",95,02/01/2012,03/26/2018,"United States, Canada",ES_1017619_UBSSC-200_03262018140950_5262819,No,Yes
+2314031,ECR International,Utica Boilers,UBSSC Series,UBSSC-299,,Boiler,"Natural Gas,Propane Gas",95,08/16/2013,03/26/2018,"United States, Canada",ES_1017619_UBSSC-299_03262018141005_9513842,No,Yes
+2313981,ECR International,Utica Boilers,UCS-240,UCS-240,,Boiler,"Natural Gas,Propane Gas",95,03/07/2017,03/26/2018,"United States, Canada",ES_1017619_UCS-240_03262018134934_3834737,No,Yes
+2221923,Energy Kinetics System 2000,Energy Kinetics,Accel CS EK1C,Accel CS EK1C 120,"Condensing,Max Input 120,000 Btu/Hr, Min Input 24,000 Btu/Hr,",Boiler,"Natural Gas,Propane Gas",96,01/01/2013,08/29/2014,United States,ES_22949_Accel CS EK1C 120_10082014161117_4677961,Yes,Yes
+2221884,Energy Kinetics System 2000,Energy Kinetics,Accel CS EK1C,Accel CS EK1C 90,"Condensing,Max Input 90,000 Btu/Hr, Min Input 18,000 Btu/Hr,",Boiler,"Natural Gas,Propane Gas",97,01/01/2013,10/17/2016,United States,ES_22949_Accel CS EK1C 90_10082014160131_4091815,Yes,Yes
+2221885,Energy Kinetics System 2000,Energy Kinetics,Accel CS EK2C,Accel CS EK2C 150,"Condensing,Max Input 150,000 Btu/Hr, Min Input 30,000 Btu/Hr,",Boiler,"Natural Gas,Propane Gas",95,08/01/2014,08/29/2014,United States,ES_22949_Accel CS EK2C 150_10082014162234_5354531,Yes,Yes
+2221886,Energy Kinetics System 2000,Energy Kinetics,Accel CS EK2C,Accel CS EK2C 200,"Condensing,Max Input 200,000 Btu/Hr, Min Input 40,000 Btu/Hr,",Boiler,"Natural Gas,Propane Gas",95,08/01/2014,08/29/2014,United States,ES_22949_Accel CS EK2C 200_10082014161736_5056052,Yes,Yes
+2324980,Energy Kinetics System 2000,Energy Kinetics,Resolute RT,EK1RT,"Accent Combi Plus,EK1TP,",Boiler,Oil,91,09/01/2018,08/28/2018,United States,ES_22949_EK1RT_08282018165719_5439647,Yes,Yes
+2303590,Energy Kinetics System 2000,Energy Kinetics,Ascent,EK-1T,",,Non-condensing, #2 Oil-Fired, Ascent Combi EK1T Max Input 175,000 Btu/Hr, Min Input 119,000 Btu/Hr; Accel CS EK2C,Accel CS EK2C 150,; Condensing,Max Input 150,000 Btu/Hr, Min Input 30,000 Btu/Hr,",Boiler,Oil,87,09/01/2017,09/14/2017,United States,ES_22949_EK-1T_09142017163937_7177044,Yes,No
+2324988,Energy Kinetics System 2000,Energy Kinetics,Frontier,EK2F,,Boiler,Oil,88,08/21/2018,08/28/2018,United States,ES_22949_EK2F_08282018174158_8118293,Yes,No
+2220170,Energy Kinetics System 2000,Energy Kinetics,Frontier EK1F,Frontier EK1F,",Non-condensing, 0.85 gph firing rate,",Boiler,Oil,88,01/01/1997,08/29/2014,United States,ES_22949_Frontier EK1F_09242014221228_6748452,Yes,No
+2220182,Energy Kinetics System 2000,Energy Kinetics,Resolute EK1R,Resolute EK1R,",Non-condensing, 0.74 gph firing rate,",Boiler,Oil,91,01/01/2013,08/29/2014,United States,ES_22949_Resolute EK1R_09252014115242_5962920,Yes,Yes
+2234011,Energy Kinetics System 2000,Energy Kinetics,Resolute EK1R,Resolute EK1R,,Boiler,"Natural Gas,Propane Gas",90,01/01/2013,03/02/2015,United States,ES_22949_Resolute EK1R_03022015172139_6899500,Yes,No
+2335414,Glow Technologies Inc,Glow Brand,C140,C140,,Boiler,Natural Gas,95,01/30/2019,02/28/2019,"United States, Canada",ES_1139213_C140_03152019143358_1673852,No,Yes
+2334074,Glow Technologies Inc,Glow Brand,C95,C95,,Boiler,Natural Gas,95,01/30/2019,02/28/2019,"United States, Canada",ES_1139213_C95_02252019150210_5704767,No,Yes
+2313326,HTP Comfort Solutions LLC,HTP,Elite Fire Tube,EFT-110,,Boiler,"Natural Gas,Propane Gas",95,11/11/2011,02/20/2019,"United States, Canada",ES_29975_EFT-110_03232018171723_0387361,No,Yes
+2313327,HTP Comfort Solutions LLC,HTP,Elite Fire Tube,EFT-155,,Boiler,"Natural Gas,Propane Gas",95,07/12/2012,03/23/2018,"United States, Canada",ES_29975_EFT-155_03232018171725_2404465,No,Yes
+2323516,HTP Comfort Solutions LLC,HTP,Elite FT,EFT-199,,Boiler,"Natural Gas,Propane Gas",95,07/12/2012,07/31/2018,"United States, Canada",ES_29975_EFT-199_07312018203705_7407743,No,Yes
+2313328,HTP Comfort Solutions LLC,HTP,Elite Fire Tube,EFT-285,,Boiler,"Natural Gas,Propane Gas",95,07/17/2012,03/23/2018,"United States, Canada",ES_29975_EFT-285_03232018171726_3026129,No,Yes
+2313324,HTP Comfort Solutions LLC,HTP,Elite Fire Tube,EFT-55,,Boiler,"Natural Gas,Propane Gas",96,11/11/2011,03/23/2018,"United States, Canada",ES_29975_EFT-55_03232018171719_8828387,No,Yes
+2313325,HTP Comfort Solutions LLC,HTP,Elite Fire Tube,EFT-80,,Boiler,"Natural Gas,Propane Gas",96,11/11/2011,03/23/2018,"United States, Canada",ES_29975_EFT-80_03232018171721_5862001,No,Yes
+2322436,HTP Comfort Solutions LLC,HTP,EFT Combi,EFTC-140F,,Boiler,"Natural Gas,Propane Gas",93,09/14/2015,07/10/2018,"United States, Canada",ES_29975_EFTC-140F_07102018200856_0100051,Yes,No
+2322437,HTP Comfort Solutions LLC,HTP,Combi FT,EFTC-140W,,Boiler,"Natural Gas,Propane Gas",95,07/07/2015,07/10/2018,"United States, Canada",ES_29975_EFTC-140W_07102018200907_9567590,Yes,Yes
+2322438,HTP Comfort Solutions LLC,HTP,Combi FT,EFTC-199F,,Boiler,"Natural Gas,Propane Gas",95,09/28/2017,07/10/2018,"United States, Canada",ES_29975_EFTC-199F_07102018200910_0375169,Yes,Yes
+2322439,HTP Comfort Solutions LLC,HTP,Combi FT,EFTC-199W,,Boiler,"Natural Gas,Propane Gas",95,09/28/2017,07/10/2018,"United States, Canada",ES_29975_EFTC-199W_07102018200913_5991513,Yes,Yes
+2313295,HTP Comfort Solutions LLC,HTP,Elite Premier,EP-110,,Boiler,"Natural Gas,Propane Gas",96,11/25/2016,03/23/2018,"United States, Canada",ES_29975_EP-110_03232018170033_8568925,No,Yes
+2313296,HTP Comfort Solutions LLC,HTP,Elite Premier,EP-150,,Boiler,"Natural Gas,Propane Gas",95,01/19/2016,03/23/2018,"United States, Canada",ES_29975_EP-150_03232018170035_3094285,No,Yes
+2313297,HTP Comfort Solutions LLC,HTP,Elite Premier,EP-220,,Boiler,"Natural Gas,Propane Gas",95,01/20/2016,03/23/2018,"United States, Canada",ES_29975_EP-220_03232018170037_1207694,No,Yes
+2313298,HTP Comfort Solutions LLC,HTP,Elite Premier,EP-299,,Boiler,"Natural Gas,Propane Gas",94,11/25/2015,03/23/2018,"United States, Canada",ES_29975_EP-299_03232018170038_8556952,No,No
+2313294,HTP Comfort Solutions LLC,HTP,Elite Premier,EP-80,,Boiler,"Natural Gas,Propane Gas",96,01/28/2016,03/23/2018,"United States, Canada",ES_29975_EP-80_03232018170030_5821473,No,Yes
+2225126,HTP Comfort Solutions LLC,HTP,PHR100-55,PHR100-55,,Boiler,"Natural Gas,Propane Gas",94,08/19/2009,11/14/2014,"United States, Canada",ES_29975_PHR100-55_11112014140239_5382501,Yes,No
+2225127,HTP Comfort Solutions LLC,HTP,PHR130-55,PHR130-55,,Boiler,"Natural Gas,Propane Gas",93,08/19/2009,11/14/2014,"United States, Canada",ES_29975_PHR130-55_11112014140831_2129175,Yes,No
+2225129,HTP Comfort Solutions LLC,HTP,PHR160-55,PHR160-55,,Boiler,"Natural Gas,Propane Gas",94,09/23/2010,11/14/2014,"United States, Canada",ES_29975_PHR160-55_10242014142022_7150384,Yes,No
+2225139,HTP Comfort Solutions LLC,HTP,PHR199-55,PHR199-55,,Boiler,"Natural Gas,Propane Gas",93,10/05/2009,11/14/2014,"United States, Canada",ES_29975_PHR199-55_10242014142526_5546686,Yes,No
+2313305,HTP Comfort Solutions LLC,HTP,Universal Fire Tube,UFT-100*,,Boiler,"Natural Gas,Propane Gas",95,06/11/2015,03/23/2018,"United States, Canada",ES_29975_UFT-100*_03232018170141_8798869,No,Yes
+2313306,HTP Comfort Solutions LLC,HTP,Universal Fire Tube,UFT-120*,,Boiler,"Natural Gas,Propane Gas",95,01/21/2016,03/23/2018,"United States, Canada",ES_29975_UFT-120*_03232018170143_1928789,No,Yes
+2313307,HTP Comfort Solutions LLC,HTP,Universal Fire Tube,UFT-140*,,Boiler,"Natural Gas,Propane Gas",95,01/21/2016,03/23/2018,"United States, Canada",ES_29975_UFT-140*_03232018170145_0357843,No,Yes
+2313308,HTP Comfort Solutions LLC,HTP,Universal Fire Tube,UFT-175*,,Boiler,"Natural Gas,Propane Gas",95,11/20/2015,03/23/2018,"United States, Canada",ES_29975_UFT-175*_03232018170147_2407966,No,Yes
+2313309,HTP Comfort Solutions LLC,HTP,Universal Fire Tube,UFT-199*,,Boiler,"Natural Gas,Propane Gas",96,11/20/2015,03/23/2018,"United States, Canada",ES_29975_UFT-199*_03232018170149_4981478,No,Yes
+2313304,HTP Comfort Solutions LLC,HTP,Universal Fire Tube,UFT-80*,,Boiler,"Natural Gas,Propane Gas",95,06/11/2015,03/23/2018,"United States, Canada",ES_29975_UFT-80*_03232018170139_7305153,No,Yes
+2313320,HTP Comfort Solutions LLC,HTP,UFT Combi,UFTC-140*,,Boiler,"Natural Gas,Propane Gas",96,09/28/2017,03/23/2018,"United States, Canada",ES_29975_UFTC-140*_03232018171705_2753465,No,Yes
+2313321,HTP Comfort Solutions LLC,HTP,UFT Combi,UFTC-199*,,Boiler,"Natural Gas,Propane Gas",95,09/28/2017,03/23/2018,"United States, Canada",ES_29975_UFTC-199*_03232018171707_3768003,No,Yes
+2323519,HTP Comfort Solutions LLC,Westinghouse,Combi,WBRCLP140F,,Boiler,Propane Gas,93,09/28/2017,07/31/2018,"United States, Canada",ES_29975_WBRCLP140F_07312018203843_2405506,Yes,No
+2313317,HTP Comfort Solutions LLC,Westinghouse,Combi,WBRCLP140W,,Boiler,Propane Gas,96,09/28/2017,03/23/2018,"United States, Canada",ES_29975_WBRCLP140W_03232018171659_7583277,Yes,Yes
+2323521,HTP Comfort Solutions LLC,Westinghouse,Combi,WBRCLP199F,,Boiler,Propane Gas,95,09/28/2017,07/31/2018,"United States, Canada",ES_29975_WBRCLP199F_07312018203848_5448339,Yes,Yes
+2313319,HTP Comfort Solutions LLC,Westinghouse,Combi,WBRCLP199W,,Boiler,Propane Gas,95,09/28/2017,03/23/2018,"United States, Canada",ES_29975_WBRCLP199W_03232018171703_5642620,Yes,Yes
+2323817,HTP Comfort Solutions LLC,Westinghouse,Combi,WBRCNG140F,,Boiler,Natural Gas,93,09/14/2015,11/05/2018,"United States, Canada",ES_29975_WBRCNG140F_08012018234645_4735881,Yes,No
+2313316,HTP Comfort Solutions LLC,Westinghouse,Combi,WBRCNG140W,,Boiler,Natural Gas,96,09/28/2017,12/18/2018,"United States, Canada",ES_29975_WBRCNG140W_03232018171657_5488943,Yes,Yes
+2323520,HTP Comfort Solutions LLC,Westinghouse,Combi,WBRCNG199F,,Boiler,Natural Gas,95,09/28/2017,07/31/2018,"United States, Canada",ES_29975_WBRCNG199F_07312018203846_2514973,Yes,Yes
+2313318,HTP Comfort Solutions LLC,Westinghouse,Combi,WBRCNG199W,,Boiler,Natural Gas,95,09/28/2017,03/23/2018,"United States, Canada",ES_29975_WBRCNG199W_03232018171701_5740897,Yes,Yes
+2313299,HTP Comfort Solutions LLC,Westinghouse,Premier,WBRE**080,,Boiler,"Natural Gas,Propane Gas",96,01/28/2016,03/23/2018,"United States, Canada",ES_29975_WBRE**080_03232018170040_9702004,No,Yes
+2313300,HTP Comfort Solutions LLC,Westinghouse,Premier,WBRE**110,,Boiler,"Natural Gas,Propane Gas",96,11/25/2016,03/23/2018,"United States, Canada",ES_29975_WBRE**110_03232018170042_7815413,No,Yes
+2313301,HTP Comfort Solutions LLC,Westinghouse,Premier,WBRE**150,,Boiler,"Natural Gas,Propane Gas",95,01/19/2016,03/23/2018,"United States, Canada",ES_29975_WBRE**150_03232018170044_6800875,No,Yes
+2313302,HTP Comfort Solutions LLC,Westinghouse,Premier,WBRE**220,,Boiler,"Natural Gas,Propane Gas",95,01/20/2016,03/23/2018,"United States, Canada",ES_29975_WBRE**220_03232018170046_6135000,No,Yes
+2313303,HTP Comfort Solutions LLC,Westinghouse,Premier,WBRE**299,,Boiler,"Natural Gas,Propane Gas",94,11/25/2015,03/23/2018,"United States, Canada",ES_29975_WBRE**299_03232018170048_8359847,No,No
+2313330,HTP Comfort Solutions LLC,Westinghouse,High Efficiency Fire Tube,WBRLP055,,Boiler,Propane Gas,96,11/11/2017,03/23/2018,"United States, Canada",ES_29975_WBRLP055_03232018171730_1869104,No,Yes
+2313332,HTP Comfort Solutions LLC,Westinghouse,High Efficiency Fire Tube,WBRLP080,,Boiler,Propane Gas,96,11/11/2011,03/23/2018,"United States, Canada",ES_29975_WBRLP080_03232018171734_4507872,No,Yes
+2313334,HTP Comfort Solutions LLC,Westinghouse,High Efficiency Fire Tube,WBRLP110,,Boiler,Propane Gas,95,11/11/2011,03/23/2018,"United States, Canada",ES_29975_WBRLP110_03232018171738_1432019,No,Yes
+2313336,HTP Comfort Solutions LLC,Westinghouse,High Efficiency Fire Tube,WBRLP155,,Boiler,Propane Gas,95,07/12/2012,03/23/2018,"United States, Canada",ES_29975_WBRLP155_03232018171742_6579041,No,Yes
+2323518,HTP Comfort Solutions LLC,Westinghouse,High Efficiency Fire Tube,WBRLP199,,Boiler,Propane Gas,95,07/12/2012,07/31/2018,"United States, Canada",ES_29975_WBRLP199_07312018203709_9022117,No,Yes
+2313338,HTP Comfort Solutions LLC,Westinghouse,High Efficiency Fire Tube,WBRLP285,,Boiler,Propane Gas,95,07/12/2012,03/23/2018,"United States, Canada",ES_29975_WBRLP285_03232018171746_0994934,No,Yes
+2313329,HTP Comfort Solutions LLC,Westinghouse,High Efficiency Fire Tube,WBRNG055,,Boiler,Natural Gas,96,11/11/2017,03/23/2018,"United States, Canada",ES_29975_WBRNG055_03232018171728_9503335,No,Yes
+2313331,HTP Comfort Solutions LLC,Westinghouse,High Efficiency Fire Tube,WBRNG080,,Boiler,Natural Gas,96,11/11/2011,03/23/2018,"United States, Canada",ES_29975_WBRNG080_03232018171732_3570563,No,Yes
+2313333,HTP Comfort Solutions LLC,Westinghouse,High Efficiency Fire Tube,WBRNG110,,Boiler,Natural Gas,95,11/11/2011,03/23/2018,"United States, Canada",ES_29975_WBRNG110_03232018171736_9066250,No,Yes
+2313335,HTP Comfort Solutions LLC,Westinghouse,High Efficiency Fire Tube,WBRNG155,,Boiler,Natural Gas,95,07/12/2012,03/23/2018,"United States, Canada",ES_29975_WBRNG155_03232018171740_5085325,No,Yes
+2323517,HTP Comfort Solutions LLC,Westinghouse,High Efficiency Fire Tube,WBRNG199,,Boiler,Natural Gas,95,07/12/2012,07/31/2018,"United States, Canada",ES_29975_WBRNG199_07312018203707_3372753,No,Yes
+2313337,HTP Comfort Solutions LLC,Westinghouse,High Efficiency Fire Tube,WBRNG285,,Boiler,Natural Gas,95,07/12/2012,03/23/2018,"United States, Canada",ES_29975_WBRNG285_03232018171745_8977829,No,Yes
+2313310,HTP Comfort Solutions LLC,Westinghouse,Medium Mass Boiler,WBRU**080*,,Boiler,"Natural Gas,Propane Gas",95,06/11/2015,03/23/2018,"United States, Canada",ES_29975_WBRU**080*_03232018170150_7870633,No,Yes
+2313311,HTP Comfort Solutions LLC,Westinghouse,Medium Mass Boiler,WBRU**100*,,Boiler,"Natural Gas,Propane Gas",95,06/11/2015,03/23/2018,"United States, Canada",ES_29975_WBRU**100*_03232018170152_1316198,No,Yes
+2313312,HTP Comfort Solutions LLC,Westinghouse,Medium Mass Boiler,WBRU**120*,,Boiler,"Natural Gas,Propane Gas",95,01/21/2016,03/23/2018,"United States, Canada",ES_29975_WBRU**120*_03232018170154_2461250,No,Yes
+2323658,"New Yorker Boiler Company, Inc.",New Yorker,GHE,GHE150CB,,Boiler,"Natural Gas,Propane Gas",95,08/01/2017,07/31/2018,United States,ES_1016199_GHE150CB_08012018000059_8742459,Yes,Yes
+2328112,"New Yorker Boiler Company, Inc.",New Yorker,GHE-HB,GHE150HB,,Boiler,"Natural Gas,Propane Gas",95,10/01/2018,11/05/2018,United States,ES_1016199_GHE150HB_10192018200304_9389817,No,Yes
+2323656,"New Yorker Boiler Company, Inc.",New Yorker,GHE,GHE180B,,Boiler,"Natural Gas,Propane Gas",95,04/17/2017,07/31/2018,United States,ES_1016199_GHE180B_08012018000054_2634963,No,Yes
+2328037,"New Yorker Boiler Company, Inc.",New Yorker,GHE-HB,GHE180HB,,Boiler,"Natural Gas,Propane Gas",95,10/01/2018,10/18/2018,United States,ES_1016199_GHE180HB_10182018151440_9643508,No,Yes
+2323659,"New Yorker Boiler Company, Inc.",New Yorker,GHE,GHE180M,,Boiler,"Natural Gas,Propane Gas",94,08/01/2017,07/31/2018,United States,ES_1016199_GHE180M_08012018000101_8295518,No,No
+2328034,"New Yorker Boiler Company, Inc.",New Yorker,GHE-HB,GHE80HB,,Boiler,"Natural Gas,Propane Gas",95,10/01/2018,10/18/2018,United States,ES_1016199_GHE80HB_10182018151431_6697386,No,Yes
+2313366,Noritz America Corporation,Noritz,CB180-DV,CB180-DV,,Boiler,"Natural Gas,Propane Gas",95,01/15/2016,03/23/2018,"United States, Canada",ES_1070591_CB180-DV_03232018173050_4895488,Yes,Yes
+2313367,Noritz America Corporation,Noritz,CB199-DV,CB199-DV,,Boiler,"Natural Gas,Propane Gas",95,01/15/2016,03/23/2018,"United States, Canada",ES_1070591_CB199-DV_03232018173052_3565305,Yes,Yes
+2313364,Noritz America Corporation,Noritz,NRCB180DV,NRCB180DV (GHQ-C2801WX-FF US),,Boiler,"Natural Gas,Propane Gas",95,09/01/2017,03/23/2018,"United States, Canada",ES_1070591_NRCB180DV (GHQ-C2801WX-FF US)_03232018173046_9574524,Yes,Yes
+2313365,Noritz America Corporation,Noritz,NRCB199DV,NRCB199DV (GHQ-C3201WX-FF US),,Boiler,"Natural Gas,Propane Gas",95,09/01/2017,03/23/2018,"United States, Canada",ES_1070591_NRCB199DV (GHQ-C3201WX-FF US)_03232018173048_1624648,Yes,Yes
+2313973,NY Thermal Inc.,NTI,FTV,FTV110,,Boiler,"Natural Gas,Propane Gas",95,02/03/2018,03/26/2018,"United States, Canada",ES_1016238_FTV110_03262018133131_0746731,No,Yes
+2313975,NY Thermal Inc.,NTI,FTV,FTV110C,,Boiler,"Natural Gas,Propane Gas",95,02/03/2018,03/26/2018,"United States, Canada",ES_1016238_FTV110C_03262018133135_9187757,Yes,Yes
+2313976,NY Thermal Inc.,NTI,FTV,FTV150,,Boiler,"Natural Gas,Propane Gas",95,02/03/2018,03/26/2018,"United States, Canada",ES_1016238_FTV150_03262018133137_7137634,No,Yes
+2313977,NY Thermal Inc.,NTI,FTV,FTV150C,,Boiler,"Natural Gas,Propane Gas",95,02/03/2018,03/26/2018,"United States, Canada",ES_1016238_FTV150C_03262018133139_8883304,Yes,Yes
+2313974,NY Thermal Inc.,NTI,FTV,FTV190,,Boiler,"Natural Gas,Propane Gas",95,02/03/2018,03/26/2018,"United States, Canada",ES_1016238_FTV190_03262018133133_7301167,No,Yes
+2313978,NY Thermal Inc.,NTI,FTV,FTV190C,,Boiler,"Natural Gas,Propane Gas",95,02/03/2018,03/26/2018,"United States, Canada",ES_1016238_FTV190C_03262018133142_7356568,Yes,Yes
+2329417,NY Thermal Inc.,NTI,Trinity,LX150,,Boiler,"Natural Gas,Propane Gas",93,01/30/2009,12/13/2018,"United States, Canada",ES_1016238_LX150_11092018222144_8556191,No,No
+2329419,NY Thermal Inc.,NTI,Trinity,LX200,,Boiler,"Natural Gas,Propane Gas",93,01/30/2009,12/13/2018,"United States, Canada",ES_1016238_LX200_11092018222149_8162533,No,No
+2329420,NY Thermal Inc.,NTI,Trinity,LX300,,Boiler,"Natural Gas,Propane Gas",93,07/14/2010,12/13/2018,"United States, Canada",ES_1016238_LX300_11092018222151_6657627,No,No
+2329260,NY Thermal Inc.,NTI,Trinity,TFT110,,Boiler,"Natural Gas,Propane Gas",95,11/22/2011,12/18/2018,"United States, Canada",ES_1016238_TFT110_11062018203445_7974852,No,Yes
+2329266,NY Thermal Inc.,NTI,Trinity,TFT154,,Boiler,"Natural Gas,Propane Gas",95,06/01/2016,12/18/2018,"United States, Canada",ES_1016238_TFT154_11062018203504_3751830,No,Yes
+2329261,NY Thermal Inc.,NTI,Trinity,TFT155,,Boiler,"Natural Gas,Propane Gas",95,11/22/2011,12/18/2018,"United States, Canada",ES_1016238_TFT155_11062018203449_3437520,No,Yes
+2329262,NY Thermal Inc.,NTI,Trinity,TFT175,,Boiler,"Natural Gas,Propane Gas",95,11/22/2011,12/18/2018,"United States, Canada",ES_1016238_TFT175_11062018203452_6741380,No,Yes
+2329263,NY Thermal Inc.,NTI,Trinity,TFT200,,Boiler,"Natural Gas,Propane Gas",95,11/22/2011,12/18/2018,"United States, Canada",ES_1016238_TFT200_11062018203454_4156678,No,Yes
+2329267,NY Thermal Inc.,NTI,Trinity,TFT201,,Boiler,"Natural Gas,Propane Gas",95,08/01/2018,11/06/2018,"United States, Canada",ES_1016238_TFT201_11062018203507_7088709,No,Yes
+2329264,NY Thermal Inc.,NTI,Trinity,TFT250,,Boiler,"Natural Gas,Propane Gas",95,11/22/2011,12/18/2018,"United States, Canada",ES_1016238_TFT250_11062018203457_2825712,No,Yes
+2313979,NY Thermal Inc.,NTI,Trinity,TFT285,,Boiler,"Natural Gas,Propane Gas",95,08/21/2017,03/26/2018,"United States, Canada",ES_1016238_TFT285_03262018133818_5970051,No,Yes
+2329265,NY Thermal Inc.,NTI,Trinity,TFT300,,Boiler,"Natural Gas,Propane Gas",94,11/22/2011,12/18/2018,"United States, Canada",ES_1016238_TFT300_11062018203501_4210744,No,No
+2329258,NY Thermal Inc.,NTI,Trinity,TFT60,,Boiler,"Natural Gas,Propane Gas",95,11/22/2011,12/18/2018,"United States, Canada",ES_1016238_TFT60_11062018203436_2665080,No,Yes
+2329259,NY Thermal Inc.,NTI,Trinity,TFT85,,Boiler,"Natural Gas,Propane Gas",95,11/22/2011,12/18/2018,"United States, Canada",ES_1016238_TFT85_11062018203441_2512185,No,Yes
+2329416,NY Thermal Inc.,NTI,Trinity,TI100,,Boiler,"Natural Gas,Propane Gas",93,10/01/2004,12/13/2018,"United States, Canada",ES_1016238_TI100_11092018222141_2569353,No,No
+2329415,NY Thermal Inc.,NTI,Trinity,TI150,,Boiler,"Natural Gas,Propane Gas",93,10/01/2004,12/13/2018,"United States, Canada",ES_1016238_TI150_11092018222123_6792375,No,No
+2329418,NY Thermal Inc.,NTI,Trinity,TI200,,Boiler,"Natural Gas,Propane Gas",93,10/01/2004,12/13/2018,"United States, Canada",ES_1016238_TI200_11092018222146_9875183,No,No
+2329421,NY Thermal Inc.,NTI,Trinity,TS80,,Boiler,"Natural Gas,Propane Gas",93,06/18/2010,12/13/2018,"United States, Canada",ES_1016238_TS80_11092018222154_6024772,No,No
+2329424,NY Thermal Inc.,NTI,Trinity,TX101,,Boiler,"Natural Gas,Propane Gas",94,03/12/2013,12/18/2018,"United States, Canada",ES_1016238_TX101_11092018223830_8248876,No,No
+2329425,NY Thermal Inc.,NTI,Trinity,TX151,,Boiler,"Natural Gas,Propane Gas",94,03/12/2013,12/18/2018,"United States, Canada",ES_1016238_TX151_11092018223833_6536226,No,No
+2329426,NY Thermal Inc.,NTI,Trinity,TX151C,,Boiler,"Natural Gas,Propane Gas",95,01/08/2016,12/18/2018,"United States, Canada",ES_1016238_TX151C_11092018223835_2315322,Yes,Yes
+2329427,NY Thermal Inc.,NTI,Trinity,TX200,,Boiler,"Natural Gas,Propane Gas",94,07/03/2014,12/18/2018,"United States, Canada",ES_1016238_TX200_11092018223838_0112304,No,No
+2329428,NY Thermal Inc.,NTI,Trinity,TX200C,,Boiler,"Natural Gas,Propane Gas",95,01/08/2016,12/18/2018,"United States, Canada",ES_1016238_TX200C_11092018223841_1256573,Yes,Yes
+2324949,Rinnai America Corporation,Rinnai,M090S,M090S,,Boiler,"Natural Gas,Propane Gas",95,06/25/2018,08/28/2018,"United States, Canada",ES_97439_M090S_08282018152748_7614599,Yes,Yes
+2325136,Rinnai America Corporation,Rinnai,M120C,M120C,,Boiler,"Natural Gas,Propane Gas",95,07/25/2018,08/31/2018,"United States, Canada",ES_97439_M120C_08312018153211_4476253,Yes,Yes
+2325133,Rinnai America Corporation,Rinnai,M120S,M120S,,Boiler,"Natural Gas,Propane Gas",95,06/25/2018,08/31/2018,"United States, Canada",ES_97439_M120S_08312018153200_9832354,Yes,Yes
+2325137,Rinnai America Corporation,Rinnai,M160C,M160C,,Boiler,"Natural Gas,Propane Gas",95,07/25/2018,08/31/2018,"United States, Canada",ES_97439_M160C_08312018153213_8826888,Yes,Yes
+2325134,Rinnai America Corporation,Rinnai,M160S,M160S,,Boiler,"Natural Gas,Propane Gas",95,06/25/2018,08/31/2018,"United States, Canada",ES_97439_M160S_08312018153206_6788738,Yes,Yes
+2313558,Rinnai America Corporation,Rinnai,Q-Series,Q130S,,Boiler,"Natural Gas,Propane Gas",95,07/15/2009,12/18/2018,"United States, Canada",ES_97439_Q130S_03232018204822_4293323,No,Yes
+2313556,Rinnai America Corporation,Rinnai,Q-Series,Q175C,,Boiler,"Natural Gas,Propane Gas",95,07/15/2009,12/18/2018,"United States, Canada",ES_97439_Q175C_03232018204811_1270754,No,Yes
+2313555,Rinnai America Corporation,Rinnai,Q-Series,Q175S,,Boiler,"Natural Gas,Propane Gas",95,07/15/2009,12/18/2018,"United States, Canada",ES_97439_Q175S_03232018204808_9209438,No,Yes
+2313554,Rinnai America Corporation,Rinnai,Q-Series,Q205S,,Boiler,"Natural Gas,Propane Gas",95,07/15/2009,12/18/2018,"United States, Canada",ES_97439_Q205S_03232018204552_4162449,No,Yes
+2313562,Rinnai America Corporation,Rinnai,Q-Series,Q85S,,Boiler,"Natural Gas,Propane Gas",95,07/15/2009,12/13/2018,"United States, Canada",ES_97439_Q85S_03242018211917_8586558,No,Yes
+2328009,Slant/Fin Corporation,Slant/Fin,CHS,CHS-110,,Boiler,"Natural Gas,Propane Gas",95,09/01/2012,11/05/2018,"United States, Canada",ES_22951_CHS-110_10172018221208_5025867,No,Yes
+2328010,Slant/Fin Corporation,Slant/Fin,CHS,CHS-155,,Boiler,"Natural Gas,Propane Gas",95,09/01/2012,11/05/2018,"United States, Canada",ES_22951_CHS-155_10172018221210_2103692,No,Yes
+2328011,Slant/Fin Corporation,Slant/Fin,CHS,CHS-175,,Boiler,"Natural Gas,Propane Gas",95,09/01/2012,11/05/2018,"United States, Canada",ES_22951_CHS-175_10172018221212_4513670,No,Yes
+2328012,Slant/Fin Corporation,Slant/Fin,CHS,CHS-200,,Boiler,"Natural Gas,Propane Gas",95,09/01/2012,11/05/2018,"United States, Canada",ES_22951_CHS-200_10172018221215_0163035,No,Yes
+2328013,Slant/Fin Corporation,Slant/Fin,CHS,CHS-250,,Boiler,"Natural Gas,Propane Gas",95,09/01/2012,11/05/2018,"United States, Canada",ES_22951_CHS-250_10172018221217_7764246,No,Yes
+2328014,Slant/Fin Corporation,Slant/Fin,CHS,CHS-300,,Boiler,"Natural Gas,Propane Gas",94,09/01/2012,11/05/2018,"United States, Canada",ES_22951_CHS-300_10172018221219_6793918,No,No
+2328008,Slant/Fin Corporation,Slant/Fin,CHS,CHS-85,,Boiler,"Natural Gas,Propane Gas",95,09/01/2012,11/05/2018,"United States, Canada",ES_22951_CHS-85_10172018221205_6344860,No,Yes
+2313518,Slant/Fin Corporation,Slant/Fin,Eutectic EC-10DV,EC-13DV,,Boiler,Oil,87,11/17/2008,03/23/2018,"United States, Canada",ES_22951_EC-13DV_03232018200114_2732917,No,No
+2313537,Slant/Fin Corporation,Slant/Fin,Eutectic EC-10,EC-13P,,Boiler,Oil,87,05/09/2008,03/23/2018,"United States, Canada",ES_22951_EC-13P_03232018201128_4805533,No,No
+2313519,Slant/Fin Corporation,Slant/Fin,Eutectic EC-10DV,EC-14DV,,Boiler,Oil,87,11/17/2008,03/23/2018,"United States, Canada",ES_22951_EC-14DV_03232018200116_7291295,No,No
+2313538,Slant/Fin Corporation,Slant/Fin,Eutectic EC-10,EC-14P,,Boiler,Oil,87,05/09/2008,03/23/2018,"United States, Canada",ES_22951_EC-14P_03232018201131_7738899,No,No
+2313520,Slant/Fin Corporation,Slant/Fin,Eutectic EC-10DV,EC-15DV,,Boiler,Oil,87,11/17/2008,03/23/2018,"United States, Canada",ES_22951_EC-15DV_03232018200119_1641931,No,No
+2313539,Slant/Fin Corporation,Slant/Fin,Eutectic EC-10,EC-15P,,Boiler,Oil,87,05/09/2008,03/23/2018,"United States, Canada",ES_22951_EC-15P_03232018201133_1959805,No,No
+2313521,Slant/Fin Corporation,Slant/Fin,Eutectic EC-10DV,EC-16DV,,Boiler,Oil,87,11/17/2008,03/23/2018,"United States, Canada",ES_22951_EC-16DV_03232018200121_2612260,No,No
+2313540,Slant/Fin Corporation,Slant/Fin,Eutectic EC-10,EC-16P,,Boiler,Oil,87,05/09/2008,03/23/2018,"United States, Canada",ES_22951_EC-16P_03232018201136_4544506,No,No
+2313534,Slant/Fin Corporation,Slant/Fin,LYNX,LX-120,,Boiler,"Natural Gas,Propane Gas",92,09/01/2010,11/05/2018,United States,ES_22951_LX-120_03232018200916_3564744,No,No
+2313535,Slant/Fin Corporation,Slant/Fin,LYNX,LX-120CB,,Boiler,"Natural Gas,Propane Gas",92,09/01/2010,03/23/2018,United States,ES_22951_LX-120CB_03232018200918_7818668,Yes,No
+2313533,Slant/Fin Corporation,Slant/Fin,LYNX,LX-150,,Boiler,"Natural Gas,Propane Gas",92,08/01/2010,03/23/2018,United States,ES_22951_LX-150_03232018200913_8679530,No,No
+2313536,Slant/Fin Corporation,Slant/Fin,LYNX,LX-150CB,,Boiler,"Natural Gas,Propane Gas",92,08/01/2010,03/23/2018,United States,ES_22951_LX-150CB_03232018200920_6848340,Yes,No
+2313545,Slant/Fin Corporation,Slant/Fin,Q3 Series,Q3-4,,Boiler,Oil,87,05/15/2012,03/23/2018,"United States, Canada",ES_22951_Q3-4_03232018203345_5192956,No,No
+2313546,Slant/Fin Corporation,Slant/Fin,Q3 Series,Q3-5,,Boiler,Oil,87,05/15/2012,03/23/2018,"United States, Canada",ES_22951_Q3-5_03232018203347_7254270,No,No
+2313547,Slant/Fin Corporation,Slant/Fin,Q3 Series,Q3-6,,Boiler,Oil,87,05/15/2012,03/23/2018,"United States, Canada",ES_22951_Q3-6_03232018203350_1823840,No,No
+2313548,Slant/Fin Corporation,Slant/Fin,Q3 Series,Q3-7,,Boiler,Oil,87,05/15/2012,03/23/2018,"United States, Canada",ES_22951_Q3-7_03232018203352_8901663,No,No
+2313528,Slant/Fin Corporation,Slant/Fin,Intrepid TRDV,TRDV-30-0.85,,Boiler,Oil,87,01/31/2003,03/23/2018,"United States, Canada",ES_22951_TRDV-30-0.85_03232018200756_3526284,No,No
+2313529,Slant/Fin Corporation,Slant/Fin,Intrepid TRDV,TRDV-30-0.85P,,Boiler,Oil,87,01/31/2003,03/23/2018,"United States, Canada",ES_22951_TRDV-30-0.85P_03232018200758_8400307,No,No
+2313530,Slant/Fin Corporation,Slant/Fin,Intrepid TRDV,TRDV-30-0.85PT,,Boiler,Oil,87,01/31/2003,03/23/2018,"United States, Canada",ES_22951_TRDV-30-0.85PT_03232018200801_0275708,Yes,No
+2313522,Slant/Fin Corporation,Slant/Fin,VSL,VSL-160B,,Boiler,"Natural Gas,Propane Gas",91,01/01/2008,03/23/2018,United States,ES_22951_VSL-160B_03232018200513_4836565,No,No
+2313523,Slant/Fin Corporation,Slant/Fin,VSL,VSL-160C,,Boiler,"Natural Gas,Propane Gas",91,09/01/2010,03/23/2018,United States,ES_22951_VSL-160C_03232018200516_6504222,Yes,No
+2313526,Slant/Fin Corporation,Slant/Fin,VSL II,VSL II 150,,Boiler,"Natural Gas,Propane Gas",92,06/01/2015,03/23/2018,"United States, Canada",ES_22951_VSL II 150_03232018200524_6034117,No,No
+2313527,Slant/Fin Corporation,Slant/Fin,VSL II,VSL II 200,,Boiler,"Natural Gas,Propane Gas",92,06/01/2015,03/23/2018,"United States, Canada",ES_22951_VSL II 200_03232018200526_4496191,No,No
+2313525,Slant/Fin Corporation,Slant/Fin,VSL II,VSL II 250,,Boiler,"Natural Gas,Propane Gas",92,06/01/2015,03/23/2018,"United States, Canada",ES_22951_VSL II 250_03232018200521_5620196,No,No
+2313524,Slant/Fin Corporation,Slant/Fin,VSL II,VSL II 90,,Boiler,"Natural Gas,Propane Gas",92,06/01/2015,03/23/2018,"United States, Canada",ES_22951_VSL II 90_03232018200519_9841101,No,No
+2313422,"Triangle Tube/Phase III Co., Inc.",CHALLENGER,Challenger,CC105,,Boiler,"Natural Gas,Propane Gas",94,04/18/2011,03/23/2018,"United States, Canada",ES_1003136_CC105_03232018183257_3610383,Yes,No
+2313426,"Triangle Tube/Phase III Co., Inc.",CHALLENGER,Challenger,CC105s,,Boiler,"Natural Gas,Propane Gas",94,01/01/2012,03/23/2018,"United States, Canada",ES_1003136_CC105s_03232018183305_1570115,No,No
+2313424,"Triangle Tube/Phase III Co., Inc.",CHALLENGER,Challenger,CC125,,Boiler,"Natural Gas,Propane Gas",94,04/18/2011,03/23/2018,"United States, Canada",ES_1003136_CC125_03232018183301_9978121,Yes,No
+2313436,"Triangle Tube/Phase III Co., Inc.",CHALLENGER,Challenger,CC125H,,Boiler,"Natural Gas,Propane Gas",95,10/03/2016,03/23/2018,"United States, Canada",ES_1003136_CC125H_03232018183326_0302288,Yes,Yes
+2313438,"Triangle Tube/Phase III Co., Inc.",CHALLENGER,Challenger,CC125HS,,Boiler,"Natural Gas,Propane Gas",95,10/03/2016,03/23/2018,"United States, Canada",ES_1003136_CC125HS_03232018183330_4161772,No,Yes
+2313428,"Triangle Tube/Phase III Co., Inc.",CHALLENGER,Challenger,CC125s,,Boiler,"Natural Gas,Propane Gas",94,01/01/2012,03/23/2018,"United States, Canada",ES_1003136_CC125s_03232018183309_9017649,No,No
+2313430,"Triangle Tube/Phase III Co., Inc.",CHALLENGER,Challenger,CC150S,,Boiler,"Natural Gas,Propane Gas",92,01/01/2012,03/23/2018,"United States, Canada",ES_1003136_CC150S_03232018183313_0053235,No,No
+2313434,"Triangle Tube/Phase III Co., Inc.",CHALLENGER,Challenger,CC50S,,Boiler,"Natural Gas,Propane Gas",95,02/02/2015,03/23/2018,"United States, Canada",ES_1003136_CC50S_03232018183322_3345121,No,Yes
+2313432,"Triangle Tube/Phase III Co., Inc.",CHALLENGER,Challenger,CC85 S,,Boiler,"Natural Gas,Propane Gas",94,01/01/2012,03/23/2018,"United States, Canada",ES_1003136_CC85 S_03232018183318_1437484,No,No
+2313423,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Challenger,CC105,,Boiler,"Natural Gas,Propane Gas",94,04/18/2011,03/23/2018,"United States, Canada",ES_1003136_CC105_03232018183259_8692149,Yes,No
+2313427,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Challenger,CC105s,,Boiler,"Natural Gas,Propane Gas",94,01/01/2012,03/23/2018,"United States, Canada",ES_1003136_CC105s_03232018183307_7523933,No,No
+2313425,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Challenger,CC125,,Boiler,"Natural Gas,Propane Gas",94,04/18/2011,03/23/2018,"United States, Canada",ES_1003136_CC125_03232018183303_6488348,Yes,No
+2313437,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Challenger,CC125H,,Boiler,"Natural Gas,Propane Gas",95,10/03/2016,03/23/2018,"United States, Canada",ES_1003136_CC125H_03232018183328_6256106,Yes,Yes
+2313439,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Challenger,CC125HS,,Boiler,"Natural Gas,Propane Gas",95,10/03/2016,03/23/2018,"United States, Canada",ES_1003136_CC125HS_03232018183332_9035795,No,Yes
+2313429,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Challenger,CC125s,,Boiler,"Natural Gas,Propane Gas",94,01/01/2012,03/23/2018,"United States, Canada",ES_1003136_CC125s_03232018183311_9431570,No,No
+2313431,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Challenger,CC150S,,Boiler,"Natural Gas,Propane Gas",92,01/01/2012,03/23/2018,"United States, Canada",ES_1003136_CC150S_03232018183315_4927257,No,No
+2313435,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Challenger,CC50S,,Boiler,"Natural Gas,Propane Gas",95,02/02/2015,03/23/2018,"United States, Canada",ES_1003136_CC50S_03232018183324_7695756,No,Yes
+2313433,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Challenger,CC85 S,,Boiler,"Natural Gas,Propane Gas",94,01/01/2012,03/23/2018,"United States, Canada",ES_1003136_CC85 S_03232018183320_8263354,No,No
+2313375,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Prestige,EXCELLENCE 110,,Boiler,"Natural Gas,Propane Gas",95,04/18/2008,03/23/2018,"United States, Canada",ES_1003136_EXCELLENCE 110_03232018175328_8256747,Yes,Yes
+2313382,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Prestige,EXCELLENCE 110,,Boiler,"Natural Gas,Propane Gas",95,04/18/2008,03/23/2018,"United States, Canada",ES_1003136_EXCELLENCE 110_03232018175343_0489885,Yes,Yes
+2313374,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Prestige,SOLO 110,,Boiler,"Natural Gas,Propane Gas",95,11/01/2005,03/23/2018,"United States, Canada",ES_1003136_SOLO 110_03232018175326_0666726,No,Yes
+2313381,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Prestige,SOLO 110,,Boiler,"Natural Gas,Propane Gas",95,11/01/2005,03/23/2018,"United States, Canada",ES_1003136_SOLO 110_03232018175341_0632372,No,Yes
+2313377,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Prestige,SOLO 155,,Boiler,"Natural Gas,Propane Gas",95,12/01/2015,03/23/2018,"United States, Canada",ES_1003136_SOLO 155_03232018175332_6576334,No,Yes
+2313384,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Prestige,SOLO 155,,Boiler,"Natural Gas,Propane Gas",95,12/01/2015,03/23/2018,"United States, Canada",ES_1003136_SOLO 155_03232018175347_0969063,No,Yes
+2313373,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Prestige,SOLO 175,,Boiler,"Natural Gas,Propane Gas",95,02/06/2006,03/23/2018,"United States, Canada",ES_1003136_SOLO 175_03232018175324_7744550,No,Yes
+2313380,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Prestige,SOLO 175,,Boiler,"Natural Gas,Propane Gas",95,02/06/2006,03/23/2018,"United States, Canada",ES_1003136_SOLO 175_03232018175339_1646910,No,Yes
+2313372,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Prestige,SOLO 250,,Boiler,"Natural Gas,Propane Gas",95,02/06/2006,03/23/2018,"United States, Canada",ES_1003136_SOLO 250_03232018175322_0918680,No,Yes
+2313379,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Prestige,SOLO 250,,Boiler,"Natural Gas,Propane Gas",95,02/06/2006,03/23/2018,"United States, Canada",ES_1003136_SOLO 250_03232018175337_9073398,No,Yes
+2313378,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Prestige,SOLO 299,,Boiler,"Natural Gas,Propane Gas",95,12/01/2015,03/23/2018,"United States, Canada",ES_1003136_SOLO 299_03232018175335_6674610,No,Yes
+2313385,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Prestige,SOLO 299,,Boiler,"Natural Gas,Propane Gas",95,12/01/2015,03/23/2018,"United States, Canada",ES_1003136_SOLO 299_03232018175348_1034319,No,Yes
+2313376,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Prestige,SOLO 80,,Boiler,"Natural Gas,Propane Gas",95,12/01/2015,03/23/2018,"United States, Canada",ES_1003136_SOLO 80_03232018175330_7242208,No,Yes
+2313383,"Triangle Tube/Phase III Co., Inc.",Triangle Tube,Prestige,SOLO 80,,Boiler,"Natural Gas,Propane Gas",95,12/01/2015,03/23/2018,"United States, Canada",ES_1003136_SOLO 80_03232018175345_2506989,No,Yes
+2314115,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,Alpine,ALP080B,,Boiler,"Natural Gas,Propane Gas",95,03/08/2013,03/26/2018,"United States, Canada",ES_23449_ALP080B_03262018154455_0942582,No,Yes
+2314116,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,Alpine,ALP105B,,Boiler,"Natural Gas,Propane Gas",95,03/08/2013,03/26/2018,"United States, Canada",ES_23449_ALP105B_03262018154457_1575437,No,Yes
+2314117,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,Alpine,ALP150B,,Boiler,"Natural Gas,Propane Gas",95,03/08/2013,03/26/2018,"United States, Canada",ES_23449_ALP150B_03262018154500_5032190,No,Yes
+2314118,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,Alpine,ALP210B,,Boiler,"Natural Gas,Propane Gas",95,03/08/2013,03/26/2018,"United States, Canada",ES_23449_ALP210B_03262018154502_3746218,No,Yes
+2314119,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,Alpine,ALP285B,,Boiler,"Natural Gas,Propane Gas",95,03/08/2013,03/26/2018,"United States, Canada",ES_23449_ALP285B_03262018154504_0267635,No,Yes
+2313156,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,ASPEN,ASPN-085,,Boiler,"Natural Gas,Propane Gas",96,08/01/2017,03/22/2018,"United States, Canada",ES_23449_ASPN-085_03232018005104_0815888,No,Yes
+2313157,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,ASPEN,ASPN-110,,Boiler,"Natural Gas,Propane Gas",96,08/01/2017,03/22/2018,"United States, Canada",ES_23449_ASPN-110_03232018005106_2353815,No,Yes
+2313158,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,ASPEN,ASPN-155,,Boiler,"Natural Gas,Propane Gas",95,08/01/2017,03/22/2018,"United States, Canada",ES_23449_ASPN-155_03232018005108_9223895,No,Yes
+2313159,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,ASPEN,ASPN-205,,Boiler,"Natural Gas,Propane Gas",95,08/01/2017,03/22/2018,"United States, Canada",ES_23449_ASPN-205_03232018005110_0238434,No,Yes
+2313160,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,ASPEN,ASPN-270,,Boiler,"Natural Gas,Propane Gas",95,08/01/2017,03/22/2018,"United States, Canada",ES_23449_ASPN-270_03232018005112_2681432,No,Yes
+2313161,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,ASPEN,ASPNC-155,,Boiler,"Natural Gas,Propane Gas",95,08/01/2017,03/22/2018,"United States, Canada",ES_23449_ASPNC-155_03232018005114_7284021,Yes,Yes
+2314092,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2,K2-080,,Boiler,"Natural Gas,Propane Gas",94,05/11/2015,03/26/2018,"United States, Canada",ES_23449_K2-080_03262018145253_0822671,No,No
+2314093,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2,K2-100,,Boiler,"Natural Gas,Propane Gas",93,07/07/2014,03/26/2018,"United States, Canada",ES_23449_K2-100_03262018145255_0550454,No,No
+2314094,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2,K2-120,,Boiler,"Natural Gas,Propane Gas",94,05/11/2015,03/26/2018,"United States, Canada",ES_23449_K2-120_03262018145258_2088380,No,No
+2314095,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2,K2-150,,Boiler,"Natural Gas,Propane Gas",95,05/11/2015,03/26/2018,"United States, Canada",ES_23449_K2-150_03262018145300_5229490,No,Yes
+2314096,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2,K2-180,,Boiler,"Natural Gas,Propane Gas",94,05/11/2015,03/26/2018,"United States, Canada",ES_23449_K2-180_03262018145302_7323823,No,No
+2314073,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2FT,K2FT-085,,Boiler,"Natural Gas,Propane Gas",95,04/01/2016,03/26/2018,"United States, Canada",ES_23449_K2FT-085_03262018144906_8075459,No,Yes
+2314074,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2FT,K2FT-110,,Boiler,"Natural Gas,Propane Gas",95,04/01/2016,03/26/2018,"United States, Canada",ES_23449_K2FT-110_03262018144908_5468928,No,Yes
+2314075,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2FT,K2FT-155,,Boiler,"Natural Gas,Propane Gas",95,04/01/2016,03/26/2018,"United States, Canada",ES_23449_K2FT-155_03262018144910_2579772,No,Yes
+2314076,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2FT,K2FT-205,,Boiler,"Natural Gas,Propane Gas",95,04/01/2016,03/26/2018,"United States, Canada",ES_23449_K2FT-205_03262018144912_8054413,No,Yes
+2314077,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2FT,K2FT-270,,Boiler,"Natural Gas,Propane Gas",95,04/01/2016,03/26/2018,"United States, Canada",ES_23449_K2FT-270_03262018144914_2623982,No,Yes
+2314078,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2FT,K2FTC-155,,Boiler,"Natural Gas,Propane Gas",95,04/01/2016,03/26/2018,"United States, Canada",ES_23449_K2FTC-155_03262018144916_8098623,Yes,Yes
+2314102,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2WT,K2WT-080,,Boiler,"Natural Gas,Propane Gas",94,04/01/2016,03/26/2018,"United States, Canada",ES_23449_K2WT-080_03262018145314_4773476,No,No
+2313167,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2WT,K2WT-080B,,Boiler,"Natural Gas,Propane Gas",95,04/17/2017,03/22/2018,"United States, Canada",ES_23449_K2WT-080B_03232018005329_0029717,No,Yes
+2314103,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2WT,K2WT-100,,Boiler,"Natural Gas,Propane Gas",93,04/01/2016,03/26/2018,"United States, Canada",ES_23449_K2WT-100_03262018145316_7391198,No,No
+2313168,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2WT,K2WT-100B,,Boiler,"Natural Gas,Propane Gas",95,04/17/2017,03/22/2018,"United States, Canada",ES_23449_K2WT-100B_03232018005331_5504358,No,Yes
+2314104,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2WT,K2WT-120,,Boiler,"Natural Gas,Propane Gas",94,04/01/2016,03/26/2018,"United States, Canada",ES_23449_K2WT-120_03262018145318_4850706,No,No
+2313169,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2WT,K2WT-120B,,Boiler,"Natural Gas,Propane Gas",95,04/17/2017,03/22/2018,"United States, Canada",ES_23449_K2WT-120B_03232018005333_1502387,No,Yes
+2314105,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2WT,K2WT-150,,Boiler,"Natural Gas,Propane Gas",95,04/01/2016,03/26/2018,"United States, Canada",ES_23449_K2WT-150_03262018145320_2833602,No,Yes
+2313170,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2WT,K2WT-150B,,Boiler,"Natural Gas,Propane Gas",95,04/17/2017,03/22/2018,"United States, Canada",ES_23449_K2WT-150B_03232018005335_3388978,No,Yes
+2314106,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2WT,K2WT-180,,Boiler,"Natural Gas,Propane Gas",94,04/01/2016,03/26/2018,"United States, Canada",ES_23449_K2WT-180_03262018145322_8831630,No,No
+2313171,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2WT,K2WT-180B,,Boiler,"Natural Gas,Propane Gas",95,04/17/2017,03/22/2018,"United States, Canada",ES_23449_K2WT-180B_03232018005337_5450292,No,Yes
+2313175,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,X-C,K2WT-180M,,Boiler,"Natural Gas,Propane Gas",94,08/01/2017,03/22/2018,United States,ES_23449_K2WT-180M_03232018005345_3445162,No,No
+2313172,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2 Watertube,K2WTC-135B,,Boiler,"Natural Gas,Propane Gas",95,08/01/2017,03/22/2018,United States,ES_23449_K2WTC-135B_03232018005339_1830005,Yes,Yes
+2313173,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2 Watertube,K2WTC-150B,,Boiler,"Natural Gas,Propane Gas",95,08/01/2017,03/22/2018,United States,ES_23449_K2WTC-150B_03232018005341_1972492,Yes,Yes
+2313174,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,K2 Watertube,K2WTC-180B,,Boiler,"Natural Gas,Propane Gas",95,08/01/2017,03/22/2018,United States,ES_23449_K2WTC-180B_03232018005343_4731134,Yes,Yes
+2314084,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,MPO-IQ,MPO-IQ115,,Boiler,Oil,87,08/01/2010,03/26/2018,"United States, Canada",ES_23449_MPO-IQ115_03262018145054_5396897,Yes,No
+2314085,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,MPO-IQ,MPO-IQ147,,Boiler,Oil,87,08/01/2010,03/26/2018,"United States, Canada",ES_23449_MPO-IQ147_03262018145057_9094413,Yes,No
+2314086,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,MPO-IQ,MPO-IQ189,,Boiler,Oil,87,08/01/2010,03/26/2018,"United States, Canada",ES_23449_MPO-IQ189_03262018145059_2027781,Yes,No
+2314087,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,MPO-IQ,MPO-IQ231,,Boiler,Oil,87,08/01/2010,03/26/2018,"United States, Canada",ES_23449_MPO-IQ231_03262018145101_8233552,Yes,No
+2314083,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,MPO-IQ,MPO-IQ84,,Boiler,Oil,87,08/01/2010,03/26/2018,"United States, Canada",ES_23449_MPO-IQ84_03262018145052_2463531,Yes,No
+2314107,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,V8H,V8H3WRD,,Boiler,Oil,87,04/15/2016,03/26/2018,"United States, Canada",ES_23449_V8H3WRD_03262018145442_6541707,No,No
+2314111,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,V8H,V8H3WRD-T,,Boiler,Oil,87,04/15/2016,03/26/2018,"United States, Canada",ES_23449_V8H3WRD-T_03262018145451_4329617,Yes,No
+2314108,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,V8H,V8H4WRD,,Boiler,Oil,87,04/15/2016,03/26/2018,"United States, Canada",ES_23449_V8H4WRD_03262018145444_0587889,No,No
+2314112,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,V8H,V8H4WRD-T,,Boiler,Oil,87,04/15/2016,03/26/2018,"United States, Canada",ES_23449_V8H4WRD-T_03262018145452_5136412,Yes,No
+2314109,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,V8H,V8H5WRD,,Boiler,Oil,88,04/15/2016,03/26/2018,"United States, Canada",ES_23449_V8H5WRD_03262018145446_2158835,No,No
+2314113,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,V8H,V8H5WRD-T,,Boiler,Oil,88,04/15/2016,03/26/2018,"United States, Canada",ES_23449_V8H5WRD-T_03262018145454_8659205,Yes,No
+2314110,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,V8H,V8H6WRD,,Boiler,Oil,87,04/15/2016,03/26/2018,"United States, Canada",ES_23449_V8H6WRD_03262018145448_3696762,No,No
+2314114,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,V8H,V8H6WRD-T,,Boiler,Oil,87,04/15/2016,03/26/2018,"United States, Canada",ES_23449_V8H6WRD-T_03262018145456_3785182,Yes,No
+2314097,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,X-C,X-C080,,Boiler,"Natural Gas,Propane Gas",94,04/01/2016,03/26/2018,"United States, Canada",ES_23449_X-C080_03262018145304_2242057,No,No
+2313162,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,X-C,X-C080B,,Boiler,"Natural Gas,Propane Gas",95,04/17/2017,03/22/2018,"United States, Canada",ES_23449_X-C080B_03232018005319_2307065,No,Yes
+2314098,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,X-C,X-C100,,Boiler,"Natural Gas,Propane Gas",93,04/01/2016,03/26/2018,"United States, Canada",ES_23449_X-C100_03262018145306_8240086,No,No
+2313163,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,X-C,X-C100B,,Boiler,"Natural Gas,Propane Gas",95,04/17/2017,03/22/2018,"United States, Canada",ES_23449_X-C100B_03232018005321_5829858,No,Yes
+2314099,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,X-C,X-C120,,Boiler,"Natural Gas,Propane Gas",94,04/01/2016,03/26/2018,"United States, Canada",ES_23449_X-C120_03262018145308_6430725,No,No
+2313164,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,X-C,X-C120B,,Boiler,"Natural Gas,Propane Gas",95,04/17/2017,03/22/2018,"United States, Canada",ES_23449_X-C120B_03232018005323_9876039,No,Yes
+2314100,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,X-C,X-C150,,Boiler,"Natural Gas,Propane Gas",95,04/01/2016,03/26/2018,"United States, Canada",ES_23449_X-C150_03262018145310_1348959,No,Yes
+2313165,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,X-C,X-C150B,,Boiler,"Natural Gas,Propane Gas",95,04/17/2017,03/22/2018,"United States, Canada",ES_23449_X-C150B_03232018005325_6397456,No,Yes
+2314101,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,X-C,X-C180,,Boiler,"Natural Gas,Propane Gas",94,04/01/2016,03/26/2018,"United States, Canada",ES_23449_X-C180_03262018145312_2363498,No,No
+2313166,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,X-C,X-C180B,,Boiler,"Natural Gas,Propane Gas",95,04/17/2017,03/22/2018,"United States, Canada",ES_23449_X-C180B_03232018005327_3998668,No,Yes
+2313176,"U.S. Boiler Company, Inc.",Burnham by U.S. Boiler,X-C,X-C180M,,Boiler,"Natural Gas,Propane Gas",94,08/01/2017,03/22/2018,United States,ES_23449_X-C180M_03232018005346_9268466,No,No
+2314088,"U.S. Boiler Company, Inc.",Force,Force Oil,FORCEOL084,,Boiler,Oil,87,08/12/2015,03/26/2018,United States,ES_23449_FORCEOL084_03262018145103_9771478,No,No
+2314089,"U.S. Boiler Company, Inc.",Force,Force Oil,FORCEOL115,,Boiler,Oil,87,08/12/2015,03/26/2018,United States,ES_23449_FORCEOL115_03262018145105_5769508,No,No
+2314090,"U.S. Boiler Company, Inc.",Force,Force Oil,FORCEOL147,,Boiler,Oil,87,08/12/2015,03/26/2018,United States,ES_23449_FORCEOL147_03262018145107_7656098,No,No
+2314091,"U.S. Boiler Company, Inc.",Force,Force Oil,FORCEOL189,,Boiler,Oil,87,08/12/2015,03/26/2018,United States,ES_23449_FORCEOL189_03262018145109_2258688,No,No
+2323608,Velocity Boiler Works,Velocity Boiler Works,Phantom,PHNTM135CB,,Boiler,"Natural Gas,Propane Gas",95,08/01/2017,07/31/2018,United States,ES_1136570_PHNTM135CB_07312018233611_0067325,Yes,Yes
+2323609,Velocity Boiler Works,Velocity Boiler Works,Phantom,PHNTM150CB,,Boiler,"Natural Gas,Propane Gas",95,08/01/2017,07/31/2018,United States,ES_1136570_PHNTM150CB_07312018233613_1048844,Yes,Yes
+2323610,Velocity Boiler Works,Velocity Boiler Works,Phantom,PHNTM180CB,,Boiler,"Natural Gas,Propane Gas",95,08/01/2017,07/31/2018,United States,ES_1136570_PHNTM180CB_07312018233616_8857799,Yes,Yes
+2323611,Velocity Boiler Works,Velocity Boiler Works,Phantom,PHNTM180M,,Boiler,"Natural Gas,Propane Gas",94,08/01/2017,07/31/2018,United States,ES_1136570_PHNTM180M_07312018233618_7331063,No,No
+2323607,Velocity Boiler Works,Velocity Boiler Works,Raptor,RPTR085,,Boiler,"Natural Gas,Propane Gas",95,04/20/2016,07/31/2018,"United States, Canada",ES_1136570_RPTR085_07312018233353_9753436,No,Yes
+2323615,Velocity Boiler Works,Velocity Boiler Works,Raptor,RPTR085HB,,Boiler,"Natural Gas,Propane Gas",96,08/01/2017,07/31/2018,"United States, Canada",ES_1136570_RPTR085HB_07312018233818_0914457,No,Yes
+2323616,Velocity Boiler Works,Velocity Boiler Works,Raptor,RPTR110HB,,Boiler,"Natural Gas,Propane Gas",96,08/01/2017,07/31/2018,"United States, Canada",ES_1136570_RPTR110HB_07312018233821_6563821,No,Yes
+2323617,Velocity Boiler Works,Velocity Boiler Works,Raptor,RPTR155HB,,Boiler,"Natural Gas,Propane Gas",95,08/01/2017,07/31/2018,"United States, Canada",ES_1136570_RPTR155HB_07312018233823_6116880,No,Yes
+2323618,Velocity Boiler Works,Velocity Boiler Works,Raptor,RPTR205HB,,Boiler,"Natural Gas,Propane Gas",95,08/01/2017,07/31/2018,"United States, Canada",ES_1136570_RPTR205HB_07312018233825_7098399,No,Yes
+2329422,NY Thermal Inc.,NTI,Trinity,TX51,,Boiler,"Natural Gas,Propane Gas",94,03/12/2013,12/18/2018,"United States, Canada",ES_1016238_TX51_11092018223824_6242963,No,No
+2329423,NY Thermal Inc.,NTI,Trinity,TX81,,Boiler,"Natural Gas,Propane Gas",94,03/12/2013,12/18/2018,"United States, Canada",ES_1016238_TX81_11092018223827_9928507,No,No
+2329272,NY Thermal Inc.,NTI,Vmax,VM110,,Boiler,"Natural Gas,Propane Gas",95,11/01/2014,12/18/2018,"United States, Canada",ES_1016238_VM110_11062018210640_2651723,No,Yes
+2329273,NY Thermal Inc.,NTI,Vmax,VM110P,,Boiler,"Natural Gas,Propane Gas",95,11/01/2014,12/18/2018,"United States, Canada",ES_1016238_VM110P_11062018210643_2923940,Yes,Yes
+2329274,NY Thermal Inc.,NTI,Vmax,VM153,,Boiler,"Natural Gas,Propane Gas",95,06/01/2016,12/18/2018,"United States, Canada",ES_1016238_VM153_11062018210645_2291086,No,Yes
+2329275,NY Thermal Inc.,NTI,Vmax,VM153P,,Boiler,"Natural Gas,Propane Gas",95,06/01/2016,12/18/2018,"United States, Canada",ES_1016238_VM153P_11062018210648_5071558,Yes,Yes
+2313473,"P. B. Heat, LLC",Peerless,PBC Combi,PBC-34,,Boiler,"Natural Gas,Propane Gas",95,01/19/2017,03/23/2018,"United States, Canada",ES_19344_PBC-34_03232018192828_8521313,Yes,Yes
+2313474,"P. B. Heat, LLC",Peerless,PBC Combi,PBC-40,,Boiler,"Natural Gas,Propane Gas",95,01/19/2017,03/23/2018,"United States, Canada",ES_19344_PBC-40_03232018192830_4475132,Yes,Yes
+2313475,"P. B. Heat, LLC",Peerless,PBC Combi,PBC-52,,Boiler,"Natural Gas,Propane Gas",95,01/19/2017,03/23/2018,"United States, Canada",ES_19344_PBC-52_03232018192832_0952339,Yes,Yes
+2313511,"P. B. Heat, LLC",Peerless,Combi,PC-160C,,Boiler,"Natural Gas,Propane Gas",91,08/15/2013,11/05/2018,"United States, Canada",ES_19344_PC-160C_03232018195648_9433834,Yes,No
+2313501,"P. B. Heat, LLC",Peerless,PureFire,PF-110,,Boiler,"Natural Gas,Propane Gas",95,11/17/2014,03/23/2018,"United States, Canada",ES_19344_PF-110_03232018194132_9946632,No,Yes
+2313503,"P. B. Heat, LLC",Peerless,PureFire,PF-140,,Boiler,"Natural Gas,Propane Gas",95,11/17/2014,03/23/2018,"United States, Canada",ES_19344_PF-140_03232018194136_5475340,No,Yes
+2313509,"P. B. Heat, LLC",Peerless,PureFire,PF-200-LP,,Boiler,Propane Gas,95,11/17/2014,03/23/2018,"United States, Canada",ES_19344_PF-200-LP_03232018194149_8548292,No,Yes
+2313507,"P. B. Heat, LLC",Peerless,PureFire,PF-200-NAT,,Boiler,Natural Gas,95,11/17/2014,03/23/2018,"United States, Canada",ES_19344_PF-200-NAT_03232018194145_9115890,No,Yes
+2313499,"P. B. Heat, LLC",Peerless,PureFire,PF-210 LP,,Boiler,Propane Gas,95,11/17/2014,03/23/2018,"United States, Canada",ES_19344_PF-210 LP_03232018194128_9990842,No,Yes
+2313502,"P. B. Heat, LLC",Peerless,PureFire,PF-210 NAT,,Boiler,Natural Gas,95,11/17/2014,03/23/2018,"United States, Canada",ES_19344_PF-210 NAT_03232018194134_5584806,No,Yes
+2313500,"P. B. Heat, LLC",Peerless,PureFire,PF-50,,Boiler,"Natural Gas,Propane Gas",95,11/17/2014,03/23/2018,"United States, Canada",ES_19344_PF-50_03232018194130_4549222,No,Yes
+2313504,"P. B. Heat, LLC",Peerless,PureFire,PF-80,,Boiler,"Natural Gas,Propane Gas",95,11/17/2014,03/23/2018,"United States, Canada",ES_19344_PF-80_03232018194138_5332853,No,Yes
+2313510,"P. B. Heat, LLC",Peerless,PureFire,PFW-200-LP,,Boiler,Propane Gas,95,11/17/2014,03/23/2018,"United States, Canada",ES_19344_PFW-200-LP_03232018194152_0980100,No,Yes
+2313508,"P. B. Heat, LLC",Peerless,PureFire,PFW-200-NAT,,Boiler,Natural Gas,95,11/17/2014,03/23/2018,"United States, Canada",ES_19344_PFW-200-NAT_03232018194147_9214166,No,Yes
+2313506,"P. B. Heat, LLC",Peerless,PureFire,PFW-210-LP,,Boiler,Propane Gas,95,11/17/2014,03/23/2018,"United States, Canada",ES_19344_PFW-210-LP_03232018194143_7829917,No,Yes
+2313505,"P. B. Heat, LLC",Peerless,PureFire,PFW-210-NAT,,Boiler,Natural Gas,95,11/17/2014,03/23/2018,"United States, Canada",ES_19344_PFW-210-NAT_03232018194141_1319692,No,Yes
+2313479,"P. B. Heat, LLC",Peerless,WB90,WB90-03-W,,Boiler,Oil,90,11/15/2012,03/23/2018,United States,ES_19344_WB90-03-W_03232018193822_0050604,Yes,Yes
+2313481,"P. B. Heat, LLC",Peerless,WB90,WB90-03-W,,Boiler,Oil,90,11/15/2012,03/23/2018,United States,ES_19344_WB90-03-W_03232018193827_4871344,Yes,Yes
+2313483,"P. B. Heat, LLC",Peerless,WB90,WB90-03-W,,Boiler,Oil,90,11/15/2012,03/23/2018,United States,ES_19344_WB90-03-W_03232018193832_0040749,Yes,Yes
+2313485,"P. B. Heat, LLC",Peerless,WB90,WB90-03-W,,Boiler,Oil,90,11/15/2012,03/23/2018,United States,ES_19344_WB90-03-W_03232018193837_9179886,Yes,Yes
+2313487,"P. B. Heat, LLC",Peerless,WB90,WB90-03-W,,Boiler,Oil,90,11/15/2012,03/23/2018,United States,ES_19344_WB90-03-W_03232018193841_4938718,Yes,Yes
+2313489,"P. B. Heat, LLC",Peerless,WB90,WB90-03-W,,Boiler,Oil,90,11/15/2012,03/23/2018,United States,ES_19344_WB90-03-W_03232018193846_5444799,Yes,Yes
+2313491,"P. B. Heat, LLC",Peerless,WB90,WB90-03-W,,Boiler,Oil,90,11/15/2012,03/23/2018,United States,ES_19344_WB90-03-W_03232018193851_8813915,Yes,Yes
+2313480,"P. B. Heat, LLC",Peerless,WB90,WB90-04-W,,Boiler,Oil,90,11/15/2012,03/23/2018,United States,ES_19344_WB90-04-W_03232018193824_0999103,Yes,Yes
+2313482,"P. B. Heat, LLC",Peerless,WB90,WB90-04-W,,Boiler,Oil,90,11/15/2012,03/23/2018,United States,ES_19344_WB90-04-W_03232018193830_5852863,Yes,Yes
+2313484,"P. B. Heat, LLC",Peerless,WB90,WB90-04-W,,Boiler,Oil,90,11/15/2012,03/23/2018,United States,ES_19344_WB90-04-W_03232018193834_5166725,Yes,Yes
+2313486,"P. B. Heat, LLC",Peerless,WB90,WB90-04-W,,Boiler,Oil,90,11/15/2012,03/23/2018,United States,ES_19344_WB90-04-W_03232018193839_5734323,Yes,Yes
+2313488,"P. B. Heat, LLC",Peerless,WB90,WB90-04-W,,Boiler,Oil,90,11/15/2012,03/23/2018,United States,ES_19344_WB90-04-W_03232018193844_6476644,Yes,Yes
+2313490,"P. B. Heat, LLC",Peerless,WB90,WB90-04-W,,Boiler,Oil,90,11/15/2012,03/23/2018,United States,ES_19344_WB90-04-W_03232018193848_8366974,Yes,Yes
+2313492,"P. B. Heat, LLC",Peerless,WB90,WB90-04-W,,Boiler,Oil,90,11/15/2012,03/23/2018,United States,ES_19344_WB90-04-W_03232018193853_3372294,Yes,Yes
+2313477,"P. B. Heat, LLC",Peerless,WBV,WBV-03-060-W,,Boiler,Oil,87,05/01/2006,03/23/2018,"United States, Canada",ES_19344_WBV-03-060-W_03232018192840_5594075,Yes,No
+2313476,"P. B. Heat, LLC",Peerless,WBV,WBV-04-095-W,,Boiler,Oil,87,05/01/2006,03/23/2018,"United States, Canada",ES_19344_WBV-04-095-W_03232018192838_3499741,Yes,No
+2313513,PNA Inc.,Pensotti,Quatech DK2-3,DK2-3,,Boiler,Oil,87,10/15/2007,03/23/2018,"United States, Canada",ES_1029598_DK2-3_03232018195657_4080937,No,No
+2313516,PNA Inc.,Pensotti,Quatech DK2-4,DK2-4,,Boiler,Oil,87,10/15/2007,03/23/2018,"United States, Canada",ES_1029598_DK2-4_03232018195704_6884572,No,No
+2313512,PNA Inc.,Pensotti,Quatech DK2-6,DK2-6,,Boiler,Oil,87,10/15/2007,03/23/2018,"United States, Canada",ES_1029598_DK2-6_03232018195654_8813256,No,No
+2313515,PNA Inc.,Pensotti,Quatech DK2-7,DK2-7,,Boiler,Oil,87,10/15/2007,03/23/2018,"United States, Canada",ES_1029598_DK2-7_03232018195702_4474594,No,No
+2313514,PNA Inc.,Pensotti,Quatech DK2-8,DK2-8,,Boiler,Oil,87,10/15/2007,03/23/2018,"United States, Canada",ES_1029598_DK2-8_03232018195659_7222046,No,No
+2313496,PNA Inc.,Pensotti,Solenne,PCC34-H,,Boiler,"Natural Gas,Propane Gas",91,04/08/2013,03/23/2018,"United States, Canada",ES_1029598_PCC34-H_03232018194014_1343036,Yes,No
+2313493,PNA Inc.,Pensotti,Solenne,PCH18/B-H,,Boiler,"Natural Gas,Propane Gas",91,04/08/2013,03/23/2018,"United States, Canada",ES_1029598_PCH18/B-H_03232018194007_8083386,No,No
+2313494,PNA Inc.,Pensotti,Solenne,PCH34/B-H,,Boiler,"Natural Gas,Propane Gas",91,04/08/2013,03/23/2018,"United States, Canada",ES_1029598_PCH34/B-H_03232018194009_9925766,Yes,No
+2313495,PNA Inc.,Pensotti,Solenne,PCH50/B-H,,Boiler,"Natural Gas,Propane Gas",91,04/08/2013,03/23/2018,"United States, Canada",ES_1029598_PCH50/B-H_03232018194011_7515788,No,No
+2313498,PNA Inc.,Pensotti,Solenne,PCI18/8-H,,Boiler,"Natural Gas,Propane Gas",91,04/08/2013,03/23/2018,"United States, Canada",ES_1029598_PCI18/8-H_03232018194018_4330468,Yes,No
+2313497,PNA Inc.,Pensotti,Solenne,PCI34/20-H,,Boiler,"Natural Gas,Propane Gas",91,04/08/2013,03/23/2018,"United States, Canada",ES_1029598_PCI34/20-H_03232018194016_5345007,No,No
+2313550,Raypak Inc.,Raypak,XPAK FT,H7-088AR,,Boiler,"Natural Gas,Propane Gas",95,01/01/2015,03/23/2018,"United States, Canada",ES_1088187_H7-088AR_03232018204459_9825723,No,Yes
+2313551,Raypak Inc.,Raypak,XPAK FT,H7-108AR*,,Boiler,"Natural Gas,Propane Gas",95,01/01/2015,03/23/2018,"United States, Canada",ES_1088187_H7-108AR*_03232018204504_6489627,No,Yes
+2313552,Raypak Inc.,Raypak,XPAK FT,H7-198AR*,,Boiler,"Natural Gas,Propane Gas",95,01/01/2015,03/23/2018,"United States, Canada",ES_1088187_H7-198AR*_03232018204506_4090839,No,Yes
+2313553,Raypak Inc.,Raypak,XPAK FT,H7-278AR*,,Boiler,"Natural Gas,Propane Gas",94,01/01/2015,03/23/2018,"United States, Canada",ES_1088187_H7-278AR*_03232018204508_7231948,No,No
+2313543,Raypak Inc.,Raypak,XPak,XPAK 120,,Boiler,"Natural Gas,Propane Gas",90,07/23/2009,02/20/2019,United States,ES_1088187_XPAK 120_03232018203338_5595686,No,No
+2313544,Raypak Inc.,Raypak,XPak,XPAK 85,,Boiler,"Natural Gas,Propane Gas",90,07/23/2009,02/20/2019,United States,ES_1088187_XPAK 85_03232018203341_2989155,No,No
+2332117,"Rheem Sales Company, Inc.",Rheem,CRCBH199DVLN,CRCBH199DVLN,,Boiler,Natural Gas,95,12/21/2018,12/27/2018,"United States, Canada",ES_1071043_CRCBH199DVLN_12272018172119_1279214,Yes,Yes
+2332118,"Rheem Sales Company, Inc.",Rheem,CRCBH199DVLP,CRCBH199DVLP,,Boiler,Propane Gas,95,12/21/2018,12/27/2018,"United States, Canada",ES_1071043_CRCBH199DVLP_12272018172917_1757766,Yes,Yes
+2332111,"Rheem Sales Company, Inc.",Rheem,RCBH180DVLN,RCBH180DVLN,,Boiler,Natural Gas,95,12/21/2018,12/27/2018,"United States, Canada",ES_1071043_RCBH180DVLN_12272018161549_7349302,Yes,Yes
+2332112,"Rheem Sales Company, Inc.",Rheem,RCBH180DVLP,RCBH180DVLP,,Boiler,Propane Gas,95,12/21/2018,12/27/2018,"United States, Canada",ES_1071043_RCBH180DVLP_12272018163210_8330286,Yes,Yes
+2332119,"Rheem Sales Company, Inc.",Rheem,RCBH199DVLN,RCBH199DVLN,,Boiler,Natural Gas,95,12/21/2018,12/27/2018,"United States, Canada",ES_1071043_RCBH199DVLN_12272018173837_2317479,Yes,Yes
+2332120,"Rheem Sales Company, Inc.",Rheem,RCBH199DVLP,RCBH199DVLP,,Boiler,Propane Gas,95,12/21/2018,12/27/2018,"United States, Canada",ES_1071043_RCBH199DVLP_12272018174213_2533372,Yes,Yes
+2332113,"Rheem Sales Company, Inc.",Ruud,RUCBH180DVLN,RUCBH180DVLN,,Boiler,Natural Gas,95,12/21/2018,12/27/2018,"United States, Canada",ES_1071043_RUCBH180DVLN_12272018163409_8449485,Yes,Yes
+2332114,"Rheem Sales Company, Inc.",Ruud,RUCBH180DVLP,RUCBH180DVLP,,Boiler,Propane Gas,95,12/21/2018,12/27/2018,"United States, Canada",ES_1071043_RUCBH180DVLP_12272018164122_8882141,Yes,Yes
+2332121,"Rheem Sales Company, Inc.",Ruud,RUCBH199DVLN,RUCBH199DVLN,,Boiler,Natural Gas,95,12/21/2018,12/27/2018,"United States, Canada",ES_1071043_RUCBH199DVLN_12272018174525_2725493,Yes,Yes
+2332122,"Rheem Sales Company, Inc.",Ruud,RUCBH199DVLP,RUCBH199DVLP,,Boiler,Propane Gas,95,12/21/2018,12/27/2018,"United States, Canada",ES_1071043_RUCBH199DVLP_12272018174747_2867250,Yes,Yes
+2333573,Riello Canada Inc.,RIELLO,CONDEXA PRO NA 75 P,CONDEXA PRO NA 75 P,,Boiler,"Natural Gas,Propane Gas",95,01/11/2018,02/15/2019,"United States, Canada",ES_1141772_CONDEXA PRO NA 75 P_02152019173709_8076405,No,Yes
+2328702,Riello Canada Inc.,RIELLO,FAMILY PRO 42 IS,FAMILY PRO 42 IS,,Boiler,Natural Gas,95,01/11/2018,10/31/2018,"United States, Canada",ES_1141772_FAMILY PRO 42 IS_10312018194445_8126698,Yes,Yes
+2328701,Riello Canada Inc.,RIELLO,FAMILY PRO 42 KIS,FAMILY PRO 42 KIS,,Boiler,Natural Gas,95,01/11/2018,10/31/2018,"United States, Canada",ES_1141772_FAMILY PRO 42 KIS_10312018194440_4385754,Yes,Yes
+2328703,Riello Canada Inc.,RIELLO,RESIDENCE PRO 32 KIS,RESIDENCE PRO 32 KIS,,Boiler,Natural Gas,95,01/11/2018,10/31/2018,"United States, Canada",ES_1141772_RESIDENCE PRO 32 KIS_10312018194448_4822839,Yes,Yes
+2313557,Rinnai America Corporation,Rinnai,E-Series,E110C,,Boiler,"Natural Gas,Propane Gas",95,07/15/2009,11/05/2018,"United States, Canada",ES_97439_E110C_03232018204820_4707244,Yes,Yes
+2313559,Rinnai America Corporation,Rinnai,E-Refresh,E110CR,,Boiler,"Natural Gas,Propane Gas",95,08/01/2016,12/18/2018,"United States, Canada",ES_97439_E110CR_03232018204824_3879402,Yes,Yes
+2313560,Rinnai America Corporation,Rinnai,E-Refresh,E110SR,,Boiler,"Natural Gas,Propane Gas",95,08/01/2016,12/18/2018,"United States, Canada",ES_97439_E110SR_03232018204827_7892564,No,Yes
+2313563,Rinnai America Corporation,Rinnai,E-Series,E50C,,Boiler,"Natural Gas,Propane Gas",95,10/01/2013,03/24/2018,"United States, Canada",ES_97439_E50C_03242018211919_1160071,Yes,Yes
+2313564,Rinnai America Corporation,Rinnai,E-Refresh,E50CR,,Boiler,"Natural Gas,Propane Gas",95,08/01/2016,12/13/2018,"United States, Canada",ES_97439_E50CR_03242018211921_1050604,Yes,Yes
+2313567,Rinnai America Corporation,Rinnai,E-Refresh,E60SR,,Boiler,"Natural Gas,Propane Gas",95,08/01/2016,12/13/2018,"United States, Canada",ES_97439_E60SR_03242018211926_6753251,No,Yes
+2313561,Rinnai America Corporation,Rinnai,E-Series,E75C,,Boiler,"Natural Gas,Propane Gas",95,07/15/2009,03/24/2018,"United States, Canada",ES_97439_E75C_03242018211911_6471961,Yes,Yes
+2313565,Rinnai America Corporation,Rinnai,E-Refresh,E75CR,,Boiler,"Natural Gas,Propane Gas",95,08/01/2016,12/13/2018,"United States, Canada",ES_97439_E75CR_03242018211923_7735553,Yes,Yes
+2313566,Rinnai America Corporation,Rinnai,E-Refresh,E85SR,,Boiler,"Natural Gas,Propane Gas",95,08/01/2016,12/13/2018,"United States, Canada",ES_97439_E85SR_03242018211924_7244402,No,Yes
+2324950,Rinnai America Corporation,Rinnai,M060C,M060C,,Boiler,"Natural Gas,Propane Gas",95,07/25/2018,08/28/2018,"United States, Canada",ES_97439_M060C_08282018152750_5901949,Yes,Yes
+2324948,Rinnai America Corporation,Rinnai,M060S,M060S,,Boiler,"Natural Gas,Propane Gas",95,06/25/2018,08/28/2018,"United States, Canada",ES_97439_M060S_08282018152740_1116347,Yes,Yes
+2325135,Rinnai America Corporation,Rinnai,M090C,M090C,,Boiler,"Natural Gas,Propane Gas",95,07/25/2018,08/31/2018,"United States, Canada",ES_97439_M090C_08312018153208_0092598,Yes,Yes
+2323612,Velocity Boiler Works,Velocity Boiler Works,Shadow,SHADW180M,,Boiler,"Natural Gas,Propane Gas",94,08/01/2017,07/31/2018,United States,ES_1136570_SHADW180M_07312018233620_6360734,No,No
+2302196,"Vesta.DS., Inc.",Vesta,VRB,VRB-110,,Boiler,"Natural Gas,Propane Gas",95,08/16/2017,08/16/2017,United States,ES_1137991_VRB-110_08162017020730_1024176,No,Yes
+2307468,"Vesta.DS., Inc.",Vesta,VRB,VRB-130,,Boiler,"Natural Gas,Propane Gas",95,12/01/2017,12/06/2017,United States,ES_1137991_VRB-130_12062017070110_1024200,No,Yes
+2302197,"Vesta.DS., Inc.",Vesta,VRB,VRB-80,,Boiler,"Natural Gas,Propane Gas",95,08/16/2017,08/16/2017,United States,ES_1137991_VRB-80_08162017021220_1024176,No,Yes
+2303283,"Vesta.DS., Inc.",Vesta,VRC,VRC-100,,Boiler,"Natural Gas,Propane Gas",95,09/06/2017,09/07/2017,United States,ES_1137991_VRC-100_09072017085330_1024179,Yes,Yes
+2302210,"Vesta.DS., Inc.",Vesta,VRC,VRC-120,,Boiler,"Natural Gas,Propane Gas",95,08/16/2017,08/16/2017,United States,ES_1137991_VRC-120_08162017021840_1024176,Yes,Yes
+2302198,"Vesta.DS., Inc.",Vesta,VRC,VRC-140,,Boiler,"Natural Gas,Propane Gas",95,08/16/2017,08/16/2017,United States,ES_1137991_VRC-140_08162017022840_1024176,Yes,Yes
+2302199,"Vesta.DS., Inc.",Vesta,VRC,VRC-80,,Boiler,"Natural Gas,Propane Gas",95,08/16/2017,08/16/2017,United States,ES_1137991_VRC-80_08162017022440_1024176,Yes,Yes
+2313391,Viessmann Manufacturing Company,Viessmann,Vitodens 100,B1HA-125,,Boiler,"Natural Gas,Propane Gas",95,01/04/2017,03/23/2018,"United States, Canada",ES_42211_B1HA-125_03232018180700_5722195,Yes,Yes
+2313387,Viessmann Manufacturing Company,Viessmann,Vitodens 100,B1HA 26,,Boiler,"Natural Gas,Propane Gas",95,04/01/2017,03/23/2018,"United States, Canada",ES_42211_B1HA 26_03232018180652_4728703,Yes,Yes
+2313388,Viessmann Manufacturing Company,Viessmann,Vitodens 100,B1HA 35,,Boiler,"Natural Gas,Propane Gas",95,04/01/2017,03/23/2018,"United States, Canada",ES_42211_B1HA 35_03232018180654_0726732,Yes,Yes
+2313390,Viessmann Manufacturing Company,Viessmann,Vitodens 100,B1HA-94,,Boiler,"Natural Gas,Propane Gas",95,01/04/2017,03/23/2018,"United States, Canada",ES_42211_B1HA-94_03232018180658_4184269,Yes,Yes
+2313392,Viessmann Manufacturing Company,Viessmann,Vitodens 100,B1KA-125,,Boiler,"Natural Gas,Propane Gas",95,01/04/2017,03/23/2018,"United States, Canada",ES_42211_B1KA-125_03232018180702_5656939,Yes,Yes
+2313389,Viessmann Manufacturing Company,Viessmann,Vitodens 100,B1KA 35,,Boiler,"Natural Gas,Propane Gas",95,04/01/2017,03/23/2018,"United States, Canada",ES_42211_B1KA 35_03232018180656_8709627,Yes,Yes
+2313456,Viessmann Manufacturing Company,Viessmann,Vitodens 200,B2HA-285,,Boiler,"Natural Gas,Propane Gas",92,09/30/2013,03/23/2018,"United States, Canada",ES_42211_B2HA-285_03232018185917_6710856,Yes,No
+2313455,Viessmann Manufacturing Company,Viessmann,Vitodens 200,B2HA-80,,Boiler,"Natural Gas,Propane Gas",92,09/30/2013,03/23/2018,"United States, Canada",ES_42211_B2HA-80_03232018185915_8564427,Yes,No
+2313449,Viessmann Manufacturing Company,Viessmann,Vitodens 200,B2HB-125,,Boiler,"Natural Gas,Propane Gas",95,01/09/2014,03/23/2018,"United States, Canada",ES_42211_B2HB-125_03232018184318_8716570,Yes,Yes
+2313450,Viessmann Manufacturing Company,Viessmann,Vitodens 200,B2HB-160,,Boiler,"Natural Gas,Propane Gas",95,01/09/2015,03/23/2018,"United States, Canada",ES_42211_B2HB-160_03232018184321_8826037,Yes,Yes
+2313443,Viessmann Manufacturing Company,Viessmann,Vitodens 200,B2HB-19,,Boiler,"Natural Gas,Propane Gas",95,09/01/2014,03/23/2018,"United States, Canada",ES_42211_B2HB-19_03232018184305_2345931,Yes,Yes
+2313451,Viessmann Manufacturing Company,Viessmann,Vitodens 200,B2HB-199,,Boiler,"Natural Gas,Propane Gas",95,01/09/2015,03/23/2018,"United States, Canada",ES_42211_B2HB-199_03232018184323_1410740,Yes,Yes
+2313444,Viessmann Manufacturing Company,Viessmann,Vitodens 200,B2HB-26,,Boiler,"Natural Gas,Propane Gas",95,09/01/2014,03/23/2018,"United States, Canada",ES_42211_B2HB-26_03232018184307_2804062,Yes,Yes
+2313445,Viessmann Manufacturing Company,Viessmann,Vitodens 200,B2HB-35,,Boiler,"Natural Gas,Propane Gas",95,09/01/2014,03/23/2018,"United States, Canada",ES_42211_B2HB-35_03232018184310_7581374,Yes,Yes
+2313447,Viessmann Manufacturing Company,Viessmann,Vitodens 200,B2HB-68,,Boiler,"Natural Gas,Propane Gas",95,01/09/2014,03/23/2018,"United States, Canada",ES_42211_B2HB-68_03232018184314_8672360,Yes,Yes
+2313448,Viessmann Manufacturing Company,Viessmann,Vitodens 200,B2HB-94,,Boiler,"Natural Gas,Propane Gas",95,01/09/2014,03/23/2018,"United States, Canada",ES_42211_B2HB-94_03232018184316_0210287,Yes,Yes
+2313452,Viessmann Manufacturing Company,Viessmann,Vitodens 222,B2TB-125,,Boiler,"Natural Gas,Propane Gas",95,01/09/2014,03/23/2018,"United States, Canada",ES_42211_B2TB-125_03232018184325_3505074,Yes,Yes
+2313446,Viessmann Manufacturing Company,Viessmann,Vitodens 222,B2TB-35,,Boiler,"Natural Gas,Propane Gas",95,09/01/2014,03/23/2018,"United States, Canada",ES_42211_B2TB-35_03232018184312_2466588,Yes,Yes
+2313410,Viessmann Manufacturing Company,Viessmann,Vitocrossal 300,CU3A-125,,Boiler,"Natural Gas,Propane Gas",95,01/06/2015,03/23/2018,"United States, Canada",ES_42211_CU3A-125_03232018181957_3220649,Yes,Yes
+2313412,Viessmann Manufacturing Company,Viessmann,Vitocrossal 300,CU3A-160,,Boiler,"Natural Gas,Propane Gas",95,01/06/2015,03/23/2018,"United States, Canada",ES_42211_CU3A-160_03232018182000_6731468,Yes,Yes
+2313411,Viessmann Manufacturing Company,Viessmann,Vitocrossal 300,CU3A-199,,Boiler,"Natural Gas,Propane Gas",95,01/06/2015,03/23/2018,"United States, Canada",ES_42211_CU3A-199_03232018181959_2206110,Yes,Yes
+2313405,Viessmann Manufacturing Company,Viessmann,Vitocrossal 300,CU3A-26,,Boiler,"Natural Gas,Propane Gas",95,06/01/2015,03/23/2018,"United States, Canada",ES_42211_CU3A-26_03232018181946_6798843,Yes,Yes
+2313406,Viessmann Manufacturing Company,Viessmann,Vitocrossal 300,CU3A-35,,Boiler,"Natural Gas,Propane Gas",95,06/01/2015,03/23/2018,"United States, Canada",ES_42211_CU3A-35_03232018181948_4704509,Yes,Yes
+2313408,Viessmann Manufacturing Company,Viessmann,Vitocrossal 300,CU3A-45,,Boiler,"Natural Gas,Propane Gas",95,06/01/2015,03/23/2018,"United States, Canada",ES_42211_CU3A-45_03232018181952_1279992,Yes,Yes
+2313407,Viessmann Manufacturing Company,Viessmann,Vitocrossal 300,CU3A-57,,Boiler,"Natural Gas,Propane Gas",95,06/01/2015,03/23/2018,"United States, Canada",ES_42211_CU3A-57_03232018181950_5326173,Yes,Yes
+2313409,Viessmann Manufacturing Company,Viessmann,Vitocrossal 300,CU3A-94,,Boiler,"Natural Gas,Propane Gas",95,01/06/2015,03/23/2018,"United States, Canada",ES_42211_CU3A-94_03232018181955_1170525,Yes,Yes
+2313400,Viessmann Manufacturing Company,Viessmann,Vitorond 100,VR1-105,,Boiler,Oil,87,01/04/2017,03/23/2018,"United States, Canada",ES_42211_VR1-105_03232018181612_3383158,Yes,No
+2313401,Viessmann Manufacturing Company,Viessmann,Vitorond 100,VR1-140,,Boiler,Oil,87,01/04/2017,03/23/2018,"United States, Canada",ES_42211_VR1-140_03232018181615_0449791,Yes,No
+2313402,Viessmann Manufacturing Company,Viessmann,Vitorond 100,VR1-161,,Boiler,Oil,87,01/04/2017,03/23/2018,"United States, Canada",ES_42211_VR1-161_03232018181617_9227509,Yes,No
+2313403,Viessmann Manufacturing Company,Viessmann,Vitorond 100,VR1-196,,Boiler,Oil,87,01/04/2017,03/23/2018,"United States, Canada",ES_42211_VR1-196_03232018181619_3437224,Yes,No
+2313394,Viessmann Manufacturing Company,Viessmann,Vitorond 100,VR1-22,,Boiler,Oil,87,01/04/2017,03/23/2018,"United States, Canada",ES_42211_VR1-22_03232018181600_7103838,Yes,No
+2313404,Viessmann Manufacturing Company,Viessmann,Vitorond 100,VR1-245,,Boiler,Oil,87,01/04/2017,03/23/2018,"United States, Canada",ES_42211_VR1-245_03232018181621_0296114,Yes,No
+2313393,Viessmann Manufacturing Company,Viessmann,Vitorond 100,VR1-27,,Boiler,Oil,87,01/04/2017,03/23/2018,"United States, Canada",ES_42211_VR1-27_03232018181558_7005562,Yes,No
+2313395,Viessmann Manufacturing Company,Viessmann,Vitorond 100,VR1-33,,Boiler,Oil,87,01/04/2017,03/23/2018,"United States, Canada",ES_42211_VR1-33_03232018181602_0582422,Yes,No
+2313396,Viessmann Manufacturing Company,Viessmann,Vitorond 100,VR1-40,,Boiler,Oil,87,01/04/2017,03/23/2018,"United States, Canada",ES_42211_VR1-40_03232018181604_0996343,Yes,No
+2313397,Viessmann Manufacturing Company,Viessmann,Vitorond 100,VR1-50,,Boiler,Oil,87,01/04/2017,03/23/2018,"United States, Canada",ES_42211_VR1-50_03232018181606_0853857,Yes,No
+2313398,Viessmann Manufacturing Company,Viessmann,Vitorond 100,VR1-63,,Boiler,Oil,87,01/04/2017,03/23/2018,"United States, Canada",ES_42211_VR1-63_03232018181608_0395725,Yes,No
+2313399,Viessmann Manufacturing Company,Viessmann,Vitorond 100,VR1-91,,Boiler,Oil,87,01/04/2017,03/23/2018,"United States, Canada",ES_42211_VR1-91_03232018181610_5477491,Yes,No
+2313453,Viessmann Manufacturing Company,Viessmann,Vitodens 100,WB1B-26,,Boiler,"Natural Gas,Propane Gas",94,04/15/2009,03/23/2018,"United States, Canada",ES_42211_WB1B-26_03232018184329_4977743,Yes,No
+2313454,Viessmann Manufacturing Company,Viessmann,Vitodens 100,WB1B-35,,Boiler,"Natural Gas,Propane Gas",94,04/15/2009,03/23/2018,"United States, Canada",ES_42211_WB1B-35_03232018184331_2927620,Yes,No
+2323474,Weil-McLain,Weil-McLain,AB-120-*,AB-120-*,,Boiler,"Natural Gas,Propane Gas",95,05/11/2018,11/05/2018,"United States, Canada",ES_22947_AB-120-*_07312018165233_6584346,Yes,Yes
+2323475,Weil-McLain,Weil-McLain,AB-155-*,AB-155-*,,Boiler,"Natural Gas,Propane Gas",95,05/11/2018,11/05/2018,"United States, Canada",ES_22947_AB-155-*_07312018165235_6660793,Yes,Yes
+2323473,Weil-McLain,Weil-McLain,AB-80-*,AB-80-*,,Boiler,"Natural Gas,Propane Gas",95,05/11/2018,11/05/2018,"United States, Canada",ES_22947_AB-80-*_07312018165227_2635658,Yes,Yes
+2312400,Weil-McLain,Weil-McLain,ECO,ECO 110,,Boiler,"Natural Gas,Propane Gas",95,01/15/2013,11/26/2018,"United States, Canada",ES_22947_ECO 110_03072018201615_6017633,Yes,Yes
+2312401,Weil-McLain,Weil-McLain,ECO,ECO 155,,Boiler,"Natural Gas,Propane Gas",95,01/15/2013,11/26/2018,"United States, Canada",ES_22947_ECO 155_03072018201618_8416420,Yes,Yes
+2312399,Weil-McLain,Weil-McLain,ECO,ECO 70,,Boiler,"Natural Gas,Propane Gas",95,01/15/2013,11/26/2018,"United States, Canada",ES_22947_ECO 70_03072018201613_6650487,Yes,Yes
+2312405,Weil-McLain,Weil-McLain,Evergreen,EVG 110,,Boiler,"Natural Gas,Propane Gas",95,10/01/2017,11/05/2018,"United States, Canada",ES_22947_EVG 110_03072018201808_8618965,No,Yes
+2312406,Weil-McLain,Weil-McLain,Evergreen,EVG 155,,Boiler,"Natural Gas,Propane Gas",95,10/01/2017,11/05/2018,"United States, Canada",ES_22947_EVG 155_03072018201810_9065905,No,Yes
+2312402,Weil-McLain,Weil-McLain,Evergreen,EVG 220,,Boiler,"Natural Gas,Propane Gas",95,07/15/2015,11/05/2018,"United States, Canada",ES_22947_EVG 220_03072018201801_1771266,No,Yes
+2312403,Weil-McLain,Weil-McLain,Evergreen,EVG 299,,Boiler,"Natural Gas,Propane Gas",95,07/15/2015,11/05/2018,"United States, Canada",ES_22947_EVG 299_03072018201803_5773237,No,Yes
+2312404,Weil-McLain,Weil-McLain,Evergreen,EVG 70,,Boiler,"Natural Gas,Propane Gas",95,10/01/2017,11/05/2018,"United States, Canada",ES_22947_EVG 70_03072018201805_3188535,No,Yes
+2312408,Weil-McLain,Weil-McLain,GV90+,GV90+3,,Boiler,"Natural Gas,Propane Gas",91,08/01/2011,11/05/2018,"United States, Canada",ES_22947_GV90+3_03072018201939_8376686,Yes,No
+2312409,Weil-McLain,Weil-McLain,GV90+,GV90+4,,Boiler,"Natural Gas,Propane Gas",91,08/01/2011,11/05/2018,"United States, Canada",ES_22947_GV90+4_03072018201942_5443320,Yes,No
+2312410,Weil-McLain,Weil-McLain,GV90+,GV90+5,,Boiler,"Natural Gas,Propane Gas",91,08/01/2011,11/05/2018,"United States, Canada",ES_22947_GV90+5_03072018201944_8157753,Yes,No
+2312411,Weil-McLain,Weil-McLain,GV90+,GV90+6,,Boiler,"Natural Gas,Propane Gas",91,08/01/2011,11/05/2018,"United States, Canada",ES_22947_GV90+6_03072018201946_5224387,Yes,No
+2312413,Weil-McLain,Weil-McLain,ULTRA,ULTRA 105-CT,,Boiler,"Natural Gas,Propane Gas",94,01/15/2013,11/05/2018,"United States, Canada",ES_22947_ULTRA 105-CT_03072018202110_9040263,Yes,No
+2312414,Weil-McLain,Weil-McLain,ULTRA,ULTRA 155-CT,,Boiler,"Natural Gas,Propane Gas",94,01/15/2013,11/05/2018,"United States, Canada",ES_22947_ULTRA 155-CT_03072018202112_9454183,Yes,No
+2312415,Weil-McLain,Weil-McLain,ULTRA,ULTRA 230-CT,,Boiler,"Natural Gas,Propane Gas",94,01/15/2013,11/05/2018,"United States, Canada",ES_22947_ULTRA 230-CT_03072018202115_5233279,Yes,No
+2312416,Weil-McLain,Weil-McLain,ULTRA,ULTRA 299-CT,,Boiler,"Natural Gas,Propane Gas",92,01/15/2013,11/05/2018,"United States, Canada",ES_22947_ULTRA 299-CT_03072018202117_8711862,Yes,No
+2312412,Weil-McLain,Weil-McLain,ULTRA,ULTRA  80-CT,,Boiler,"Natural Gas,Propane Gas",93,01/15/2013,11/05/2018,"United States, Canada",ES_22947_ULTRA  80-CT_03072018202106_9781801,Yes,No
+2312423,Weil-McLain,Weil-McLain,Ultra Oil,UO-3E,,Boiler,Oil,87,10/15/2014,11/05/2018,"United States, Canada",ES_22947_UO-3E_03072018202325_7690007,No,No
+2312422,Weil-McLain,Weil-McLain,Ultra Oil,UO-3RE,,Boiler,Oil,87,10/15/2014,11/05/2018,"United States, Canada",ES_22947_UO-3RE_03072018202323_4419167,No,No
+2312424,Weil-McLain,Weil-McLain,Ultra Oil,UO-4E,,Boiler,Oil,87,10/15/2014,11/05/2018,"United States, Canada",ES_22947_UO-4E_03072018202327_3676846,No,No
+2312425,Weil-McLain,Weil-McLain,Ultra Oil,UO-5E,,Boiler,Oil,87,10/15/2014,11/05/2018,"United States, Canada",ES_22947_UO-5E_03072018202330_0187072,No,No
+2312426,Weil-McLain,Weil-McLain,WGO,WGO-2RD,,Boiler,Oil,87,10/15/2014,11/05/2018,"United States, Canada",ES_22947_WGO-2RD_03072018202519_0498301,No,No
+2312427,Weil-McLain,Weil-McLain,WGO,WGO-3RD,,Boiler,Oil,87,10/15/2014,11/05/2018,"United States, Canada",ES_22947_WGO-3RD_03072018202521_3420476,No,No
+2312428,Weil-McLain,Weil-McLain,WGO,WGO-4RD,,Boiler,Oil,87,10/15/2014,11/05/2018,"United States, Canada",ES_22947_WGO-4RD_03072018202523_8850906,No,No
+2312429,Weil-McLain,Weil-McLain,WGO,WGO-5RD,,Boiler,Oil,87,10/15/2014,11/05/2018,"United States, Canada",ES_22947_WGO-5RD_03072018202525_2885898,No,No
+2312430,Weil-McLain,Weil-McLain,WGO,WGO-6RD,,Boiler,Oil,87,10/15/2014,11/05/2018,"United States, Canada",ES_22947_WGO-6RD_03072018202528_4171871,No,No
+2312431,Weil-McLain,Weil-McLain,WGO,WGO-7RD,,Boiler,Oil,87,10/15/2014,11/05/2018,"United States, Canada",ES_22947_WGO-7RD_03072018202530_3190352,No,No
+2312398,Weil-McLain,Weil-McLain,WM97+,WM97+ 110-CT,,Boiler,"Natural Gas,Propane Gas",95,01/15/2013,11/26/2018,"United States, Canada",ES_22947_WM97+ 110-CT_03072018201610_9791597,Yes,Yes
+2312397,Weil-McLain,Weil-McLain,WM97+,WM97+ 155-CT,,Boiler,"Natural Gas,Propane Gas",95,01/15/2013,11/26/2018,"United States, Canada",ES_22947_WM97+ 155-CT_03072018201608_5440962,Yes,Yes
+2312396,Weil-McLain,Weil-McLain,WM97+,WM97+  70-CT,,Boiler,"Natural Gas,Propane Gas",95,01/15/2013,11/26/2018,"United States, Canada",ES_22947_WM97+  70-CT_03072018201606_4437614,Yes,Yes
+2312436,Weil-McLain,Weil-McLain,WTGO,WTGO-3RD,,Boiler,Oil,87,10/15/2014,11/05/2018,"United States, Canada",ES_22947_WTGO-3RD_03072018202540_7452566,Yes,No
+2312435,Weil-McLain,Weil-McLain,WTGO,WTGO-4RD,,Boiler,Oil,87,10/15/2014,11/05/2018,"United States, Canada",ES_22947_WTGO-4RD_03072018202538_8990492,Yes,No
+2312434,Weil-McLain,Weil-McLain,WTGO,WTGO-5RD,,Boiler,Oil,87,10/15/2014,11/05/2018,"United States, Canada",ES_22947_WTGO-5RD_03072018202536_4116470,Yes,No
+2312433,Weil-McLain,Weil-McLain,WTGO,WTGO-6RD,,Boiler,Oil,87,10/15/2014,11/05/2018,"United States, Canada",ES_22947_WTGO-6RD_03072018202534_5097989,Yes,No
+2312432,Weil-McLain,Weil-McLain,WTGO,WTGO-7RD,,Boiler,Oil,87,10/15/2014,11/05/2018,"United States, Canada",ES_22947_WTGO-7RD_03072018202532_2732221,Yes,No
+2325889,Williamson-Thermoflo,Williamson-Thermoflo,FS-120-*,FS-120-*,,Boiler,"Natural Gas,Propane Gas",95,06/30/2018,11/05/2018,"United States, Canada",ES_1090273_FS-120-*_09132018195225_3649866,Yes,Yes
+2325890,Williamson-Thermoflo,Williamson-Thermoflo,FS-155-*,FS-155-*,,Boiler,"Natural Gas,Propane Gas",95,06/30/2018,11/05/2018,"United States, Canada",ES_1090273_FS-155-*_09132018195227_2330873,Yes,Yes
+2312380,Williamson-Thermoflo,Williamson-Thermoflo,FreeStyle,FS-155-N-*,,Boiler,"Natural Gas,Propane Gas",94,07/28/2016,03/07/2018,Canada,ES_1090273_FS-155-N-*_03072018200538_1888711,Yes,No
+2325888,Williamson-Thermoflo,Williamson-Thermoflo,FS-80-*,FS-80-*,,Boiler,"Natural Gas,Propane Gas",95,06/30/2018,11/05/2018,"United States, Canada",ES_1090273_FS-80-*_09132018195222_5906950,Yes,Yes
+2312390,Williamson-Thermoflo,Williamson-Thermoflo,GWC,GWC-070-N-T,,Boiler,"Natural Gas,Propane Gas",91,08/01/2011,11/26/2018,United States,ES_1090273_GWC-070-N-T_03072018201038_8977785,Yes,No
+2312391,Williamson-Thermoflo,Williamson-Thermoflo,GWC,GWC-105-N-T,,Boiler,"Natural Gas,Propane Gas",91,08/01/2011,11/26/2018,United States,ES_1090273_GWC-105-N-T_03072018201041_0329799,Yes,No
+2312392,Williamson-Thermoflo,Williamson-Thermoflo,GWC,GWC-140-N-T,,Boiler,"Natural Gas,Propane Gas",91,08/01/2011,11/26/2018,United States,ES_1090273_GWC-140-N-T_03072018201043_9696943,Yes,No
+2312393,Williamson-Thermoflo,Williamson-Thermoflo,GWC,GWC-175-N-T,,Boiler,"Natural Gas,Propane Gas",91,08/01/2011,11/26/2018,United States,ES_1090273_GWC-175-N-T_03072018201046_2095732,Yes,No

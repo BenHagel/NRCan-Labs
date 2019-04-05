@@ -23,7 +23,7 @@ Menu.onload = function(){
     }
 
 
-    ServerAPI.howManyLightBulbEntries();
+    ServerAPI.initialQuery();
     ServerAPI.checkOnJobs();
 };
 
