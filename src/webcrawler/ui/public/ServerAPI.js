@@ -31,13 +31,18 @@ ServerAPI.dis_productSearch = function(){
     var confirmJobs = function(data){
         //Menu.renderCurrentJobs(data);
         //setTimeout(ServerAPI.checkOnJobs, 3500);
-	};
+    };
+    
+    //var dbselect = document.getElementById('databaseSelector');
+    //var dbval = '' + dbselect.options[dbselect.selectedIndex].value;
     var command = '?sig=' + Menu.signature;
     command += '&cmd=DIS_start_job_search';
     command += '&shop=' + document.getElementById('shopTypeBB').checked + 
         '1' + document.getElementById('shopTypeHD').checked + 
             '1' + document.getElementById('shopTypeCT').checked;
     command += '&search=' + document.getElementById('searchForProductInput').value;
+    command += '&ps=' + document.getElementById('pageFrom').value;
+    command += '&pe=' + document.getElementById('pageTo').value;
     ServerAPI.xmlRequest('POST', command, confirmJobs);
 };
 
@@ -62,16 +67,28 @@ ServerAPI.dis_getHotProductLink = function(){
         else{
             Menu.renderHighestHits(data);
         }
-	};
+    };
+    
+    var dbselect = document.getElementById('databaseSelector');
+    var dbval = '' + dbselect.options[dbselect.selectedIndex].value;
+
     var command = '?sig=' + Menu.signature;
     command += '&cmd=DIS_get_hit_product_link';
-    command += '&index=' + document.getElementById('searchForProductInputIndex').value;
+    command += '&index=' + 'all';//document.getElementById('searchForProductInputIndex').value;
     command += '&shop=' + document.getElementById('shopTypeBB').checked + 
         '1' + document.getElementById('shopTypeHD').checked + 
             '1' + document.getElementById('shopTypeCT').checked;
+    command += '&db=' + dbval;
     //console.log(command);
     ServerAPI.xmlRequest('POST', command, gggg);
 };
+
+
+
+
+
+
+
 
 ServerAPI.getProductLink = function(f, l){
     var confirmJobs = function(data){

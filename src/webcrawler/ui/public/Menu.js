@@ -64,7 +64,7 @@ Menu.renderCurrentJobs = function(data){
     else{
         document.getElementById('loadingSpinner').classList.add('hidden');
     }
-    console.log(data.lbEstarHits);
+    console.log(data.linksToProducts + ' ' + data.productsWithHits + ' ' + data.linksOfInfractions);
     document.getElementById('numLinksInMemory').innerText = data.lbEstarHits;
 };
 

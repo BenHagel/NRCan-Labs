@@ -1,4 +1,5 @@
 {
     "database_dir_name": "product_databases",
-    "databases": []
+    "databases": [],
+    "total_record_count": -1
 }

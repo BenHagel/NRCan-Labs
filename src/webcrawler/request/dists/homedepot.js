@@ -2,34 +2,24 @@
 NRCAN - HomeDepot 1
 Scrape all the pages after a search
 */
-//1. Look at the file name first, if they even contain 'energy' 'star' 'certified'
-//2. alt tags on the images 
-
-//Scale down the image to illegable format and then use that as the max
-
-//Careful for going too fast - will be detected from 
-//2. Look out for slower queires
-
-//TWITTER, FACEBOOK, use the api's to look at API's for 
-//All less fluffy and low-fidelity 
-//Look to book off time w Douglas
 
 
 var HomeDepot = {};
 
 //Part 1
-HomeDepot.currentPage = 1;
-HomeDepot.maxPages = 11;
+
 
 //Just search for first term
 HomeDepot.baseURL = 'https://www.homedepot.ca';
-HomeDepot.pageURL = HomeDepot.baseURL + '/en-CA/Search/SearchResults.aspx?type=product&page=1&sortBy=relevance&sortDir=desc&query=';
+HomeDepot.pageURL = HomeDepot.baseURL + '/en/home/search.html?page=0&q=';
 
-HomeDepot.startSearching = function(searchTerm){
+HomeDepot.startSearching = function(searchTerm, ps, pe){
+
+    HomeDepot.currentPage = ps;//sjhpould be 0
+    HomeDepot.maxPages = pe;//15 or w.e.
+    console.log(('Pages:: ' + HomeDepot.currentPage + ' ' + HomeDepot.maxPages).green);
     var urlStart = HomeDepot.pageURL + searchTerm;
     processInProgress = true;
-    //HomeDepot.currentPage = 1;
-    //HomeDepot.maxPages = 11;
     linksToProducts = [];
     //console.log(urlStart);
     HomeDepot.grabLinksFrom(urlStart);
@@ -42,10 +32,10 @@ HomeDepot.grabLinksFrom = function(pageURL){
         links = $('a');
         $(links).each(function(i, link){
             var targetLink = ('' + $(link).attr('href'));
-            var targetLinkParsed = targetLink.split('/', 4);  //  /en-ca/product/
+            var targetLinkParsed = targetLink.split('/', 4);  //  /product/weifasdkj3asdkj 
             //console.log(targetLink);
             if(targetLinkParsed.length > 2){
-                if(targetLinkParsed[1] === 'en-ca' && targetLinkParsed[2] === 'product'){
+                if(targetLinkParsed[1] === 'product'){
                     targetLink = HomeDepot.baseURL + targetLink;
                     HomeDepot.addLink(targetLink);
                 }
@@ -59,9 +49,9 @@ HomeDepot.grabLinksFrom = function(pageURL){
 
         //Iterate pages
         if(HomeDepot.currentPage < HomeDepot.maxPages && processInProgress === true){
-            var oldPageNum = '&page=' + HomeDepot.currentPage;
+            var oldPageNum = '?page=' + HomeDepot.currentPage;
             HomeDepot.currentPage++;
-            var newPageNum = '&page=' + HomeDepot.currentPage;
+            var newPageNum = '?page=' + HomeDepot.currentPage;
             //Call new page
             var nextPageURL = pageURL.replace(oldPageNum, newPageNum);
             //console.log(nextPageURL);
@@ -84,6 +74,7 @@ HomeDepot.addLink = function(newURL){
         if(newURL === linksToProducts[t]) return false;
     }
     linksToProducts.push(newURL);
+    console.log(newURL);
     return true;
 };
 

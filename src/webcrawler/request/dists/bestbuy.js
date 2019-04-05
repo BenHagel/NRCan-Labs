@@ -17,19 +17,17 @@ Scrape all the pages after a search
 
 var BestBuy = {};
 
-//Part 1
-BestBuy.currentPage = 1;
-BestBuy.maxPages = 11;
-
 //Just search for first term
 BestBuy.baseURL = 'https://www.bestbuy.ca';
 BestBuy.pageURL = BestBuy.baseURL + '/en-CA/Search/SearchResults.aspx?type=product&page=1&sortBy=relevance&sortDir=desc&query=';
 
-BestBuy.startSearching = function(searchTerm){
+BestBuy.startSearching = function(searchTerm, ps, pe){
     var urlStart = BestBuy.pageURL + searchTerm;
     processInProgress = true;
-    //BestBuy.currentPage = 1;
-    //BestBuy.maxPages = 11;
+
+    BestBuy.currentPage = ps;
+    BestBuy.maxPages = pe;
+
     linksToProducts = [];
     //console.log(urlStart);
     BestBuy.grabLinksFrom(urlStart);
@@ -152,26 +150,7 @@ BestBuy.compareToDatabase = function(url, res){
         //console.log(overallText);
         var titleComponents = overallText.split(' ');
         var hitValues = [];
-        /*
 
-        for(var i = 0;i < formatted.length;i++){
-            var hitFound = 0;
-            for(var j = 0;j < formatted[i].length;j++){
-                for(var x = 0;x < titleComponents.length;x++){
-                    if(levenshtein.get(formatted[i][j], titleComponents[x]) < 1){hitFound++;}
-                }
-            }
-            var perc = (0.0+hitFound) / (0.0+formatted[i].length);
-            hitValues.push({'ind': i, 'match': perc});
-        }
-
-        hitValues.sort(function(a, b){return b.match-a.match});
-
-        //console.log(hitValues[0]);
-        for(var u = 0;u < hitValues.length;u++){
-            hitValues[u].words = formatted[hitValues[u].ind];
-        }
-        */
         var returnVal = {};
         returnVal.url = url;
         returnVal.title = overallText;
@@ -181,7 +160,7 @@ BestBuy.compareToDatabase = function(url, res){
     });
 };
 
-BestBuy.compareAllModelNumberToDatabase = function(indOfESMatch, res){
+BestBuy.compareAllModelNumberToDatabase = function(indOfESMatch, res, dbIndex){
     //console.log("here: " + productsWithHits[indOfESMatch]);
     request(productsWithHits[indOfESMatch], function(err, resp, body){
         $ = cheerio.load(body);
@@ -192,8 +171,8 @@ BestBuy.compareAllModelNumberToDatabase = function(indOfESMatch, res){
         });
 
         var hit = false;
-        for(var j = 0;j < db.length;j++){
-            var mNumber = '' + db[j]['Model Number'];
+        for(var j = 0;j < CONFIG.databases[dbIndex].records.length;j++){
+            var mNumber = '' + CONFIG.databases[dbIndex].records[j]['Model Number'];
             var allMatch = true;
             for(var f = 0;f < mNumber.length;f++){
                 if(f < overallText.length){
@@ -220,7 +199,7 @@ BestBuy.compareAllModelNumberToDatabase = function(indOfESMatch, res){
 
         if(indOfESMatch > 0 && processInProgress){
             indOfESMatch--;
-            BestBuy.compareAllModelNumberToDatabase(indOfESMatch, res);
+            BestBuy.compareAllModelNumberToDatabase(indOfESMatch, res, dbIndex);
         }
         else{
             var returnVal = {};

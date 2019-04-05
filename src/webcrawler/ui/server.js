@@ -6,10 +6,12 @@ var request = require('request');
 var cheerio = require('cheerio');
 var levenshtein = require('fast-levenshtein');
 const csv = require('csv-parser');
+const colour = require('colour');
 
-
+console.log('START'.green);
 //Load config file,
 var CONFIG = JSON.parse(fs.readFileSync('../../../config.json', 'utf8'));
+CONFIG.total_record_count = 0;
 var db_filenames = [];
 fs.readdirSync('../../../' + CONFIG.database_dir_name).forEach(file => {
     db_filenames.push('' + file);
@@ -26,8 +28,10 @@ var dbLoader = function(dbInd){
         var toAdd = {};
         toAdd.name = '' + db_filenames[dbInd].split('.')[0];
         toAdd.size = tempdb.length;
+        toAdd.records = tempdb;
         console.log('loaded:\t' + toAdd.name);
         console.log('\trecords:\t' + toAdd.size);
+
         CONFIG.databases.push(toAdd);
         if(dbInd > 0){
             dbLoader(dbInd-1);
@@ -50,7 +54,7 @@ var processInProgress = false;
 
 //DISTRIBUTORS
 var radioButtons = [];//which shop selectged
-var linksToProducts = [];//current links to products
+var linksToProducts = [];
 var productsWithHits = [];
 var linksOfInfractions = [];
 
@@ -74,16 +78,21 @@ var folderNameOfOutput = 'temp';//fridges, lightbulbs, dehumidifiers, :::temp:::
 
 
 
-//Load FRIDGE hits for ENERGY STAR
+//Load hits for ENERGY STAR
 productsWithHits = '' + fs.readFileSync('../output/' + folderNameOfOutput + '/eStarHits.txt');
 //productsWithHits = '' + fs.readFileSync('../output/' + folderNameOfOutput + '/eStarHits.txt');
 productsWithHits = productsWithHits.split('\n');
+for(var g = 0;g < productsWithHits.length;g++){
+    if(productsWithHits.length < 3) productsWithHits.splice(g, 1);
+}
 
 //Load FRIDGE infractions for ENERGY STAR
 linksOfInfractions = '' + fs.readFileSync('../output/' + folderNameOfOutput + '/eStarHits_infractions.txt');
 //linksOfInfractions = '' + fs.readFileSync('../output/' + folderNameOfOutput + '/eStarHits_infractions.txt');
 linksOfInfractions = linksOfInfractions.split('\n');
-
+for(var g = 0;g < linksOfInfractions.length;g++){
+    if(linksOfInfractions.length < 3) linksOfInfractions.splice(g, 1);
+}
 
 
 
@@ -102,16 +111,22 @@ app.post('/api', function(req, res){
     }
     //Once on startup to load in information
     else if(req.query.cmd === 'confirm_database'){
+        var sendOver = [];
+        for(var h = 0;h < CONFIG.databases.length;h++){
+            sendOver.push({"name": CONFIG.databases[h].name, "size": CONFIG.databases[h].size});
+        }
         res.json({'entries': JSON.stringify(CONFIG.databases), 'goodStartingSeeds': goodStartingSeedURLS});
     }
     //Once every second called
     else if(req.query.cmd === 'check_jobs'){
         if(linksToProducts.length > 0){
-            res.json({'busy': processInProgress, 'links': linksToProducts.length, 'lbEstarHits': productsWithHits.length,
+            res.json({'busy': processInProgress, 'linksToProducts': linksToProducts.length,
+            'productsWithHits': productsWithHits.length, 'linksOfInfractions': linksOfInfractions.length,
                 'firstLink': linksToProducts[0], 'lastLink': linksToProducts[linksToProducts.length-1],
                 'nodes': JSON.stringify(WWW.nodes)});
         }else{
-            res.json({'busy': processInProgress, 'links': linksToProducts.length,  'lbEstarHits': productsWithHits.length,
+            res.json({'busy': processInProgress, 'linksToProducts': linksToProducts.length,
+            'productsWithHits': productsWithHits.length, 'linksOfInfractions': linksOfInfractions.length,
                 'firstLink': '---', 'lastLink': '---',
                 'nodes': JSON.stringify(WWW.nodes)});
         }
@@ -122,11 +137,13 @@ app.post('/api', function(req, res){
     else if(req.query.cmd === 'DIS_start_job_search'){
         if(!processInProgress && (''+req.query.search).length > 2){
             radioButtons = (''+req.query.shop).split('1');
+            var ps = Math.round(Number((''+req.query.ps)));
+            var pe = Math.round(Number((''+req.query.pe)));
             if(radioButtons[0] === 'true'){
-                BestBuy.startSearching((''+req.query.search).replace(/ /g, '+').trim());
+                BestBuy.startSearching((''+req.query.search).replace(/ /g, '+').trim(), ps, pe);
             }
             else if(radioButtons[1] === 'true'){
-
+                HomeDepot.startSearching((''+req.query.search).replace(/ /g, '+').trim(), ps, pe);
             }
             else if(radioButtons[2] === 'true'){
 
@@ -163,6 +180,14 @@ app.post('/api', function(req, res){
     else if(req.query.cmd === 'DIS_get_hit_product_link'){
         if(!processInProgress){
             radioButtons = (''+req.query.shop).split('1');
+            var dbIndex = -1;
+            var requestedDB = (''+req.query.db);
+            for(var k = 0;k < CONFIG.databases.length;k++){
+                if(requestedDB === CONFIG.databases[k].name){
+                    dbIndex = k;
+                    break;
+                }
+            }
             if(req.query.index === 'all'){
                 /*for(var p = 0;p < 75;p++){
                     BestBuy.compareToDatabase(p, res);
@@ -170,7 +195,7 @@ app.post('/api', function(req, res){
                 res.json({'all': productsWithHits});*/
                 linksOfInfractions = [];
                 processInProgress = true;
-                BestBuy.compareAllModelNumberToDatabase(productsWithHits.length-1, res);
+                BestBuy.compareAllModelNumberToDatabase(productsWithHits.length-1, res, dbIndex);
                 //res.json({'all': productsWithHits});
             }
             else{

@@ -80,6 +80,11 @@ html{
 
     resize: vertical;
 }
+
+.page-num-specifier{
+    width: 25px;
+}
+
 .url-starting-seeds-text-area{
     width: 100%;
     height: 140px;

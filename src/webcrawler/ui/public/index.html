@@ -44,6 +44,7 @@
                     <input type="radio" name="shop" value="hd" id="shopTypeHD"> Home Depot<br>
                     <input type="radio" name="shop" value="ct" id="shopTypeCT"> Canadian Tire<br>
                     <input id="searchForProductInput" type="text" placeholder="product name">
+                    Page <input id="pageFrom" type="text" placeholder="0" class="page-num-specifier"> to <input id="pageTo" type="text" placeholder="15" class="page-num-specifier">
                     <button onclick="ServerAPI.dis_productSearch();">Search</button>
                     <br>
                     <button onclick="ServerAPI.dis_findWhichLinksHaveESHits();">Which have hits?</button>
@@ -56,8 +57,8 @@
                 <div style="display: none;">
                     <p>Search products of interest with Energy Star</p>
                     <div>links of interest: <span id="numLinksInMemory"></span></div>
-                    <input width="100%" id="searchForProductInputIndex" type="text" placeholder="search index">
-                    <button onclick="ServerAPI.dis_getHotProductLink();">Search</button>
+                    <!--<input width="100%" id="searchForProductInputIndex" type="text" placeholder="search index">-->
+                    <button onclick="ServerAPI.dis_getHotProductLink();">Find Model# Misuse</button>
                     <select id="databaseSelector" class="database-selector">
                         <option value="none">n/a</option>
                     </select>
