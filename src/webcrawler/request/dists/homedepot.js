@@ -21,12 +21,43 @@ HomeDepot.startSearching = function(searchTerm, ps, pe){
     var urlStart = HomeDepot.pageURL + searchTerm;
     processInProgress = true;
     linksToProducts = [];
-    //console.log(urlStart);
+    console.log((''+urlStart).red);
     HomeDepot.grabLinksFrom(urlStart);
 };
 
 HomeDepot.grabLinksFrom = function(pageURL){
+    console.log((''+pageURL).yellow);
     request(pageURL, function(err, resp, body){
+        console.log(('IN:\t\t'+pageURL).yellow);
+        
+        if(body){
+            console.log(body.length);
+            $ = cheerio.load(body);
+            links = $('a');
+            $(links).each(function(i, link){
+                var targetLink = ('' + $(link).attr('href'));
+                var targetLinkParsed = targetLink.split('/', 4);  //  /product/weifasdkj3asdkj 
+                //console.log(targetLink);
+                if(targetLinkParsed.length > 2){
+                    if(targetLinkParsed[1] === 'product'){
+                        targetLink = HomeDepot.baseURL + targetLink;
+                        //console.log((''+targetLink).green);
+                        HomeDepot.addLink(targetLink);
+                    }
+                }
+            });
+        }else{
+            HomeDepot.currentPage--;
+        }
+
+        /*
+        let $ = cheerio.load(body);
+        $('a').each((i, element) => {
+            let LI = $(element).attr('href');
+        });
+        */
+
+        /*
         //Body 
         $ = cheerio.load(body);
         links = $('a');
@@ -37,15 +68,13 @@ HomeDepot.grabLinksFrom = function(pageURL){
             if(targetLinkParsed.length > 2){
                 if(targetLinkParsed[1] === 'product'){
                     targetLink = HomeDepot.baseURL + targetLink;
+                    console.log((''+targetLink).green);
                     HomeDepot.addLink(targetLink);
                 }
             }
-            //if((''+$(link).attr('href')).substring(0,4) === 'http'){
-                //console.log($(link).attr('href'));
-                //console.log('---LINK SAVED\n' + (''+$(link).attr('href')));
-                //firstLinks.push($(link).attr('href'));
-            //}
         });
+        */
+
 
         //Iterate pages
         if(HomeDepot.currentPage < HomeDepot.maxPages && processInProgress === true){
@@ -54,9 +83,9 @@ HomeDepot.grabLinksFrom = function(pageURL){
             var newPageNum = '?page=' + HomeDepot.currentPage;
             //Call new page
             var nextPageURL = pageURL.replace(oldPageNum, newPageNum);
-            //console.log(nextPageURL);
-            //console.log(nextPageURL);
-            HomeDepot.grabLinksFrom(nextPageURL);
+
+            setTimeout(function(){HomeDepot.grabLinksFrom(nextPageURL)}, 840);
+            //HomeDepot.grabLinksFrom(nextPageURL);
         }
         else{
             //console.log('---FINISHED with:');
