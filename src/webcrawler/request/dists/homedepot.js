@@ -14,7 +14,6 @@ HomeDepot.baseURL = 'https://www.homedepot.ca';
 HomeDepot.pageURL = HomeDepot.baseURL + '/en/home/search.html?page=0&q=';
 
 HomeDepot.startSearching = function(searchTerm, ps, pe){
-
     HomeDepot.currentPage = ps;//sjhpould be 0
     HomeDepot.maxPages = pe;//15 or w.e.
     console.log(('Pages:: ' + HomeDepot.currentPage + ' ' + HomeDepot.maxPages).green);
@@ -36,8 +35,7 @@ HomeDepot.grabLinksFrom = function(pageURL){
             links = $('a');
             $(links).each(function(i, link){
                 var targetLink = ('' + $(link).attr('href'));
-                var targetLinkParsed = targetLink.split('/', 4);  //  /product/weifasdkj3asdkj 
-                //console.log(targetLink);
+                var targetLinkParsed = targetLink.split('/', 4);  //  /product/
                 if(targetLinkParsed.length > 2){
                     if(targetLinkParsed[1] === 'product'){
                         targetLink = HomeDepot.baseURL + targetLink;
