@@ -10,101 +10,78 @@ const csv = require('csv-parser');
 const fs = require('fs');
 
 //Case Study URL
-var productURL = 'https://www.bestbuy.ca/en-ca/product/philips-468009-led-90w-par38-glass-daylight-5000k/12741957.aspx?';
+var productURL = 
+    'https://www.homedepot.ca/product/philips-hue-white-and-colour-ambiance-a19-60w-equivalent-dimmable-led-smart-bulb-energy-star-/1001027903';
 
 
-//Helper functions
-String.prototype.replaceAll = function(search, replacement) {
-    var target = this;
-    return target.replace(new RegExp(search, 'g'), replacement);
-};
 
-function repAll(word, target, desired){
-    //console.log(word);
-    if(word.includes(target)){
-        //console.log('before: ' + word);
-        word = word.replace(target, desired);
-        return repAll(word, target, desired);
-    }
-    else{
-        return word;
-    }
-}
-
-//var csvRaw = ''+ fs.readFileSync('../../../../certified-light-bulbs-2019-03-14.csv');
-//csvRaw = csvRaw.split('\n');
 var db = [];
-
-fs.createReadStream('../../../../certified-light-bulbs-2019-03-14.csv')
+fs.createReadStream('../../../../product_databases/certified-light-bulbs-2019-03-14.csv')
     .pipe(csv())
     .on('headers', (headers) => {
-        console.log('First header: ' + headers);
+        //console.log('First header: ' + headers);
     })
     .on('data', (data) => db.push(data))
     .on('end', () => {
         //console.log('db: ' + db.length);
-        console.log(db[0]);
+        //console.log(db[0]);
+        loadStuff(productURL);
     });
 
 
-/*
-var formatted = [];
-for(var i = 0;i < csvRaw.length;i++){
-    if(csvRaw[i].length > 20){
-        csvRaw[i] = csvRaw[i].toLocaleLowerCase();
-        csvRaw[i] = csvRaw[i].replaceAll(',', ' ');
-        csvRaw[i] = csvRaw[i].replaceAll('"', ' ');
-        csvRaw[i] = csvRaw[i].replaceAll('\t', '');
-        csvRaw[i] = csvRaw[i].replaceAll('\n', '');
-        csvRaw[i] = csvRaw[i].replaceAll('\r', '');
-        csvRaw[i] = csvRaw[i].replace(/\s\s+/g, ' ');
-        csvRaw[i] = csvRaw[i].trim();
-        formatted.push(csvRaw[i].split(' '));
+
+
+var extractES = function(body){
+    var ind = body.indexOf('energy star');
+    if(ind > -1){
+        console.log(body.substring(ind, ind+35));
+        body = body.replace('energy star', '');
+        extractES(body);
     }
-}*/
+    else{
+        console.log('Finished-----------');
+    }
+};
 
 
-
-// terms = '' + fs.readFileSync('../../output/bestbuy_products_w_hits.txt');
-//terms = terms.split('\n');
 
 var linkIndex = 0;
-
 function loadStuff(url){
-    request(url, function(err, resp, body){
-        /*
-        if((''+body).includes('energy')){
-            console.log('Energy seen');
-        }
-        */
+    request({"url": url, "timeout": 2200}, function(err, resp, body){
 
+        //Body loaded successfufully
+        if(body){
+            body = (''+body).toLowerCase();
+            console.log('success extracting...')
+            extractES(body);
+            /*
+            if((''+body).includes('energy')){
+                console.log('Energy Seen!');
+            }
+            */
+        }
+        else{
+            console.log('error trying again');
+            loadStuff(productURL);
+        }
+        
+        
+
+
+        /*
         $ = cheerio.load(body);
         links = $('.product-title');
         var overallText = '';
         $(links).each(function(i, link){
             overallText = ('' + $(link).text()).toLowerCase();
         });
+        */
 
-        //Useuless characters
-        overallText = overallText.replaceAll(',', '');
-        overallText = overallText.replaceAll('"', ' ');
-        overallText = overallText.replaceAll('\t', '');
-        overallText = overallText.replaceAll('\n', '');
-        overallText = overallText.replaceAll('\r', '');
-        overallText = overallText.replace(/\s\s+/g, ' ');
-        overallText = overallText.trim();
+
+
+
         
-        //Characters that taint the results
-        overallText = repAll(overallText, '-', ' ');
-        overallText = repAll(overallText, 'new!', ' ');
-        overallText = repAll(overallText, '!', ' ');
-        overallText = repAll(overallText, '(', ' ');
-        overallText = repAll(overallText, ')', ' ');
-        overallText = repAll(overallText, '/', ' ');
-        overallText = overallText.replace(/\s\s+/g, ' ');
-        overallText = overallText.trim();
-
-        //console.log(overallText);
+        /*
         var titleComponents = overallText.split(' ');
         var hitValues = [];
 
@@ -122,6 +99,9 @@ function loadStuff(url){
         hitValues.sort(function(a, b){return b.match-a.match});
         console.log('------------' + hitValues.length);
         if(linkIndex === 0) console.log(hitValues);
+        */
+
+
 
         /*
         if(overallText.includes('energy star') || overallText.includes('star certified') || overallText.includes('star qualified')){
@@ -136,18 +116,29 @@ function loadStuff(url){
             console.log('negative at: ' + linkIndex);
         }
         */
-        //console.log(hitFound + ': ' + overallText);
-
-        linkIndex++;
-        if(linkIndex < terms.length-1){
-            loadStuff(terms[linkIndex]);
-        }
     });
 }
 
-//loadStuff(terms[linkIndex]);
+/*
+//Useuless characters
+overallText = overallText.replaceAll(',', '');
+overallText = overallText.replaceAll('"', ' ');
+overallText = overallText.replaceAll('\t', '');
+overallText = overallText.replaceAll('\n', '');
+overallText = overallText.replaceAll('\r', '');
+overallText = overallText.replace(/\s\s+/g, ' ');
+overallText = overallText.trim();
 
-
+//Characters that taint the results
+overallText = repAll(overallText, '-', ' ');
+overallText = repAll(overallText, 'new!', ' ');
+overallText = repAll(overallText, '!', ' ');
+overallText = repAll(overallText, '(', ' ');
+overallText = repAll(overallText, ')', ' ');
+overallText = repAll(overallText, '/', ' ');
+overallText = overallText.replace(/\s\s+/g, ' ');
+overallText = overallText.trim();
+*/
 
 
 

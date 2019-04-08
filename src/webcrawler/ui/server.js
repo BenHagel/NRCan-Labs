@@ -7,6 +7,8 @@ var cheerio = require('cheerio');
 var levenshtein = require('fast-levenshtein');
 const csv = require('csv-parser');
 const colour = require('colour');
+const puppeteer = require('puppeteer');
+const theUtil = require('util');
 
 console.log('START'.green);
 //Load config file,
@@ -29,8 +31,7 @@ var dbLoader = function(dbInd){
         toAdd.name = '' + db_filenames[dbInd].split('.')[0];
         toAdd.size = tempdb.length;
         toAdd.records = tempdb;
-        console.log('loaded:\t' + toAdd.name);
-        console.log('\trecords:\t' + toAdd.size);
+        console.log('loaded:\t' + toAdd.size + '\t' + toAdd.name);
 
         CONFIG.databases.push(toAdd);
         if(dbInd > 0){
@@ -80,7 +81,6 @@ var folderNameOfOutput = 'temp';//fridges, lightbulbs, dehumidifiers, :::temp:::
 
 //Load hits for ENERGY STAR
 productsWithHits = '' + fs.readFileSync('../output/' + folderNameOfOutput + '/eStarHits.txt');
-//productsWithHits = '' + fs.readFileSync('../output/' + folderNameOfOutput + '/eStarHits.txt');
 productsWithHits = productsWithHits.split('\n');
 for(var g = 0;g < productsWithHits.length;g++){
     if(productsWithHits.length < 3) productsWithHits.splice(g, 1);
@@ -88,7 +88,6 @@ for(var g = 0;g < productsWithHits.length;g++){
 
 //Load FRIDGE infractions for ENERGY STAR
 linksOfInfractions = '' + fs.readFileSync('../output/' + folderNameOfOutput + '/eStarHits_infractions.txt');
-//linksOfInfractions = '' + fs.readFileSync('../output/' + folderNameOfOutput + '/eStarHits_infractions.txt');
 linksOfInfractions = linksOfInfractions.split('\n');
 for(var g = 0;g < linksOfInfractions.length;g++){
     if(linksOfInfractions.length < 3) linksOfInfractions.splice(g, 1);
@@ -155,20 +154,22 @@ app.post('/api', function(req, res){
         if(!processInProgress){
 
             radioButtons = (''+req.query.shop).split('1');
-            if(req.query.index === 'all'){
+            if(false){//req.query.index === 'all'){
                 
                 res.json({'all': productsWithHits});
             }
             else{
                 if(radioButtons[0] === 'true'){
-                    //BestBuy.compareToDatabase(productsWithHits[Number(req.query.index)], res);
                     productsWithHits = [];
                     res.json({});
                     processInProgress = true;
                     BestBuy.extractAllDescFromProducts(linksToProducts.length-1, res);
                 }
                 else if(radioButtons[1] === 'true'){
+                    productsWithHits = [];
                     res.json({});
+                    processInProgress = true;
+                    HomeDepot.extractAllDescFromProducts(linksToProducts.length-1, res);
                 }
                 else if(radioButtons[2] === 'true'){
                     res.json({});

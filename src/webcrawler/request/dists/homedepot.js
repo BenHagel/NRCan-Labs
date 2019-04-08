@@ -26,7 +26,7 @@ HomeDepot.startSearching = function(searchTerm, ps, pe){
 
 HomeDepot.grabLinksFrom = function(pageURL){
     console.log((''+pageURL).yellow);
-    request(pageURL, function(err, resp, body){
+    request({"url": pageURL, "timeout": 5200}, function(err, resp, body){
         console.log(('IN:\t\t'+pageURL).yellow);
         
         if(body){
@@ -105,11 +105,10 @@ HomeDepot.addLink = function(newURL){
     return true;
 };
 
-//extractAllDescFromProducts(productsLeft);
 HomeDepot.extractAllDescFromProducts = function(linkIndex, res){
     request(linksToProducts[linkIndex], function(err, resp, body){
         $ = cheerio.load(body);
-        descs = $('.tab-overview-item');
+        descs = $('.hdca-accordion__panel');
 
         var internalDesc = '';
         $(descs).each(function(i, desc){

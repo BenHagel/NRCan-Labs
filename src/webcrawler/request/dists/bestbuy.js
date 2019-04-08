@@ -35,26 +35,27 @@ BestBuy.startSearching = function(searchTerm, ps, pe){
 
 BestBuy.grabLinksFrom = function(pageURL){
     request(pageURL, function(err, resp, body){
-        //Body 
-        $ = cheerio.load(body);
-        links = $('a');
-        $(links).each(function(i, link){
-            var targetLink = ('' + $(link).attr('href'));
-            var targetLinkParsed = targetLink.split('/', 4);  //  /en-ca/product/
-            //console.log(targetLink);
-            if(targetLinkParsed.length > 2){
-                if(targetLinkParsed[1] === 'en-ca' && targetLinkParsed[2] === 'product'){
-                    targetLink = BestBuy.baseURL + targetLink;
-                    BestBuy.addLink(targetLink);
+        //Body loaded correctly
+        if(body){
+            //Body 
+            $ = cheerio.load(body);
+            links = $('a');
+            $(links).each(function(i, link){
+                var targetLink = ('' + $(link).attr('href'));
+                var targetLinkParsed = targetLink.split('/', 4);  //  /en-ca/product/
+                if(targetLinkParsed.length > 2){
+                    if(targetLinkParsed[1] === 'en-ca' && targetLinkParsed[2] === 'product'){
+                        targetLink = BestBuy.baseURL + targetLink;
+                        BestBuy.addLink(targetLink);
+                    }
                 }
-            }
-            //if((''+$(link).attr('href')).substring(0,4) === 'http'){
-                //console.log($(link).attr('href'));
-                //console.log('---LINK SAVED\n' + (''+$(link).attr('href')));
-                //firstLinks.push($(link).attr('href'));
-            //}
-        });
-
+            });
+        }
+        //Body not loaded correctly - blocked? Try 
+        else{
+            BestBuy.currentPage--;
+        }
+        
         //Iterate pages
         if(BestBuy.currentPage < BestBuy.maxPages && processInProgress === true){
             var oldPageNum = '&page=' + BestBuy.currentPage;
@@ -62,13 +63,9 @@ BestBuy.grabLinksFrom = function(pageURL){
             var newPageNum = '&page=' + BestBuy.currentPage;
             //Call new page
             var nextPageURL = pageURL.replace(oldPageNum, newPageNum);
-            //console.log(nextPageURL);
-            //console.log(nextPageURL);
             BestBuy.grabLinksFrom(nextPageURL);
         }
         else{
-            //console.log('---FINISHED with:');
-            //console.log('\t' + productLinks.length + ' links');
             for(var j = 0;j < linksToProducts.length;j++){
                 fs.appendFileSync('../output/' + folderNameOfOutput + '/productlinks.txt', linksToProducts[j] + '\n');
             }

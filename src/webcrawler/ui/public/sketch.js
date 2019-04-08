@@ -35,7 +35,7 @@ function draw(){
     }
     //console.log(a + '  ' + b);
     background(40);
-    drawNodes();
+    //drawNodes();
 }
 
 function windowResized(){
