@@ -1,6 +1,6 @@
 /*
 NRCAN
-save all the img urls on a page, starting from product names searches into bing.
+TEST Extraction of information from Home Depot
 */
 
 var request = require('request');

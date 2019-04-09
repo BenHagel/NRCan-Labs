@@ -1,30 +1,112 @@
 /*
-NRCAN - HomeDepot 1
+NRCAN - CanTire 1
 Scrape all the pages after a search
 */
-
-
-var HomeDepot = {};
-
-//Part 1
-
+var CanTire = {};
 
 //Just search for first term
-HomeDepot.baseURL = 'https://www.homedepot.ca';
-HomeDepot.pageURL = HomeDepot.baseURL + '/en/home/search.html?page=0&q=';
+CanTire.baseURL = 'https://www.canadiantire.ca/en/search-results.html?q=';
+CanTire.pageURL = CanTire.baseURL + '/en/home/search.html?page=0&q=';
 
-HomeDepot.startSearching = function(searchTerm, ps, pe){
-    HomeDepot.currentPage = ps;//sjhpould be 0
-    HomeDepot.maxPages = pe;//15 or w.e.
-    console.log(('Pages:: ' + HomeDepot.currentPage + ' ' + HomeDepot.maxPages).green);
-    var urlStart = HomeDepot.pageURL + searchTerm;
+CanTire.startSearching = function(searchTerm, ps, pe){
+    const sleep = theUtil.promisify(setTimeout);
+    var imgLinks = [];
     processInProgress = true;
     linksToProducts = [];
-    console.log((''+urlStart).red);
-    HomeDepot.grabLinksFrom(urlStart);
+
+    (async () => {
+        const browser = await puppeteer.launch();
+        const page = await browser.newPage();
+        //Go to the first page to seed the rest
+        await page.goto(CanTire.baseURL + searchTerm, {
+            'waitUntil': 'networkidle2',
+            'timeout': 10000
+        }).then(() => {
+            console.log('success');
+        }).catch((res) => {
+            console.log('fail ' + res);
+        });
+        page.setViewport({
+            width: 1200,
+            height: 800
+        });
+
+        //do{
+
+        //}while();
+        
+        const html = await page.evaluate('new XMLSerializer().serializeToString(document.doctype) + document.documentElement.outerHTML');
+        var tempLinks = [];
+        $ = cheerio.load(html);
+        links = $('a');
+        $(links).each(function(i, link){
+            var targetLink = ('' + $(link).attr('href'));
+            tempLinks.push(targetLink);
+        });
+
+        for(var t = 0;t < tempLinks.length;t++){
+            var parts = tempLinks[t].split('/');
+            if(parts[2] === 'pdp') CanTire.addProductLink('https://www.canadiantire.ca'+tempLinks[t]);//console.log(tempLinks[t]);
+            //console.log(tempLinks[t]);
+        }
+        //.search-results-grid__load-more-results
+
+        var loadMore = $('.search-results-grid__load-more-results');
+        console.log('===========');
+        console.log(loadMore.attr('style'));
+
+
+        /*
+        const hrefs = await page.evaluate(() => {
+            const anchors = document.querySelectorAll('a');
+            return [].map.call(anchors, a => a.href);
+        });
+
+        console.log('hrefs: ' + hrefs.length);
+
+        for(var k = 0;k < hrefs.length;k++){
+            var parts = hrefs[k].split('/');
+            //if(parts[2] === 'pdp') console.log(hrefs[k]);
+            console.log(parts[0] + '[]' + parts[1] + '[]' + parts[2]);
+        }
+        */
+
+
+        /*for(var t = 0;t < hrefs.length;t++){
+            console.log(t + '/' + hrefs.length);
+            var succc = false;
+            await page.goto(hrefs[t], {
+                'waitUntil': 'networkidle2',
+                'timeout': 10000
+            }).then(() => {
+                console.log('success');
+                succc = true;
+                
+            }).catch((res) => {
+                console.log('fail ' + res);
+            });
+            if(succc){
+                const links = await page.$$eval('a', as => as.map(img => img.href));
+                console.log('found ' + links.length + ' links');
+            }
+        }*/
+        await page.screenshot({path: 'example3.png'});
+        await sleep(1000);
+        //page.keyboard.press('Enter');
+        processInProgress = false;
+        await browser.close();
+    })();
+
+    console.log('start pupper');
+
+
+
+
+    
+    //CanTire.grabLinksFrom(urlStart);
 };
 
-HomeDepot.grabLinksFrom = function(pageURL){
+CanTire.grabLinksFrom = function(pageURL){
     request({"url": pageURL, "timeout": 3200}, function(err, resp, body){
         console.log(('IN:\t\t'+pageURL).yellow);
         
@@ -38,25 +120,25 @@ HomeDepot.grabLinksFrom = function(pageURL){
                 var targetLinkParsed = targetLink.split('/', 4);  //  /product/
                 if(targetLinkParsed.length > 2){
                     if(targetLinkParsed[1] === 'product'){
-                        targetLink = HomeDepot.baseURL + targetLink;
-                        HomeDepot.addProductLink(targetLink);
+                        targetLink = CanTire.baseURL + targetLink;
+                        CanTire.addProductLink(targetLink);
                     }
                 }
             });
         }
         //ERROR loading body take a step back and re-do this one
         else{
-            HomeDepot.currentPage--;
+            CanTire.currentPage--;
         }
 
 
         //Iterate pages
-        if(HomeDepot.currentPage < HomeDepot.maxPages && processInProgress === true){
-            var oldPageNum = '?page=' + HomeDepot.currentPage;
-            HomeDepot.currentPage++;
-            var newPageNum = '?page=' + HomeDepot.currentPage;
+        if(CanTire.currentPage < CanTire.maxPages && processInProgress === true){
+            var oldPageNum = '?page=' + CanTire.currentPage;
+            CanTire.currentPage++;
+            var newPageNum = '?page=' + CanTire.currentPage;
             var nextPageURL = pageURL.replace(oldPageNum, newPageNum);
-            setTimeout(function(){HomeDepot.grabLinksFrom(nextPageURL)}, 840);//HomeDepot.grabLinksFrom(nextPageURL);
+            setTimeout(function(){CanTire.grabLinksFrom(nextPageURL)}, 840);//CanTire.grabLinksFrom(nextPageURL);
         }
         else{
             for(var j = 0;j < linksToProducts.length;j++){
@@ -67,19 +149,15 @@ HomeDepot.grabLinksFrom = function(pageURL){
     });
 };
 
-HomeDepot.addProductLink = function(newURL){
+CanTire.addProductLink = function(newURL){
     for(var t = 0; t < linksToProducts.length;t++){
-        if(newURL === linksToProducts[t] || 
-            newURL === linksToProducts[t]+'#review' ||
-            newURL + '#review   ' === linksToProducts[t]) 
-                return false;
+        if(newURL === linksToProducts[t]) return false;
     }
     linksToProducts.push(newURL);
-    //console.log(newURL);
     return true;
 };
 
-HomeDepot.extractAllDescFromProducts = function(linkIndex, res){
+CanTire.extractAllDescFromProducts = function(linkIndex, res){
     request({"url": linksToProducts[linkIndex], "timeout": 2700}, function(err, resp, body){
         //disect
         if(body){
@@ -112,7 +190,7 @@ HomeDepot.extractAllDescFromProducts = function(linkIndex, res){
             //Add a hit if includes
             if(titleOfProduct.includes('energy star') || titleOfProduct.includes('star certified') || esHitInSpecificationsSheet){
                 //productsWithHits.push(linksToProducts[linkIndex]);
-                HomeDepot.addES_HitLink(linksToProducts[linkIndex]);
+                CanTire.addES_HitLink(linksToProducts[linkIndex]);
             }
         }
         //Try again if no response
@@ -128,7 +206,7 @@ HomeDepot.extractAllDescFromProducts = function(linkIndex, res){
         //Base case
         if(linkIndex > 0 && processInProgress){
             linkIndex--;
-            setTimeout(function(){HomeDepot.extractAllDescFromProducts(linkIndex);}, 840);
+            setTimeout(function(){CanTire.extractAllDescFromProducts(linkIndex);}, 840);
         }
         else{
             //END
@@ -142,7 +220,7 @@ HomeDepot.extractAllDescFromProducts = function(linkIndex, res){
     });
 };
 
-HomeDepot.addES_HitLink = function(newURL){
+CanTire.addES_HitLink = function(newURL){
     for(var t = 0; t < productsWithHits.length;t++){
         if(newURL === productsWithHits[t] || 
             newURL === productsWithHits[t]+'#review' ||
@@ -156,13 +234,13 @@ HomeDepot.addES_HitLink = function(newURL){
 
 
 
-HomeDepot.compareAllModelNumberToDatabase = function(indOfESMatch, res, dbIndex){
+CanTire.compareAllModelNumberToDatabase = function(indOfESMatch, res, dbIndex){
     //console.log("here: " + productsWithHits[indOfESMatch]);
     request({"url": productsWithHits[indOfESMatch], "timeout": 2700}, function(err, resp, body){
         //Successful loading
         if(body){
             $ = cheerio.load(body);
-            var links = $('.hdca-product__description-product-detail-model');//'.tab-overview-item'); //jquery get all hyperlinks
+            var links = $('.js-product-title-id');//'.tab-overview-item'); //jquery get all hyperlinks
             var overallText = '';
             $(links).each(function(i, link){
                 overallText += (' ' + $(link).text());
@@ -208,7 +286,7 @@ HomeDepot.compareAllModelNumberToDatabase = function(indOfESMatch, res, dbIndex)
         //Move to next stop
         if(indOfESMatch > 0 && processInProgress){
             indOfESMatch--;
-            HomeDepot.compareAllModelNumberToDatabase(indOfESMatch, res, dbIndex);
+            CanTire.compareAllModelNumberToDatabase(indOfESMatch, res, dbIndex);
         }
         else{
             var returnVal = {};
@@ -224,7 +302,7 @@ HomeDepot.compareAllModelNumberToDatabase = function(indOfESMatch, res, dbIndex)
 
 
 
-HomeDepot.addES_InfractionLink = function(newURL){
+CanTire.addES_InfractionLink = function(newURL){
     for(var t = 0; t < linksOfInfractions.length;t++){
         if(newURL === linksOfInfractions[t]) 
             return false;
@@ -234,7 +312,7 @@ HomeDepot.addES_InfractionLink = function(newURL){
 };
 
 
-HomeDepot.compareToDatabase = function(url, res){
+CanTire.compareToDatabase = function(url, res){
     request({"url": url, "timeout": 2700}, function(err, resp, body){
         //Success in querrtyinh
         if(body){

@@ -64,7 +64,7 @@ var goodStartingSeedURLS = '';
 
 eval('' + fs.readFileSync('../request/dists/bestbuy.js'));
 eval('' + fs.readFileSync('../request/dists/homedepot.js'));
-//eval('' + fs.readFileSync('../request/cantire/cantire.js'));
+eval('' + fs.readFileSync('../request/dists/canadiantire.js'));
 eval('' + fs.readFileSync('../request/www/www.js'));
 
 goodStartingSeedURLS = '' + fs.readFileSync('user_data/goodStartingSeeds.txt');
@@ -77,20 +77,25 @@ var folderNameOfOutput = 'temp';//fridges, lightbulbs, dehumidifiers, :::temp:::
 
 
 
-
+//Load prouct LINKS for energy star
+linksToProducts = '' + fs.readFileSync('../output/' + folderNameOfOutput + '/productlinks.txt');
+linksToProducts = linksToProducts.split('\n');
+for(var g = 0;g < linksToProducts.length;g++){
+    if(linksToProducts[g].length < 3) linksToProducts.splice(g, 1);
+}
 
 //Load hits for ENERGY STAR
 productsWithHits = '' + fs.readFileSync('../output/' + folderNameOfOutput + '/eStarHits.txt');
 productsWithHits = productsWithHits.split('\n');
 for(var g = 0;g < productsWithHits.length;g++){
-    if(productsWithHits.length < 3) productsWithHits.splice(g, 1);
+    if(productsWithHits[g].length < 3) productsWithHits.splice(g, 1);
 }
 
-//Load FRIDGE infractions for ENERGY STAR
+//Load infractions for ENERGY STAR
 linksOfInfractions = '' + fs.readFileSync('../output/' + folderNameOfOutput + '/eStarHits_infractions.txt');
 linksOfInfractions = linksOfInfractions.split('\n');
 for(var g = 0;g < linksOfInfractions.length;g++){
-    if(linksOfInfractions.length < 3) linksOfInfractions.splice(g, 1);
+    if(linksOfInfractions[g].length < 3) linksOfInfractions.splice(g, 1);
 }
 
 
@@ -145,7 +150,7 @@ app.post('/api', function(req, res){
                 HomeDepot.startSearching((''+req.query.search).replace(/ /g, '+').trim(), ps, pe);
             }
             else if(radioButtons[2] === 'true'){
-
+                CanTire.startSearching((''+req.query.search).replace(/ /g, '+').trim(), ps, pe);
             }
         }
         res.json({});
@@ -154,26 +159,22 @@ app.post('/api', function(req, res){
         if(!processInProgress){
 
             radioButtons = (''+req.query.shop).split('1');
-            if(false){//req.query.index === 'all'){
-                
-                res.json({'all': productsWithHits});
+
+            if(radioButtons[0] === 'true'){
+                productsWithHits = [];
+                res.json({});
+                processInProgress = true;
+                BestBuy.extractAllDescFromProducts(linksToProducts.length-1, res);
             }
-            else{
-                if(radioButtons[0] === 'true'){
-                    productsWithHits = [];
-                    res.json({});
-                    processInProgress = true;
-                    BestBuy.extractAllDescFromProducts(linksToProducts.length-1, res);
-                }
-                else if(radioButtons[1] === 'true'){
-                    productsWithHits = [];
-                    res.json({});
-                    processInProgress = true;
-                    HomeDepot.extractAllDescFromProducts(linksToProducts.length-1, res);
-                }
-                else if(radioButtons[2] === 'true'){
-                    res.json({});
-                }
+            else if(radioButtons[1] === 'true'){
+                productsWithHits = [];
+                res.json({});
+                processInProgress = true;
+                HomeDepot.extractAllDescFromProducts(linksToProducts.length-1, res);
+            }
+            else if(radioButtons[2] === 'true'){
+                res.json({});
+
                 
             }
         }
@@ -189,27 +190,22 @@ app.post('/api', function(req, res){
                     break;
                 }
             }
-            if(req.query.index === 'all'){
-                /*for(var p = 0;p < 75;p++){
-                    BestBuy.compareToDatabase(p, res);
-                }
-                res.json({'all': productsWithHits});*/
+            //Bestbuy
+            if(radioButtons[0] === 'true'){
                 linksOfInfractions = [];
                 processInProgress = true;
+                res.json({});
                 BestBuy.compareAllModelNumberToDatabase(productsWithHits.length-1, res, dbIndex);
-                //res.json({'all': productsWithHits});
             }
-            else{
-                if(radioButtons[0] === 'true'){
-                    BestBuy.compareToDatabase(productsWithHits[Number(req.query.index)], res);
-                }
-                else if(radioButtons[1] === 'true'){
-                    res.json({});
-                }
-                else if(radioButtons[2] === 'true'){
-                    res.json({});
-                }
-                
+            //Home depot
+            else if(radioButtons[1] === 'true'){
+                linksOfInfractions = [];
+                processInProgress = true;
+                res.json({});
+                HomeDepot.compareAllModelNumberToDatabase(productsWithHits.length-1, res, dbIndex);
+            }
+            else if(radioButtons[2] === 'true'){
+                res.json({});
             }
             
         }

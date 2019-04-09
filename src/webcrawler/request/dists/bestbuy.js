@@ -205,7 +205,7 @@ BestBuy.compareAllModelNumberToDatabase = function(indOfESMatch, res, dbIndex){
                 fs.appendFileSync('../output/' + folderNameOfOutput + '/eStarHits_infractions.txt', linksOfInfractions[j] + '\n');
             }
             processInProgress = false;
-            res.json(returnVal);
+            //res.json(returnVal);
         }
     });
 };
