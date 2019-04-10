@@ -29,7 +29,9 @@ WWW.stepTree = function(){
 };
 
 WWW.developTree = function(){
+    WWW.idNum++;
     request(productsWithHits[indOfNode], function(err, resp, body){
+        WWW.idNum++;
         //Body 
         $ = cheerio.load(body);
         links = $('a');
@@ -46,4 +48,8 @@ WWW.developTree = function(){
         });
 
     });
+};
+
+WWW.addNode = function(){
+
 };

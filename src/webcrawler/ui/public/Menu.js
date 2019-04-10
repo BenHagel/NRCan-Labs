@@ -57,21 +57,39 @@ Menu.renderCurrentJobs = function(data){
     else document.getElementById('loadingSpinner').classList.add('hidden');
     
     if(Menu.show === 'a'){
-        document.getElementById('mainTextOutput').value = '';
+        var currentEntries = (''+document.getElementById('mainTextOutput').value).split('\n');
         for(var i = 0;i < data.links.length;i++){
-            document.getElementById('mainTextOutput').value += data.links[i] + '\n';
+            var inAlready = false;
+            for(var j = 0;j < currentEntries.length;j++){
+                if(data.links[i] === currentEntries[j]) inAlready = true;
+            }
+            if(!inAlready){
+                document.getElementById('mainTextOutput').value += data.links[i] + '\n';
+            }
         }
     }
     else if(Menu.show === 'b'){
-        document.getElementById('mainTextOutput').value = '';
+        var currentEntries = (''+document.getElementById('mainTextOutput').value).split('\n');
         for(var i = 0;i < data.esclaims.length;i++){
-            document.getElementById('mainTextOutput').value += data.esclaims[i] + '\n';
+            var inAlready = false;
+            for(var j = 0;j < currentEntries.length;j++){
+                if(data.esclaims[i] === currentEntries[j]) inAlready = true;
+            }
+            if(!inAlready){
+                document.getElementById('mainTextOutput').value += data.esclaims[i] + '\n';
+            }
         }
     }
     else if(Menu.show === 'c'){
-        document.getElementById('mainTextOutput').value = '';
+        var currentEntries = (''+document.getElementById('mainTextOutput').value).split('\n');
         for(var i = 0;i < data.misuses.length;i++){
-            document.getElementById('mainTextOutput').value += data.misuses[i] + '\n';
+            var inAlready = false;
+            for(var j = 0;j < currentEntries.length;j++){
+                if(data.misuses[i] === currentEntries[j]) inAlready = true;
+            }
+            if(!inAlready){
+                document.getElementById('mainTextOutput').value += data.misuses[i] + '\n';
+            }
         }
     }
 
@@ -92,11 +110,14 @@ Menu.renderAllHits = function(data){
 
 Menu.showA = function(){
     Menu.show = 'a';
+    document.getElementById('mainTextOutput').value = '';
 };
 Menu.showB = function(){
     Menu.show = 'b';
+    document.getElementById('mainTextOutput').value = '';
 };
 Menu.showC = function(){
     Menu.show = 'c';
+    document.getElementById('mainTextOutput').value = '';
 };
 //^\s*([0-9a-zA-Z]+)\s*$
