@@ -46,8 +46,16 @@
                     <input id="searchForProductInput" type="text" placeholder="product name">
                     Page <input id="pageFrom" type="text" placeholder="0" class="page-num-specifier"> to <input id="pageTo" type="text" placeholder="15" class="page-num-specifier">
                     <button onclick="ServerAPI.dis_productSearch();">Search</button>
-                    <br>
-                    <button onclick="ServerAPI.dis_findWhichLinksHaveESHits();">Which have hits?</button>
+                </div>
+
+                <br>
+                <br>
+
+                <button class="collapsible">Find Energy Star Claims</button>
+                <div style="display: none;">
+                    <p>Determine a product's claim to be ES Certified</p>
+                    <textarea readonly id="claimSearchTerms" wrap="off" spellcheck="false" class="url-starting-seeds-text-area"></textarea>
+                    <button onclick="ServerAPI.dis_findWhichLinksHaveESHits();">Find ES Claims</button>
                 </div>
 
                 <br>
@@ -63,6 +71,7 @@
                         <option value="none">n/a</option>
                     </select>
                 </div>
+
             </div>
 
 
@@ -89,6 +98,9 @@
             <div class="results-content">
                 <textarea id="mainTextOutput" wrap="off" spellcheck="false" class="main-text-output"></textarea>
             </div>
+            <a href="javascript:void(0)" onclick="Menu.showA()"><div id="countProductLinks"></div></a>
+            <a href="javascript:void(0)" onclick="Menu.showB()"><div id="countESHits"></div></a>
+            <a href="javascript:void(0)" onclick="Menu.showC()"><div id="countMisuses"></div></a>
             <div id="sketchParent" class="sketch-parent"></div>
         </div>
 

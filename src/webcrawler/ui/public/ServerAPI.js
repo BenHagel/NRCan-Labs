@@ -19,6 +19,7 @@ ServerAPI.checkOnJobs = function(){
 	var confirmJobs = function(data){
         localNodes = JSON.parse(data.nodes);
         Menu.renderCurrentJobs(data);
+        //console.log(Menu.show);
         setTimeout(ServerAPI.checkOnJobs, 1500);
 	};
     var command = '?sig=' + Menu.signature;
@@ -61,12 +62,7 @@ ServerAPI.dis_findWhichLinksHaveESHits = function(){
 
 ServerAPI.dis_getHotProductLink = function(){
     var gggg = function(data){
-        if(data.all){
-            Menu.renderAllHits(data);
-        }
-        else{
-            Menu.renderHighestHits(data);
-        }
+        
     };
     
     var dbselect = document.getElementById('databaseSelector');

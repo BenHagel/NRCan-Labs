@@ -4,6 +4,7 @@ Menu.signature = 'ben1';
 Menu.divs = ['productSites', 'www', 'singleSite'];
 
 Menu.productLinksLastIndex = 0;
+Menu.show = 'a';
 
 Menu.onload = function(){
     var coll = document.getElementsByClassName("collapsible");
@@ -22,6 +23,7 @@ Menu.onload = function(){
         });
     }
 
+    document.getElementById('claimSearchTerms').value = 'energy star\nstar certified'
 
     ServerAPI.initialQuery();
     ServerAPI.checkOnJobs();
@@ -51,37 +53,31 @@ Menu.openTab = function(num) {
 };
 
 Menu.renderCurrentJobs = function(data){
-    if(data.busy){
-        document.getElementById('loadingSpinner').classList.remove('hidden');
-        var outputArea = document.getElementById('mainTextOutput');
-        outputArea.value = '';
-        outputArea.value += data.firstLink + '\n';
-        outputArea.value += '...' + '\n';
-        outputArea.value += data.links + '\n';
-        outputArea.value += '...' + '\n';
-        outputArea.value += data.lastLink + '\n';
-    }
-    else{
-        document.getElementById('loadingSpinner').classList.add('hidden');
-    }
-    console.log(data.linksToProducts + ' ' + data.productsWithHits + ' ' + data.linksOfInfractions);
-    document.getElementById('numLinksInMemory').innerText = data.lbEstarHits;
-};
-
-Menu.renderHighestHits = function(data){
-    if(data){
-        var outputArea = document.getElementById('mainTextOutput');
-        outputArea.value = data.url;
-        outputArea.value += '\n' + data.title;
-        outputArea.value += '\n======================';
-        for(var k = 0;k < data.hits.length;k++){
-            outputArea.value += '\n' + data.hits[k].match + ' match';
-            outputArea.value += '\n@ index ' + data.hits[k].ind + ', w/ phrases:';
-            outputArea.value += '\n' + JSON.stringify(data.hits[k].words);
-            outputArea.value += '\n-------------------------------------------';
+    if(data.busy) document.getElementById('loadingSpinner').classList.remove('hidden');
+    else document.getElementById('loadingSpinner').classList.add('hidden');
+    
+    if(Menu.show === 'a'){
+        document.getElementById('mainTextOutput').value = '';
+        for(var i = 0;i < data.links.length;i++){
+            document.getElementById('mainTextOutput').value += data.links[i] + '\n';
         }
-        
     }
+    else if(Menu.show === 'b'){
+        document.getElementById('mainTextOutput').value = '';
+        for(var i = 0;i < data.esclaims.length;i++){
+            document.getElementById('mainTextOutput').value += data.esclaims[i] + '\n';
+        }
+    }
+    else if(Menu.show === 'c'){
+        document.getElementById('mainTextOutput').value = '';
+        for(var i = 0;i < data.misuses.length;i++){
+            document.getElementById('mainTextOutput').value += data.misuses[i] + '\n';
+        }
+    }
+
+    document.getElementById('countProductLinks').innerText = 'Links:\t' + data.linksToProducts;
+    document.getElementById('countESHits').innerText = 'E-Star Claims:\t' + data.productsWithHits;
+    document.getElementById('countMisuses').innerText = 'Misuses:\t' + data.linksOfInfractions;
 };
 
 Menu.renderAllHits = function(data){
@@ -92,5 +88,15 @@ Menu.renderAllHits = function(data){
             outputArea.value += data.all[k] + '\n\n';
         }
     }
+};
+
+Menu.showA = function(){
+    Menu.show = 'a';
+};
+Menu.showB = function(){
+    Menu.show = 'b';
+};
+Menu.showC = function(){
+    Menu.show = 'c';
 };
 //^\s*([0-9a-zA-Z]+)\s*$

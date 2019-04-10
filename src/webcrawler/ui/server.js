@@ -123,17 +123,12 @@ app.post('/api', function(req, res){
     }
     //Once every second called
     else if(req.query.cmd === 'check_jobs'){
-        if(linksToProducts.length > 0){
-            res.json({'busy': processInProgress, 'linksToProducts': linksToProducts.length,
+        res.json({'busy': processInProgress, 'linksToProducts': linksToProducts.length,
             'productsWithHits': productsWithHits.length, 'linksOfInfractions': linksOfInfractions.length,
-                'firstLink': linksToProducts[0], 'lastLink': linksToProducts[linksToProducts.length-1],
+                'links': linksToProducts,
+                'esclaims': productsWithHits,
+                'misuses': linksOfInfractions,
                 'nodes': JSON.stringify(WWW.nodes)});
-        }else{
-            res.json({'busy': processInProgress, 'linksToProducts': linksToProducts.length,
-            'productsWithHits': productsWithHits.length, 'linksOfInfractions': linksOfInfractions.length,
-                'firstLink': '---', 'lastLink': '---',
-                'nodes': JSON.stringify(WWW.nodes)});
-        }
         
     }
 
