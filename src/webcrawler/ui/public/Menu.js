@@ -56,6 +56,7 @@ Menu.renderCurrentJobs = function(data){
     if(data.busy) document.getElementById('loadingSpinner').classList.remove('hidden');
     else document.getElementById('loadingSpinner').classList.add('hidden');
     
+    /*
     if(Menu.show === 'a'){
         var currentEntries = (''+document.getElementById('mainTextOutput').value).split('\n');
         for(var i = 0;i < data.links.length;i++){
@@ -92,6 +93,7 @@ Menu.renderCurrentJobs = function(data){
             }
         }
     }
+    */
 
     document.getElementById('countProductLinks').innerText = 'Links:\t' + data.linksToProducts;
     document.getElementById('countESHits').innerText = 'E-Star Claims:\t' + data.productsWithHits;
@@ -110,14 +112,14 @@ Menu.renderAllHits = function(data){
 
 Menu.showA = function(){
     Menu.show = 'a';
-    document.getElementById('mainTextOutput').value = '';
+    //document.getElementById('mainTextOutput').value = '';
 };
 Menu.showB = function(){
     Menu.show = 'b';
-    document.getElementById('mainTextOutput').value = '';
+    //document.getElementById('mainTextOutput').value = '';
 };
 Menu.showC = function(){
     Menu.show = 'c';
-    document.getElementById('mainTextOutput').value = '';
+    //document.getElementById('mainTextOutput').value = '';
 };
 //^\s*([0-9a-zA-Z]+)\s*$

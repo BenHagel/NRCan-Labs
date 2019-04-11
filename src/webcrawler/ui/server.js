@@ -125,10 +125,7 @@ app.post('/api', function(req, res){
     else if(req.query.cmd === 'check_jobs'){
         res.json({'busy': processInProgress, 'linksToProducts': linksToProducts.length,
             'productsWithHits': productsWithHits.length, 'linksOfInfractions': linksOfInfractions.length,
-                'links': linksToProducts,
-                'esclaims': productsWithHits,
-                'misuses': linksOfInfractions,
-                'nodes': JSON.stringify(WWW.nodes)});
+            'nodes': JSON.stringify(WWW.nodes)});
         
     }
 

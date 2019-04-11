@@ -6,9 +6,9 @@ function setup(){
     var widthParentDiv = canvasDiv.offsetWidth;
     var heightParentDiv = canvasDiv.offsetHeight;
     var sketchCanvas = 
-        createCanvas(widthParentDiv, heightParentDiv, WEBGL);
+        createCanvas(widthParentDiv, heightParentDiv);
     sketchCanvas.parent("sketchParent");
-    frameRate(5);
+    frameRate(30);
     smooth();
 }
 
@@ -35,6 +35,8 @@ function draw(){
     }
     //console.log(a + '  ' + b);
     background(40);
+    fill(255, 0, 0);
+    ellipse(width/2, height/2, 40, 40);
     //drawNodes();
 }
 
