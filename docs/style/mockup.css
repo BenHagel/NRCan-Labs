@@ -9,9 +9,8 @@
 .logoImage {
     z-index: 33;
     width: 50%;
-    height: 100%;
-    margin:0;
-    padding:0;
+	height: 100%;
+	padding-top: 5px;
 }
 
 #speechBubble{
