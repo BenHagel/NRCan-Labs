@@ -2,16 +2,17 @@ const express = require('express');
 const app = express();
 const port = 80;
 const fs = require('fs');
+var path = require('path');
 var request = require('request');
 var cheerio = require('cheerio');
 var levenshtein = require('fast-levenshtein');
 const csv = require('csv-parser');
 const colour = require('colour');
-const puppeteer = require('puppeteer');
+//const puppeteer = require('puppeteer');
 const theUtil = require('util');
 
 console.log('START'.green);
-//Load config file,
+//Load config file, 
 var CONFIG = JSON.parse(fs.readFileSync('../../../config.json', 'utf8'));
 CONFIG.total_record_count = 0;
 var db_filenames = [];
@@ -106,7 +107,7 @@ for(var g = 0;g < linksOfInfractions.length;g++){
 //Server stuff
 app.use(express.static('public'));
 
-app.get('/', (req, res) => res.sendFile('./index.html'));
+app.get('/', (req, res) => res.sendFile(path.basename('can.html')));
 
 app.post('/api', function(req, res){
     //Top command to halt process in progress

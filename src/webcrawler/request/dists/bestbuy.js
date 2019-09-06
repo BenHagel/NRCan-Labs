@@ -8,7 +8,7 @@ Scrape all the pages after a search
 //Scale down the image to illegable format and then use that as the max
 
 //Careful for going too fast - will be detected from 
-//2. Look out for slower   queires
+//2. Look out for slower queires
 
 //TWITTER, FACEBOOK, use the api's to look at API's for 
 //All less fluffy and low-fidelity 
@@ -17,9 +17,9 @@ Scrape all the pages after a search
 
 var BestBuy = {};
 
-//Just search for first term
+//Just search for first term//https://www.bestbuy.ca/en-ca/search?search=light+bulb
 BestBuy.baseURL = 'https://www.bestbuy.ca';
-BestBuy.pageURL = BestBuy.baseURL + '/en-CA/Search/SearchResults.aspx?type=product&page=1&sortBy=relevance&sortDir=desc&query=';
+BestBuy.pageURL = BestBuy.baseURL + '/en-ca/search?search=';
 
 BestBuy.startSearching = function(searchTerm, ps, pe){
     var urlStart = BestBuy.pageURL + searchTerm;
@@ -29,7 +29,7 @@ BestBuy.startSearching = function(searchTerm, ps, pe){
     BestBuy.maxPages = pe;
 
     linksToProducts = [];
-    //console.log(urlStart);
+    console.log('Links Being grabbed', BestBuy.currentPage);
     BestBuy.grabLinksFrom(urlStart);
 };
 
@@ -46,6 +46,7 @@ BestBuy.grabLinksFrom = function(pageURL){
                 if(targetLinkParsed.length > 2){
                     if(targetLinkParsed[1] === 'en-ca' && targetLinkParsed[2] === 'product'){
                         targetLink = BestBuy.baseURL + targetLink;
+                        console.log('pushing', targetLink);
                         BestBuy.addLink(targetLink);
                     }
                 }
@@ -56,6 +57,7 @@ BestBuy.grabLinksFrom = function(pageURL){
             BestBuy.currentPage--;
         }
         
+        /*
         //Iterate pages
         if(BestBuy.currentPage < BestBuy.maxPages && processInProgress === true){
             var oldPageNum = '&page=' + BestBuy.currentPage;
@@ -71,6 +73,11 @@ BestBuy.grabLinksFrom = function(pageURL){
             }
             processInProgress = false;
         }
+        */
+        for(var j = 0;j < linksToProducts.length;j++){
+            fs.appendFileSync('../output/' + folderNameOfOutput + '/productlinks.txt', linksToProducts[j] + '\n');
+        }
+        processInProgress = false;
     });
 };
 

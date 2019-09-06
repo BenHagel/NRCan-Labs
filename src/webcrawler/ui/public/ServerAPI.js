@@ -1,5 +1,5 @@
 var ServerAPI = {};
-ServerAPI.baseURL = 'http://localhost:80/api';
+ServerAPI.baseURL = 'http://localhost:8080/api';
 //ServerAPI.baseURL_game = 'http://localhost:80/gres';
 
 ServerAPI.xmlRequest = function(type, req, to){

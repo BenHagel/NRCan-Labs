@@ -10,6 +10,7 @@ src/
 - npm install fast-levenshtein --save
 - npm install csv-parser --save
 - npm install colour --save
+- npm install path --save
 
 
 Useful links:
@@ -24,3 +25,5 @@ npm install cheerio --save
 npm install express --save
 npm install fast-levenshtein --save
 npm install csv-parser --save
+npm install colour --save
+npm install path --save
